@@ -25,7 +25,7 @@ import ListCategory from './components/admin/Category/ListCategory.vue'
 
 import editContact from './components/admin/Contact/editContact.vue'
 
-import Info from './components/admin/INfo.vue'
+import Info from './components/admin/Info.vue'
 
 
 export const routes = [

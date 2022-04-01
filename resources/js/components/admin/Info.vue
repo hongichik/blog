@@ -2,7 +2,7 @@
     <div class="card">
         <h5 class="card-header">Thông tin chung</h5>
         <div class="card-body">
-            <form action="#">
+            <div>
                 <div class="form-group col-5">
                     <label>Phương châm</label>
                     <input v-model="info.slogan" class="form-control" type="text"  autocomplete="off" >
@@ -37,53 +37,54 @@
                 </div>
                 <div class="form-group col-5">
                     <label>Logo Chính</label>
-                    <div class="image-box text-center" style="margin-top: 1em;height: 10em;width: 20em;background: #d24d57;cursor: pointer;overflow: hidden;">
-                        <p style="position: relative;top: 45%;color: #fff;">Sửa ảnh</p>
-                        <img src="" alt="" style="height: 100%;display: none;">
+                    <div class="image-box text-center border d-flex" style="margin-top: 1em;height: 10em;width: 20em;cursor: pointer;overflow: hidden;">
+                        <p style="position: relative;top: 45%;color:rgb(255 255 255 / 0%);"></p>
+                        <img :src="info.logoHeader" alt="" style="width: 100%;" class="m-auto">
                     </div>
-                    <div class="controls" style="display: none;">
-                        <input type="file" name="contact_image_1"/>
-                    </div>
+                    <button class="file-upload">            
+                        <input type="file" class="file-input" accept="image/*">
+                        <h3 class="p-0 m-0">Đổi ảnh</h3>
+                    </button>
                 </div>
                 <div class="form-group col-5">
                     <label>Logo cuối trang</label>
-                    <div class="image-box text-center" style="margin-top: 1em;height: 10em;width: 20em;background: #d24d57;cursor: pointer;overflow: hidden;">
-                        <p style="position: relative;top: 45%;color: #fff;">Sửa ảnh</p>
-                        <img src="" alt="" style="height: 100%;display: none;">
+                    <div class="image-box text-center border d-flex" style="margin-top: 1em;height: 10em;width: 20em;cursor: pointer;overflow: hidden;">
+                        <img :src="info.logoFooter" alt="" style="width: 100%;" class="m-auto">
                     </div>
-                    <div class="controls" style="display: none;">
-                        <input type="file" name="contact_image_1"/>
-                    </div>
+                    <button class="file-upload">            
+                        <input type="file" class="file-input" accept="image/*" >
+                        <h3 class="p-0 m-0">Đổi ảnh</h3>
+                    </button>
                 </div>
                 <div class="form-group col-5">
                     <label>Logo tải trang</label>
-                    <div class="image-box text-center" style="margin-top: 1em;height: 10em;width: 20em;background: #d24d57;cursor: pointer;overflow: hidden;">
-                        <p style="position: relative;top: 45%;color: #fff;">Sửa ảnh</p>
-                        <img src="" alt="" style="height: 100%;display: none;">
+                    <div class="image-box text-center border d-flex" style="margin-top: 1em;height: 10em;width: 20em;cursor: pointer;overflow: hidden;">
+                        <img :src="info.logoLoadPage" alt="" style="width: 100%;" class="m-auto">
                     </div>
-                    <div class="controls" style="display: none;">
-                        <input type="file" name="contact_image_1"/>
-                    </div>
+                    <button class="file-upload">            
+                        <input type="file" class="file-input" accept="image/*">
+                        <h3 class="p-0 m-0">Đổi ảnh</h3>
+                    </button>
                 </div>
                 <div class="form-group col-5">
                     <label>Icon</label>
-                    <div class="image-box text-center" style="margin-top: 1em;height: 4em;width: 4em;background: #d24d57;cursor: pointer;overflow: hidden;">
-                        <p style="position: relative;top: 45%;color: #fff;">Sửa ảnh</p>
-                        <img src="" alt="" style="height: 100%;display: none;">
+                    <div class="image-box text-center border" style="margin-top: 1em;height: 2em;width: 2em;cursor: pointer;overflow: hidden;">
+                        <img :src="info.icon" alt="" style="height: 100%;">
                     </div>
-                    <div class="controls" style="display: none;">
-                        <input type="file" name="contact_image_1"/>
-                    </div>
+                    <button class="file-upload">            
+                        <input type="file" class="file-input" accept=".ico">
+                        <h3 class="p-0 m-0">Đổi ảnh</h3>
+                    </button>
                 </div>
                 <div class="row">
                     <div class="col-sm-6 pl-0">
                         <p class="text-right">
-                            <button class="btn btn-space btn-primary">Lưu</button>
-                            <button class="btn btn-space btn-secondary">Hủy</button>
+                            <button @click="Save()" class="btn btn-space btn-primary">Lưu chỉnh sửa</button>
+                            <button @click="Cancel()" class="btn btn-space btn-secondary">Hủy</button>
                         </p>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </template>
@@ -114,6 +115,12 @@ export default {
             console.log(error);
         })
     },
+    Cancel(){
+        this.showInfo();
+    },
+    Save(){
+        alert("chức năng đang phát triển");
+    }
   },
     
 }

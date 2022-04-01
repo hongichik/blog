@@ -28,14 +28,14 @@
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Sản phẩm</a>
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fa fa-fw fa-rocket"></i>Quản lý môn học</a>
                                 <div id="submenu-2" class="collapse submenu" >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/general.html">Danh sách sản phẩm</a>                                           
+                                            <a class="nav-link" href="pages/general.html">Thêm môn học</a>                                           
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="pages/general.html">Danh sách sản phẩm</a>
+                                            <a class="nav-link" href="pages/general.html">Danh sách môn học</a>
                                         </li>
 
                                     </ul>
