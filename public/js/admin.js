@@ -5662,6 +5662,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
+      Blog: "Blog",
       parentCategories: "",
       parentName: "Chưa chọn",
       parentId: null,
@@ -30411,25 +30412,29 @@ var render = function () {
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group col-5" }, [
-                    _c("button", {
-                      staticClass:
-                        "ml-1 btn btn-outline-primary btn-sm rounded-circle fa  fas fa-edit p-2",
-                      on: {
-                        click: function ($event) {
-                          return _vm.edit(data.id)
-                        },
-                      },
-                    }),
+                    !(data.name === "Blog")
+                      ? _c("button", {
+                          staticClass:
+                            "ml-1 btn btn-outline-primary btn-sm rounded-circle fa  fas fa-edit p-2",
+                          on: {
+                            click: function ($event) {
+                              return _vm.edit(data.id)
+                            },
+                          },
+                        })
+                      : _vm._e(),
                     _vm._v(" "),
-                    _c("button", {
-                      staticClass:
-                        "m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt",
-                      on: {
-                        click: function ($event) {
-                          return _vm.Delete(data.id, data.name)
-                        },
-                      },
-                    }),
+                    !(data.name === "Blog")
+                      ? _c("button", {
+                          staticClass:
+                            "m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt",
+                          on: {
+                            click: function ($event) {
+                              return _vm.Delete(data.id, data.name)
+                            },
+                          },
+                        })
+                      : _vm._e(),
                   ]),
                 ]),
                 _vm._v(" "),
@@ -30609,6 +30614,14 @@ var render = function () {
                   return _c(
                     "a",
                     {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: !(data.name === _vm.Blog),
+                          expression: "!(data.name === Blog)",
+                        },
+                      ],
                       key: data.value,
                       staticClass: "dropdown-item",
                       on: {
@@ -31861,7 +31874,7 @@ var staticRenderFns = [
         },
         [
           _c("i", { staticClass: "fa fa-fw fa-rocket" }),
-          _vm._v("Quản lý môn học"),
+          _vm._v("Quản bài viết"),
         ]
       ),
       _vm._v(" "),
@@ -31877,7 +31890,7 @@ var staticRenderFns = [
                   staticClass: "nav-link",
                   attrs: { href: "pages/general.html" },
                 },
-                [_vm._v("Thêm môn học")]
+                [_vm._v("Thêm bài viết")]
               ),
             ]),
             _vm._v(" "),
@@ -31888,7 +31901,7 @@ var staticRenderFns = [
                   staticClass: "nav-link",
                   attrs: { href: "pages/general.html" },
                 },
-                [_vm._v("Danh sách môn học")]
+                [_vm._v("Danh sách nhóm bài viết")]
               ),
             ]),
           ]),
@@ -31923,14 +31936,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("li", { staticClass: "nav-item" }, [
-      _c(
-        "a",
-        {
-          staticClass: "nav-link",
-          attrs: { href: "pages/general-table.html" },
-        },
-        [_vm._v("Đến trang người dùng")]
-      ),
+      _c("a", { staticClass: "nav-link", attrs: { href: "../" } }, [
+        _vm._v("Đến trang người dùng"),
+      ]),
     ])
   },
 ]

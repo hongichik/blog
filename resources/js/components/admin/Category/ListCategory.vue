@@ -10,8 +10,8 @@
                         <label class="col-form-label">Tên : {{data.name,}}</label>
 
                         <div class="form-group col-5">
-                            <button @click="edit(data.id)" class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa  fas fa-edit p-2"></button>
-                            <button @click="Delete(data.id,data.name)" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
+                            <button v-if="!(data.name === 'Blog')" @click="edit(data.id)" class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa  fas fa-edit p-2"></button>
+                            <button v-if="!(data.name === 'Blog')" @click="Delete(data.id,data.name)" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
                         </div>
                     </div>
                      <h5 v-if="data.Chill > []" class="ml-5">Danh mục con</h5>

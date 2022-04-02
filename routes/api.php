@@ -16,15 +16,15 @@ Route::middleware('auth')->group(function (){
     Route::post('/UpdateCategory', [Categories::class,'update']); //update
     Route::post('/SearchCategory', [Categories::class,'search']); //search
 
-
+    Route::post('/ContactEdit', [ContactController::class,'Edit']); //edit contact
+    Route::get('/ContactShow', [ContactController::class,'Show']); //Show contact
+    
+    Route::get('/InfoShow', [AllInfoWebController::class,'Show']); //Show contact
+    
+    Route::post('/UploadImg', [ImgController::class,'uploadImg']); //upload img
 });
 
-Route::post('/ContactEdit', [ContactController::class,'Edit']); //edit contact
-Route::get('/ContactShow', [ContactController::class,'Show']); //Show contact
 
-Route::get('/InfoShow', [AllInfoWebController::class,'Show']); //Show contact
-
-Route::post('/UploadImg', [ImgController::class,'uploadImg']); //upload img
 Route::get('/ShowImg/{filename}', [ImgController::class,'ShowImg']); //show img
 
 

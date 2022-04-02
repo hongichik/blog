@@ -48,6 +48,11 @@ class Categories extends Controller
 
     public function update(Request $request)
     {
+        $name =  Category::where('id', 'like', '%'.$request->id.'%')->get("name");
+        if($name[0]->name == "Blog")
+        {
+            return;
+        }
         $validated = $request->validate([
             'name'=> 'required',
         ]);
@@ -59,6 +64,11 @@ class Categories extends Controller
 
     public function destroy(Request $request)
     {
+        $name =  Category::where('id', 'like', '%'.$request->id.'%')->get("name");
+        if($name[0]->name == "Blog")
+        {
+            return;
+        }
         return Category::destroy($request->id);
     }
 

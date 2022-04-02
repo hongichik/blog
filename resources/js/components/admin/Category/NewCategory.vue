@@ -18,7 +18,7 @@
                     <div class="dropdown-menu w-100 dropdown-category"  aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" @click="addParentId(0)" href="#">Chọn làm danh mục cha</a>
                         <p class="pt-2 m-0 border-top text-center">Chọn làm danh mục con của</p>
-                        <a v-for="(data)  in parentCategories" :key="data.value" class="dropdown-item" @click="addParentId(data.id,data.name)">{{data.name}}</a>
+                        <a v-for="(data)  in parentCategories" :key="data.value" v-show="!(data.name === Blog)" class="dropdown-item" @click="addParentId(data.id,data.name)">{{data.name}}</a>
                     </div>
                 </div>
             </div>
@@ -38,6 +38,7 @@
 export default {
   data () {
     return {
+        Blog: "Blog",
         parentCategories: "",
         parentName:"Chưa chọn",
         parentId:null,

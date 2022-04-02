@@ -33,13 +33,17 @@ class DatabaseSeeder extends Seeder
         $AllInfoWeb->LinkFBFooter = 'LinkFBFooter';
         $AllInfoWeb->save();
         
+        $Category = new Category();
+        $Category->name = 'Blog';
+        $Category->save();
 
         $Category1 = new Category();
-        $Category1->name = 'danh mục cha';
+        $Category1->name = 'Lập trình';
         $Category1->save();
 
+
         $Category2 = new Category();
-        $Category2->name = 'danh mục con';
+        $Category2->name = 'C++';
         $Category2->ParentCategory()->associate($Category1);
         $Category2->save();
 
