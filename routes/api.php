@@ -6,6 +6,8 @@ use App\Http\Controllers\API\Categories;
 use App\Http\Controllers\API\ImgController;
 use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\AllInfoWebController;
+use App\Http\Controllers\API\PostsController;
+
 
 Route::middleware('auth')->group(function (){
     Route::get('/listCategory', [Categories::class,'index']); //show
@@ -22,8 +24,10 @@ Route::middleware('auth')->group(function (){
     Route::get('/InfoShow', [AllInfoWebController::class,'Show']); //Show contact
     
     Route::post('/UploadImg', [ImgController::class,'uploadImg']); //upload img
-});
 
+
+});
+Route::post('/AddPost', [PostsController::class,'AddPost']); //add post
 
 Route::get('/ShowImg/{filename}', [ImgController::class,'ShowImg']); //show img
 

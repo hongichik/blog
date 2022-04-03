@@ -27,20 +27,13 @@ import editContact from './components/admin/Contact/editContact.vue'
 
 import Info from './components/admin/Info.vue'
 
+import addPosts from './components/admin/posts/addPosts.vue';
+
 
 export const routes = [
-
     {
-		path: '*',
-        component: Home,
-    },
-    {
-		path: '/',
-        component: Home
-    },
-	{
-		path: '/home',
-        component: Home
+		path: '/addPosts',
+        component: addPosts
     },
     {
 		path: '/NewCategory',
@@ -61,6 +54,18 @@ export const routes = [
     {
 		path: '/editInfo',
         component: Info
+    },
+    {
+		path: '*',
+        component: Home,
+    },
+    {
+		path: '/',
+        component: Home
+    },
+	{
+		path: '/home',
+        component: Home
     },
 
 ];
