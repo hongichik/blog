@@ -28,11 +28,20 @@ import editContact from './components/admin/Contact/editContact.vue'
 import Info from './components/admin/Info.vue'
 
 import addPosts from './components/admin/posts/addPosts.vue';
-
+import addChildPost from './components/admin/posts/addChildPost.vue';
+import posts from './components/admin/posts/posts.vue';
 
 export const routes = [
     {
-		path: '/addPosts',
+		path: '/posts',
+        component: posts
+    },
+    {
+		path: '/addChildPost',
+        component: addChildPost
+    },
+    {
+		path: '/addPosts/:name/:id',
         component: addPosts
     },
     {
@@ -40,7 +49,7 @@ export const routes = [
         component: NewCategory
     },
     {
-		path: '/EditCategory/edit-:id',
+		path: '/EditCategory/:id',
         component: EditCategory
     },
     {
@@ -58,6 +67,7 @@ export const routes = [
     {
 		path: '*',
         component: Home,
+ 
     },
     {
 		path: '/',
@@ -65,7 +75,8 @@ export const routes = [
     },
 	{
 		path: '/home',
-        component: Home
+        component: Home,
+        name: 'home',
     },
 
 ];

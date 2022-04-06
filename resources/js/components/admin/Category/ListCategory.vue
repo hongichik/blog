@@ -42,9 +42,26 @@ export default {
     }
   },
   created () {
+      this.CheckPermissin()
       this.getCategories()
   },
   methods: {
+      async CheckPermissin()
+      {
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/CheckPermission?Permission='+'Manage-Category',{
+            headers: {
+            Accept: 'application/json'
+            },
+        })
+        .then(data => {
+            if(!data.data)
+                this.$router.push({name: 'home'});
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+      },
       async getCategories()
       {
         axios.defaults.headers.post['Accept'] = 'application/json'
@@ -54,7 +71,6 @@ export default {
             }
         })
         .then(data => {
-            console.log(data.data)
             this.Categories = data.data;
         })
         .catch(error=>{
@@ -84,7 +100,7 @@ export default {
       },
 
       edit($id){
-        this.$router.push({path: '/EditCategory/edit-'+$id});
+        this.$router.push({path: '/EditCategory/'+$id});
       }
 
       

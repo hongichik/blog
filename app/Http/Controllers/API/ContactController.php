@@ -9,6 +9,14 @@ class ContactController extends Controller
 {
     public function Edit(Request $request)
     {
+        if (!$request->user()->hasPermission('Manage-Info-Web')) {
+            return response([
+                'status' => false,
+                'message' => 'Bạn không có quyền truy cập vào chức năng này' 
+            ], 200);
+        } 
+
+
         $fileName = public_path() . '/uploads/blog/Contact.blog';
         $fileContact = file_put_contents($fileName,$request->editorData);
         return $request->editorData;

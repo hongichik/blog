@@ -97,9 +97,26 @@ export default {
     }
   },
   created () {
+      this.CheckPermissin()
       this.showInfo();
   },
   methods: {
+      async CheckPermissin()
+      {
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/CheckPermission?Permission='+'Manage-Info-Web',{
+            headers: {
+            Accept: 'application/json'
+            },
+        })
+        .then(data => {
+            if(!data.data)
+                this.$router.push({name: 'home'});
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+      },
     async showInfo()
     {
         axios.defaults.headers.post['Accept'] = 'application/json'

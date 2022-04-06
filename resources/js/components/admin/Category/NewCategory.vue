@@ -18,7 +18,7 @@
                     <div class="dropdown-menu w-100 dropdown-category"  aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" @click="addParentId(0)" href="#">Chọn làm danh mục cha</a>
                         <p class="pt-2 m-0 border-top text-center">Chọn làm danh mục con của</p>
-                        <a v-for="(data)  in parentCategories" :key="data.value" v-show="!(data.name === Blog)" class="dropdown-item" @click="addParentId(data.id,data.name)">{{data.name}}</a>
+                        <a v-for="(data)  in parentCategories" :key="data.value" v-show="!(data.name === 'Blog')" class="dropdown-item" @click="addParentId(data.id,data.name)">{{data.name}}</a>
                     </div>
                 </div>
             </div>
@@ -51,9 +51,26 @@ export default {
     }
   },
   created () {
+      this.CheckPermissin()
       this.getParentCategory()
   },
   methods: {
+      async CheckPermissin()
+      {
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/CheckPermission?Permission='+'Manage-Category',{
+            headers: {
+            Accept: 'application/json'
+            },
+        })
+        .then(data => {
+            if(!data.data)
+                this.$router.push({name: 'home'});
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+      },
       async getParentCategory()
       {
         axios.defaults.headers.post['Accept'] = 'application/json'
@@ -84,6 +101,7 @@ export default {
             }
         })
         .then(data => {
+            this.$router.push({path: '/ListCategory'});
             this.deleteError()
             this.getParentCategory()
             this.parentId = null
@@ -92,6 +110,7 @@ export default {
             this.Success = "Đã thêm thành công " + this.CategoryName
         })
         .catch(error=>{
+            console.log("lõi");
             this.showError(error);
         })
       },

@@ -28,10 +28,18 @@ class Categories extends Controller
 
     public function store(Request $request)
     {
+        if (!$request->user()->hasPermission('Manage-Category')) {
+            return response([
+                'status' => false,
+                'message' => 'Bạn không có quyền truy cập vào chức năng này' 
+            ], 200);
+        } 
+        
         $validated = $request->validate([
             'name'=> 'required|unique:categories,name',
         ]);
         return  (bool)Category::create($request->all()); 
+
     }
 
 
@@ -48,6 +56,20 @@ class Categories extends Controller
 
     public function update(Request $request)
     {
+        if (!$request->user()->hasPermission('Manage-Category')) {
+            return response([
+                'status' => false,
+                'message' => 'Bạn không có quyền truy cập vào chức năng này' 
+            ], 200);
+        } 
+        
+        $user = request()->user();
+        if (!$request->user()->permissions('Manage-Category')) {
+            return response([
+                'status' => false,
+                'message' => 'Bạn không có quyền truy cập vào chức năng này' 
+            ], 200);
+        } 
         $name =  Category::where('id', 'like', '%'.$request->id.'%')->get("name");
         if($name[0]->name == "Blog")
         {

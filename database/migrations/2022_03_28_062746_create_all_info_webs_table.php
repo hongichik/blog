@@ -14,7 +14,7 @@ class CreateAllInfoWebsTable extends Migration
     public function up()
     {
         Schema::create('all_info_webs', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('logoHeader');
             $table->string('logoFooter');
             $table->string('logoLoadPage');

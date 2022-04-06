@@ -60,9 +60,26 @@ export default {
         };
     },
     created () {
-        this.showContact();
+      this.CheckPermissin()
+      this.showContact();
     },
     methods: {
+      async CheckPermissin()
+      {
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/CheckPermission?Permission='+'Manage-Info-Web',{
+            headers: {
+            Accept: 'application/json'
+            },
+        })
+        .then(data => {
+            if(!data.data)
+                this.$router.push({name: 'home'});
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+      },
         async showContact()
         {
             axios.defaults.headers.post['Accept'] = 'application/json'

@@ -19,8 +19,10 @@
                             <a class="nav-link nav-user-img pl-1" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img :src="img" alt="" class="user-avatar-md rounded-circle"></a>
                             <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
                                 <a class="btn dropdown-item" @click="logout()"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                                <a class="btn dropdown-item" @click="logout()">Thông tin cá nhân</a>
                             </div>
                         </li>
+                        
                     </ul>
                 </div>
             </nav>
