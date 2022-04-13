@@ -1,0 +1,7 @@
+<p><span style="font-size:22px"><strong>K&yacute; tự đặc biệt trong C++</strong>&nbsp;l&agrave; một d&atilde;y c&aacute;c k&yacute; tự kh&ocirc;ng đại diện cho ch&iacute;nh n&oacute; khi được sử dụng b&ecirc;n trong chuỗi k&yacute; tự hoặc k&yacute; tự.</span></p>
+
+<p><span style="font-size:22px">N&oacute; bao gồm hai hoặc nhiều k&yacute; tự bắt đầu bằng dấu gạch ch&eacute;o ngược \. V&iacute; dụ: \n đại diện cho d&ograve;ng mới.</span></p>
+
+<h2><span style="font-size:22px">Dưới đ&acirc;y l&agrave; danh s&aacute;ch k&yacute; tự đặc biệt trong C++</span></h2>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256463ad7d8a.PNG" style="width:80%" /></span></p>

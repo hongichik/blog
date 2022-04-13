@@ -1,0 +1,662 @@
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000">Cấu tr&uacute;c v&ograve;ng lặp while</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Cấu tr&uacute;c v&ograve;ng lặp do while</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Khi n&agrave;o sử dụng v&ograve;ng lặp for, while v&agrave; do while</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp while v&agrave; do while trong việc truy xuất mảng</span></span></li>
+</ul>
+
+<h2><span style="font-size:22px"><span style="color:#000000">1. Cấu tr&uacute;c v&ograve;ng lặp while</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>C&uacute; ph&aacute;p:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$condition</code><code>) {</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// d&ograve;ng lệnh</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong đ&oacute;&nbsp;<code>$condition</code>&nbsp;l&agrave; điều kiện để dừng v&ograve;ng lặp. Nếu&nbsp;<code>$condition</code>&nbsp;c&oacute; gi&aacute; trị false th&igrave; v&ograve;ng lặp kết th&uacute;c, ngược lại v&ograve;ng lặp sẽ tiếp tục lặp. V&ograve;ng lặp while sẽ lặp v&ocirc; hạn nếu biểu thức điều kiện bạn truyền v&agrave;o lu&ocirc;n lu&ocirc;n đ&uacute;ng.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:&nbsp;</strong>D&ugrave;ng v&ograve;ng lặp while trong php liệt k&ecirc; c&aacute;c số từ 1 tới 10.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để giải b&agrave;i to&aacute;n n&agrave;y ta c&oacute; thể d&ugrave;ng&nbsp;</span><a href="https://freetuts.net/vong-lap-for-trong-php-7.html" target="_blank" title="video vong lap for trong php"><span style="color:#000000">v&ograve;ng lặp for trong php</span></a><span style="color:#000000">&nbsp;để giải một c&aacute;ch dễ d&agrave;ng.</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>for</code> <code>(</code><code>$i</code> <code>= 1; </code><code>$i</code> <code>&lt;= 10; </code><code>$i</code><code>++){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code> <code>. </code><code>&#39; - &#39;</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Nhưng đề b&agrave;i bắt buộc d&ugrave;ng v&ograve;ng lặp while, v&igrave; thế c&aacute;c bạn xem b&agrave;i giải sau:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 1; </code><code>// Biến d&ugrave;ng để lặp</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt;= 10){ </code><code>// Nếu $i &lt;= 10 th&igrave; mới lặp</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code> <code>. </code><code>&#39; - &#39;</code><code>; </code><code>// Xuất ra m&agrave;n h&igrave;nh</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++; </code><code>// Tăng biến $i l&ecirc;n 1</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>Giải th&iacute;ch:</strong></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><code>$i = 1</code>&nbsp;l&agrave; biến d&ugrave;ng để lặp.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000"><code>while ($i &lt;= 10)</code>&nbsp;l&agrave; d&ograve;ng bắt đầu v&ograve;ng lặp, trong đ&oacute; điều kiện lặp l&agrave;&nbsp;<code>$i &lt;= 10</code>.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000"><code>echo $i . &lsquo; - &lsquo;</code>&nbsp;xuất ra m&agrave;n h&igrave;nh biến&nbsp;<code>$i</code>&nbsp;v&agrave; k&yacute; tự&nbsp;<code>-</code>.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000"><code>$i++</code>&nbsp;Tăng biến&nbsp;<code>$i</code>&nbsp;l&ecirc;n 1 đơn vị, v&iacute; dụ hiện tại&nbsp;<code>$i = 1</code>&nbsp;th&igrave; sau khi v&ograve;ng lặp chạy th&igrave; biến&nbsp;<code>$i = 2</code>, d&ograve;ng n&agrave;y rất quan trọng v&igrave; nếu kh&ocirc;ng c&oacute; d&ograve;ng n&agrave;y biến&nbsp;<code>$i</code>&nbsp;sẽ lu&ocirc;n lu&ocirc;n bằng 1 sau mỗi v&ograve;ng lặp, như thế điều kiện v&ograve;ng lặp sẽ th&agrave;nh ​<code>($i &lt;= 10)</code>&nbsp;&lt;=&gt;&nbsp;<code>(1 &lt;= 10)</code>&nbsp;=&gt; đ&uacute;ng =&gt; v&ograve;ng lặp sẽ bị&nbsp;<strong>lặp v&ocirc; hạn</strong>.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần lặp 1</u>: Biến<code>&nbsp;$i = 1</code>, kiểm tra điều kiện thấy&nbsp;<code>(1 &lt;= 10)</code>&nbsp;=&gt; true n&ecirc;n b&ecirc;n trong v&ograve;ng lặp sẽ thực hiện v&agrave; xuất ra m&agrave;n h&igrave;nh &ldquo;1 &ndash; &ldquo;, đồng thời d&ograve;ng $i++ sẽ tăng $i l&ecirc;n 1 =&gt;&nbsp;<code>$i = 2</code>&nbsp;v&agrave; quay trở lại v&ograve;ng lặp để lặp v&ograve;ng tiếp theo.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần lặp 2</u>: Biến&nbsp;<code>$i = 2</code>, kiểm tra điều kiện thấy<code>&nbsp;(2 &lt;= 10)</code>&nbsp;=&gt; true n&ecirc;n b&ecirc;n trong v&ograve;ng lặp sẽ thực hiện v&agrave; xuất ra m&agrave;n h&igrave;nh &ldquo;2 - &ldquo;, đồng thời d&ograve;ng $i++ sẽ tăng $i l&ecirc;n 1 =&gt;&nbsp;<code>$i = 3</code>&nbsp;v&agrave; quay trở lại v&ograve;ng lặp để lặp v&ograve;ng tiếp theo.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Tương tự lần lặp 3, 4, 5, 6, 7, 8, 9: Sau v&ograve;ng lặp thứ 9 biến&nbsp;<code>$i</code>&nbsp;sẽ c&oacute; gi&aacute; trị&nbsp;<code>$i = 10</code>.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần lặp 10</u>: Biến&nbsp;<code>$i = 10</code>, kiểm tra điều kiện thấy&nbsp;<code>(10 &lt;= 10)</code>&nbsp;=&gt; true n&ecirc;n b&ecirc;n trong v&ograve;ng lặp sẽ thực hiện v&agrave; xuất ra m&agrave;n h&igrave;nh &ldquo;10 &ndash; &ldquo;, đồng thời d&ograve;ng $i++ sẽ tăng biến $i l&ecirc;n 1 =&gt;&nbsp;<code>$i = 11</code>&nbsp;v&agrave; quay trở lại v&ograve;ng lặp để lặp v&ograve;ng tiếp theo.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần lặp 11</u>: Biến&nbsp;<code>$i = 11</code>, kiểm tra điều kiện thấy&nbsp;<code>(11 &lt;= 10)</code>&nbsp;=&gt; false. Kh&ocirc;ng thỏa m&atilde;n điều kiện v&igrave; thế v&ograve;ng lặp kết th&uacute;c (c&aacute;c d&ograve;ng lệnh b&ecirc;n trong cũng kh&ocirc;ng thực hiện n&ecirc;n kh&ocirc;ng xuất hiện m&agrave;n h&igrave;nh chuỗi &ldquo;11 &ndash; &ldquo;).</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Kết th&uacute;c</u>: Kết hợp c&aacute;c kết quả lại với nhau th&igrave; m&agrave;n h&igrave;nh sẽ in ra d&ograve;ng &ldquo;1 &ndash; 2 &ndash; 3 &ndash; 4 &ndash; 5 &ndash; 6 &ndash; 7 &ndash; 8 &ndash; 9 &ndash; 10 &ndash; &ldquo;.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Với v&ograve;ng lặp for th&igrave; lặp theo một quy luật tăng, giảm đều th&igrave; đối với while kh&ocirc;ng những lặp theo quy luật m&agrave; bạn c&oacute; thể lặp theo một biểu thức.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 0;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$j</code> <code>= 10;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt; 100 &amp;&amp; </code><code>$j</code> <code>&gt; 5){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$j</code> <code>-= 2;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp n&agrave;y sẽ thực hiện 3 lần.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần 1</u>: $i = 0, $j = 10, kiểm tra điều kiện thấy ( 0 &lt; 100 &amp;&amp; 10 &gt; 5 ) =&gt; true n&ecirc;n v&ograve;ng lặp thực hiện tăng $i l&ecirc;n v&agrave; giảm $j xuống 2. L&uacute;c n&agrave;y $i = 1, $j = 8.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần 2</u>: $i = 1, $j = 8, kiểm ta điều kiện thấy ( 1 &lt; 100 &amp;&amp; 8 &gt; 5 ) =&gt; true n&ecirc;n v&ograve;ng lặp thực hiện tăng $i l&ecirc;n 1 v&agrave; giảm $j xuống 2. L&uacute;c n&agrave;y $i = 2, $j = 6.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần 3</u>: $i = 2, $j = 6, kiểm tra điều kiện thấy ( 2 &lt; 100 &amp;&amp; 6 &gt; 5 ) =&gt; true n&ecirc;n v&ograve;ng lặp thực hiện tăng $i l&ecirc;n 1 v&agrave; giảm $j xuốn 2. L&uacute;c n&agrave;y $i = 3, $j = 4.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><u>Lần 4</u>: $i = 3, $j = 4, kiểm tra điều kiện thấy (3 &lt; 100 &amp;&amp; 4 &gt; 5) =&gt; false, điều kiện sai n&ecirc;n v&ograve;ng lặp kết th&uacute;c (v&ograve;ng 4 kh&ocirc;ng được thực hiện).</span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">2. Cấu tr&uacute;c v&ograve;ng lặp do while</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp while sẽ kiểm tra điều kiện trước rồi thực hiện c&acirc;u lệnh b&ecirc;n trong v&ograve;ng lặp, c&ograve;n v&ograve;ng lặp&nbsp;<strong>do while&nbsp;</strong>th&igrave; ngược lại sẽ thực hiện c&acirc;u lệnh b&ecirc;n trong v&ograve;ng lặp trước rồi mới kiểm tra điều kiện. Nếu điều kiện đ&uacute;ng th&igrave; sẽ thực hiện tiếp v&ograve;ng lặp kế tiếp, nếu điều kiện sai th&igrave; sẽ dừng v&ograve;ng lặp.&nbsp;<strong>V&ograve;ng lặp do while trong php&nbsp;</strong>lu&ocirc;n lu&ocirc;n thực hiện &iacute;t nhất một lần lặp v&igrave; n&oacute; thực hiện trước rồi mới kiểm tra điều kiện.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>C&uacute; ph&aacute;p:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>do</code> <code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// d&ograve;ng lệnh</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>} </code><code>while</code> <code>(</code><code>$condition</code><code>);</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Đừng qu&ecirc;n đặt dấu chấm phẩy&nbsp;<code>;</code>&nbsp;sau mệnh đề while nh&eacute;.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 1;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>do</code><code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code><code>while</code> <code>(</code><code>$i</code> <code>&lt;= 10);</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Chương tr&igrave;nh n&agrave;y thực hiện xuất ra m&agrave;n h&igrave;nh c&aacute;c số từ 1 tới 10. Giải th&iacute;ch tương tự như while, ở mỗi bước lặp sẽ xuất ra m&agrave;n h&igrave;nh biến $i, sau đ&oacute; tăng $i l&ecirc;n 1, v&agrave; cuối c&ugrave;ng kiểm tra điều kiện nếu ($i &lt;= 10) đ&uacute;ng th&igrave; sẽ lặp v&ograve;ng tiếp theo, ngược lại sẽ dừng v&ograve;ng lặp.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 1;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>do</code><code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code><code>while</code> <code>(</code><code>$i</code> <code>&lt; 1);</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp n&agrave;y sẽ lặp 1 lần tại v&igrave; n&oacute; thực hiện&nbsp;<strong>do&nbsp;</strong>xong rồi mới kiểm tra điều kiện&nbsp;<strong>while.&nbsp;</strong>Đ&acirc;y l&agrave; l&yacute; do tại sau t&ocirc;i n&oacute;i v&ograve;ng lặp while lu&ocirc;n thực hiện &iacute;t nhất 1 lần.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Note: Cũng như lưu &yacute; ở v&ograve;ng lặp while, v&ograve;ng lặp do while trong php rất dễ bị lặp v&ocirc; hạn, v&igrave; thế h&atilde;y cẩn thận khi sử dụng n&oacute;.</span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">3. Một b&agrave;i to&aacute;n c&oacute; thể giải ở cả ba v&ograve;ng lặp kh&ocirc;ng?</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">C&acirc;u trả lời l&agrave; c&oacute; thể c&oacute; v&agrave; c&oacute; thể kh&ocirc;ng. Như với v&iacute; dụ ở tr&ecirc;n&nbsp;th&igrave; với v&ograve;ng lặp for ta kh&ocirc;ng thể thực hiện được.</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 0;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$j</code> <code>= 10;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt; 100 &amp;&amp; </code><code>$j</code> <code>&gt; 5){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$j</code> <code>-= 2;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ: In ra m&agrave;n h&igrave;nh c&aacute;c số từ 100 đến 200;</strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">D&ugrave;ng v&ograve;ng lặp for:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>for</code> <code>(</code><code>$i</code> <code>= 100; </code><code>$i</code> <code>&lt;= 200; </code><code>$i</code><code>++){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">D&ugrave;ng v&ograve;ng lặp while:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 100;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt;= 200){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++; </code><code>// Tăng $i l&ecirc;n 1</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">D&ograve;ng v&ograve;ng lặp do while:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 100;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>do</code> <code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>} </code><code>while</code> <code>(</code><code>$i</code> <code>&lt;= 200);</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">4. Khi n&agrave;o th&igrave; sử dụng v&ograve;ng lặp for, while, do while</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Vấn đề n&agrave;y t&ugrave;y v&agrave;o kinh nghiệm của từng người. nhưng c&oacute; một điểm chung để ta c&oacute; thể x&aacute;c định được l&agrave;:</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Những b&agrave;i to&aacute;n lặp theo một tr&igrave;nh tự nhất định, c&aacute;c bước lặp c&aacute;ch đều nhau (1,2,3,4) v&agrave; phải biết được tổng số lần lặp th&igrave; ta d&ugrave;ng v&ograve;ng lặp&nbsp;<strong>for</strong>.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Ngược lại những b&agrave;i to&aacute;n kh&aacute;c th&igrave; ta d&ugrave;ng v&ograve;ng lặp&nbsp;<strong>while</strong>&nbsp;hoặc&nbsp;<strong>do &hellip; while</strong></span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">5. V&ograve;ng lặp while, do while lồng nhau</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Cũng như v&ograve;ng lặp for v&agrave; mệnh đề if, v&ograve;ng lặp while v&agrave; v&ograve;ng lặp do while c&oacute; thể lồng nhau để giải quyết b&agrave;i to&aacute;n của ch&uacute;ng ta.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 1;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt; 10)</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$j</code> <code>= </code><code>$i</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>while</code> <code>(</code><code>$j</code> <code>&lt; 10)</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$j</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$j</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>}</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&#39;;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp n&agrave;y sẽ xuất ra m&agrave;n h&igrave;nh một h&igrave;nh tam gi&aacute;c với c&aacute;c con số:</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">123456789<br />
+23456789<br />
+3456789<br />
+456789<br />
+56789<br />
+6789<br />
+789<br />
+89<br />
+9</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Tổng số lần lặp ch&iacute;nh l&agrave; bằng t&iacute;ch số lần lặp của 2 v&ograve;ng lặp cộng th&ecirc;m số lần lặp của v&ograve;ng lặp cha. V&iacute; dụ v&ograve;ng lặp 1 lặp 10 lần, v&ograve;ng lặp 2 lặp 10 lần th&igrave; tổng số v&ograve;ng lặp sẽ l&agrave; 10 x 10 + 10 = 110 lần. V&igrave; thế chi ph&iacute; để lặp lồng nhau rất cao.</span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">6. V&ograve;ng lặp while, do while trong việc truy xuất mảng</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Tương tự như v&ograve;ng lặp&nbsp;<strong>for,&nbsp;</strong>v&ograve;ng lặp while v&agrave; do while c&oacute; thể d&ugrave;ng để truy xuất c&aacute;c phần tử trong mảng chỉ mục.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ:</strong></span></span></p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">14</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">15</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">16</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">17</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">18</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">19</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">20</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">21</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">22</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">23</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">24</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">25</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">26</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">27</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">28</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">29</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">30</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">31</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Cho Danh S&aacute;ch Năm</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$nam</code> <code>= </code><code>array</code><code>(</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1990,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1991,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1992,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1993,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1994,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1995</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>);</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Xuất theo c&aacute;ch th&ocirc;ng thường</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[0];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[1];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[2];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[3];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[4];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>echo</code> <code>$nam</code><code>[5];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// D&ugrave;ng while</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 0;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>while</code> <code>(</code><code>$i</code> <code>&lt;= 5){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$nam</code><code>[</code><code>$i</code><code>];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++; </code><code>// Tăng biến $i</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// D&ugrave;ng do .. while</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$i</code> <code>= 0;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>do</code> <code>{</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$nam</code><code>[</code><code>$i</code><code>];</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$i</code><code>++;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code><code>while</code> <code>(</code><code>$i</code> <code>&lt;=5);</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">7. Lời kết</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong b&agrave;i học n&agrave;y c&aacute;c bạn đ&atilde; được học&nbsp;<strong>v&ograve;ng lặp while v&agrave; do while</strong>, vậy tổng cộng ch&uacute;ng ta đ&atilde; được học ba v&ograve;ng lặp đ&oacute; l&agrave;&nbsp;<strong>if</strong>,&nbsp;<strong>while</strong>&nbsp;v&agrave;&nbsp;<strong>do while</strong>. Trong b&agrave;i tiếp theo ch&uacute;ng ta sẽ t&igrave;m hiểu một v&ograve;ng lặp chuy&ecirc;n d&ugrave;ng&nbsp;</span><a href="https://freetuts.net/cac-ham-xu-ly-mang-trong-php-21.html" target="_blank" title="xử lý mảng trong php"><span style="color:#000000">xử l&yacute; mảng trong php</span></a><span style="color:#000000">, đ&oacute; l&agrave;&nbsp;</span><a href="https://freetuts.net/vong-lap-foreach-trong-php-9.html" target="_blank" title="vòng lặp foreach"><span style="color:#000000">v&ograve;ng lặp foreach</span></a><span style="color:#000000">.</span></span></p>

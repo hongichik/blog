@@ -1,0 +1,34 @@
+<p><span style="font-size:22px"><strong>Kiểu dữ liệu trong C++</strong>&nbsp;x&aacute;c định loại dữ liệu m&agrave; một biến c&oacute; thể lưu trữ như số nguy&ecirc;n, số thực, k&yacute; tự vv.</span></p>
+
+<p><span style="font-size:22px">Bạn c&oacute; thể lưu th&ocirc;ng tin của c&aacute;c kiểu dữ liệu (Data Type) đa dạng như Character, Wide Character, integer, floating-point, double floating point, Boolean, &hellip;. Dựa tr&ecirc;n kiểu dữ liệu của một biến, hệ thống sẽ cấp ph&aacute;t bộ nhớ v&agrave; quyết định những g&igrave; c&oacute; thể được lưu giữ trong bộ nhớ d&agrave;nh ri&ecirc;ng đ&oacute;.</span></p>
+
+<h2><span style="font-size:22px">Kiểu dữ liệu nguy&ecirc;n thủy trong C++</span></h2>
+
+<p><span style="font-size:22px">T&ecirc;n tiếng Anh l&agrave; Primitive Type, c&ograve;n c&oacute; thể gọi l&agrave; kiểu dữ liệu gốc, kiểu dữ liệu cơ bản, hay kiểu dữ liệu c&oacute; sẵn trong C++. B&ecirc;n cạnh c&aacute;c kiểu dữ liệu gốc n&agrave;y, C++ cũng cung cấp c&aacute;c kiểu dữ liệu do người d&ugrave;ng tự định nghĩa (user-defined). Bảng dưới đ&acirc;y liệt k&ecirc; danh s&aacute;ch 7 kiểu dữ liệu cơ bản trong C++:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256403b0be3e.PNG" style="width:80%" /></span></p>
+
+<p><span style="font-size:22px">Một số kiểu cơ bản c&oacute; thể được sửa đổi bởi sử dụng một hoặc nhiều modifier sau:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">signed (kiểu c&oacute; dấu)</span></li>
+	<li><span style="font-size:22px">unsigned (kiểu kh&ocirc;ng c&oacute; dấu)</span></li>
+	<li><span style="font-size:22px">short</span></li>
+	<li><span style="font-size:22px">long</span></li>
+</ul>
+
+<h4><span style="font-size:22px">C&aacute;c loại dữ liệu nguy&ecirc;n thủy</span></h4>
+
+<p><span style="font-size:22px">C&aacute;c kiểu dữ liệu cơ bản dựa tr&ecirc;n số nguy&ecirc;n v&agrave; số thực. Ng&ocirc;n ngữ C hỗ trợ cả signed v&agrave; unsigned.</span></p>
+
+<p><span style="font-size:22px">K&iacute;ch thước bộ nhớ của c&aacute;c loại dữ liệu cơ bản c&oacute; thể thay đổi theo hệ điều h&agrave;nh 32 hoặc 64 bit.</span></p>
+
+<p><span style="font-size:22px">H&atilde;y xem c&aacute;c kiểu dữ liệu cơ bản. K&iacute;ch thước của n&oacute; được cho&nbsp;<strong>theo kiến tr&uacute;c 32 bit</strong>.</span></p>
+
+<p><span style="font-size:22px">Bảng sau hiển thị kiểu biến, lượng bộ nhớ n&oacute; d&ugrave;ng để lưu gi&aacute; trị trong bộ nhớ, v&agrave; gi&aacute; trị lớn nhất v&agrave; nhỏ nhất c&oacute; thể được lưu giữ với c&aacute;c kiểu biến đ&oacute;:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625640821cc5e.PNG" style="width:80%" /></span></p>
+
+<p style="text-align:center">&nbsp;</p>
+
+<p style="text-align:center">&nbsp;</p>

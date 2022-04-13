@@ -1,0 +1,266 @@
+<h2><span style="font-size:22px">1. Chương tr&igrave;nh &quot;Hello World&quot;</span></h2>
+
+<p><span style="font-size:22px">Khi bạn học một ng&ocirc;n ngữ bất k&igrave; th&igrave; chương tr&igrave;nh in ra m&agrave;n h&igrave;nh chữ&nbsp;<strong>&ldquo;Hello World!&rdquo;&nbsp;</strong>lu&ocirc;n l&agrave; b&agrave;i tập đầu ti&ecirc;n m&agrave; bạn phải l&agrave;m. Để xuất một chuỗi ra m&agrave;n h&igrave;nh bạn d&ugrave;ng c&uacute; ph&aacute;p lệnh sau:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php </code><code>echo</code> <code>&quot;Hello World!&quot;</code><code>; ?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ</strong>: Xuất ra d&ograve;ng chữ &ldquo;<em>Ch&agrave;o Mừng C&aacute;c Bạn Đến Với freetuts.net</em>&rdquo;</span></p>
+
+<p><span style="font-size:22px"><strong>Bước 1</strong>: Bạn mở Server Vertrigo l&ecirc;n, nếu bạn chưa biết n&oacute; l&agrave; g&igrave; th&igrave; đọc b&agrave;i n&agrave;y &ldquo;<a href="https://freetuts.net/huong-dan-cai-dat-vertrigo-server-1.html" target="_blank" title="Hướng dẫn cài đặt vertrigo server">Hướng dẫn c&agrave;i đặt Vertrigo Server&nbsp;</a>&rdquo;.</span></p>
+
+<p><span style="font-size:22px"><strong>Bước 2</strong>: Bạn tạo file&nbsp;<code>hello.php&nbsp;</code>nằm trong thư mục&nbsp;<code>www&nbsp;</code>của Server.</span></p>
+
+<p><span style="font-size:22px"><strong>Bước 3</strong>: Theo quy tắc ở tr&ecirc;n ta sẽ l&agrave;m như sau:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php </code><code>echo</code> <code>&#39;Ch&agrave;o Mừng C&aacute;c Bạn Đến Với freetuts.net&#39;</code><code>; ?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Hoặc</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php </code><code>echo</code> <code>&quot;Ch&agrave;o Mừng C&aacute;c Bạn Đến Với freetuts.net&quot;</code><code>; ?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Sự kh&aacute;c biệt ở 2 đoạn m&atilde; n&agrave;y l&agrave; đoạn thứ nhất m&igrave;nh&nbsp;<strong>khai b&aacute;o biến&nbsp;</strong>v&agrave; d&ugrave;ng dấu nh&aacute;y đơn để bao quanh chuỗi, c&ograve;n đoạn thứ 2 m&igrave;nh d&ugrave;ng dấu nh&aacute;y k&eacute;p, cả 2 đều c&oacute; kết quả tương đương nhau nhưng luận về tốc độ th&igrave; dấu nh&aacute;y đơn sẽ chạy nhanh hơn dấu nh&aacute;y k&eacute;p v&igrave; với dấu nh&aacute;y k&eacute;p tr&igrave;nh bi&ecirc;n dịch sẽ mất th&ecirc;m một bước kiểm tra chuỗi b&ecirc;n trong c&oacute; biến n&agrave;o kh&ocirc;ng.</span></p>
+
+<p><span style="font-size:22px"><strong>Bước 4:</strong>&nbsp;Mở tr&igrave;nh duyệt g&otilde; v&agrave;o đường dẫn&nbsp;<code>localhost/hello.php</code>. Nếu bạn l&agrave;m đ&uacute;ng th&igrave; kết quả n&oacute; sẽ xuất ra l&agrave; &ldquo;<em>Ch&agrave;o Mừng C&aacute;c Bạn Đến Với freetuts.net</em>&rdquo;.</span></p>
+
+<h2><span style="font-size:22px">2. Ghi ch&uacute;</span></h2>
+
+<p><span style="font-size:22px">Trong d&ograve;ng lệnh code php đ&ocirc;i khi ta muốn th&ecirc;m những lời giải th&iacute;ch &yacute; nghĩa của d&ograve;ng lệnh đ&oacute; để sau n&agrave;y nh&igrave;n v&agrave;o dễ hiểu hơn. Nhưng với tr&igrave;nh bi&ecirc;n dịch th&igrave; n&oacute; sẽ chạy tất cả c&aacute;c đoạn code nằm b&ecirc;n trong thẻ mở&nbsp;<code>&lt;?php</code>&nbsp;v&agrave; thẻ đ&oacute;ng&nbsp;<code>?&gt;</code>, nếu ch&uacute;ng ta g&otilde; lung tung th&igrave; tr&igrave;nh bi&ecirc;n dịch sẽ b&aacute;o sai v&igrave; kh&ocirc;ng đ&uacute;ng với c&uacute; ph&aacute;p PHP. V&igrave; thế trước khi&nbsp;<strong>t&igrave;m hiểu biến v&agrave; hằng số trong php</strong>&nbsp;ch&uacute;ng ta t&igrave;m hiểu c&uacute; ph&aacute;p ghi ch&uacute; trước.</span></p>
+
+<p><span style="font-size:22px">PHP hỗ trợ cho ch&uacute;ng ta hai c&aacute;ch để ghi ch&uacute; đ&oacute; l&agrave;:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Ghi ch&uacute; cho 1 d&ograve;ng:&nbsp;<em>// noi dung can ghi chu</em></span></li>
+	<li><span style="font-size:22px">Ghi ch&uacute; cho nhiều d&ograve;ng:&nbsp;<em>/*noi dung can ghi chu*/</em></span></li>
+</ul>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>&#39;Ch&agrave;o Mừng C&aacute;c Bạn Đến Với freetuts.net&#39;</code><code>; </code><code>// d&ograve;ng ghi ch&uacute;&nbsp;&nbsp;</code></span></p>
+
+			<p><span style="font-size:22px"><code>/*Hoặc d&ograve;ng ghi ch&uacute;*/</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">3. Khai b&aacute;o biến số trong php</span></h2>
+
+<p><span style="font-size:22px">Biến l&agrave; một định danh, n&oacute; d&ugrave;ng để lưu trữ c&aacute;c gi&aacute; trị v&agrave; n&oacute; c&oacute; thể d&ugrave;ng ph&eacute;p g&aacute;n để thay đổi gi&aacute; trị. C&uacute; ph&aacute;p của biến bắt đầu bằng dấu đ&ocirc; la&nbsp;<code>$</code>&nbsp;v&agrave; tiếp theo l&agrave; c&aacute;c chữ, số, dấu gạch dưới. K&yacute; tự đầu ti&ecirc;n của t&ecirc;n biến phải l&agrave; chữ hoặc l&agrave; dấu gạch dưới, kh&ocirc;ng được l&agrave; số.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>&#39;&#39;</code><code>; </code><code>//đ&uacute;ng</code></span></p>
+
+			<p><span style="font-size:22px"><code>$_sinh_vien</code> <code>= </code><code>&#39;&#39;</code><code>; </code><code>//đ&uacute;ng</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinh_vien90</code> <code>= </code><code>&#39;&#39;</code><code>; </code><code>//đ&uacute;ng&nbsp;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$90sinhvien</code> <code>= </code><code>&#39;&#39;</code><code>; </code><code>//sai</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">PHP l&agrave; một ng&ocirc;n ngữ c&oacute; ph&acirc;n biệt chữ hoa chữ thường. V&iacute; dụ:&nbsp;<code>$sinhvien</code>&nbsp;kh&aacute;c&nbsp;<code>$SinhVien</code></span></p>
+
+<h3><span style="font-size:22px">G&aacute;n gi&aacute; trị cho biến</span></h3>
+
+<p><span style="font-size:22px">Để g&aacute;n gi&aacute; trị cho biến ta d&ugrave;ng to&aacute;n tử ph&eacute;p g&aacute;n&nbsp;<code>=</code>.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$hello</code> <code>= </code><code>&#39;Hello Word&#39;</code><code>;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">4. Hiển thị gi&aacute; trị của bi&ecirc;n ra m&agrave;n h&igrave;nh</span></h2>
+
+<p><span style="font-size:22px">Thay v&igrave; xuất trực tiếp chuỗi th&igrave; ta xuất gi&aacute; trị của biến ra m&agrave;n h&igrave;nh.</span></p>
+
+<p><span style="font-size:22px">V&iacute; dụ:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>&#39;Nguyen Van A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$sinhvien</code><code>; </code><code>// Xuất ra m&agrave;n h&igrave;nh</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">5. Khai b&aacute;o hằng</span></h2>
+
+<p><span style="font-size:22px"><strong>Hằng cũng l&agrave; một biến</strong>&nbsp;nhưng bạn kh&ocirc;ng thể thay đổi gi&aacute; trị của n&oacute;. Tuy nhi&ecirc;n c&aacute;ch khai b&aacute;o biến v&agrave; hằng số th&igrave; lại kh&aacute;c nhau.</span></p>
+
+<p><span style="font-size:22px"><strong>C&uacute; Ph&aacute;p:</strong>&nbsp;<code>define(&lsquo;ten_hang&rsquo;, &lsquo;gia_tri&rsquo;);</code></span></p>
+
+<p><span style="font-size:22px"><strong>Trong đ&oacute;</strong>:</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><code>define</code>: h&agrave;m tạo biến hằng</span></li>
+	<li><span style="font-size:22px"><code>ten_hang</code>: l&agrave; t&ecirc;n biến hằng</span></li>
+	<li><span style="font-size:22px"><code>gia_tri</code>: gi&aacute; trị của hằng</span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="2" cellspacing="3">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>/* Tạo một hằng số c&oacute; t&ecirc;n l&agrave; SDT v&agrave; g&aacute;n gi&aacute; trị cho n&oacute; l&agrave; 0909090909*/</code></span></p>
+
+			<p><span style="font-size:22px"><code>define(</code><code>&#39;SDT&#39;</code><code>, </code><code>&#39;0909090909&#39;</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>SDT; </code><code>// xuất ra m&agrave;n h&igrave;nh gi&aacute; trị của hằng.</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">6. Lời kết</span></h2>
+
+<p><span style="font-size:22px">Trong b&agrave;i n&agrave;y t&ocirc;i hy vọng c&aacute;c bạn hiểu được c&aacute;ch khai b&aacute;o v&agrave; sử dụng biến v&agrave; hằng số trong ng&ocirc;n ngữ php, đ&acirc;y l&agrave; nền tảng để c&aacute;c bạn c&oacute; thể theo d&otilde;i c&aacute;c b&agrave;i tiếp theo n&ecirc;n t&ocirc;i mong c&aacute;c bạn nắm vững trước khi next qua b&agrave;i mới nh&eacute;.</span></p>

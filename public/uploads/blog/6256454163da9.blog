@@ -1,0 +1,240 @@
+<ul>
+	<li><span style="font-size:22px">Biểu thức l&agrave; g&igrave; ?.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử quan hệ (Relational Operators).</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử luận l&yacute; (Logical Operators).</span></li>
+	<li><span style="font-size:22px">Độ ưu ti&ecirc;n c&aacute;c to&aacute;n tử</span></li>
+</ul>
+
+<h2><span style="font-size:22px">1. Biểu thức l&agrave; g&igrave;?</span></h2>
+
+<p><span style="font-size:22px">Biểu thức l&agrave; một tổ hợp c&aacute;c to&aacute;n hạng v&agrave; to&aacute;n tử. To&aacute;n tử thực hiện c&aacute;c thao t&aacute;c như cộng, trừ, nh&acirc;n, chia, so s&aacute;nh, &hellip; To&aacute;n hạng l&agrave; những biến hay l&agrave; những gi&aacute; trị m&agrave; c&aacute;c ph&eacute;p to&aacute;n được thực hiện tr&ecirc;n n&oacute;. V&iacute; dụ&nbsp;<code>$a + $b</code>&nbsp;th&igrave;&nbsp;<code><samp>$a</samp></code>&nbsp;v&agrave;&nbsp;<code>$b</code>&nbsp;được gọi l&agrave; to&aacute;n hạng, dấu&nbsp;<code><strong>+</strong></code>&nbsp;được gọi l&agrave; to&aacute;n tử, cả 2 kết hợp lại th&agrave;nh một biểu thức&nbsp;<code>($a + $b)</code>.</span></p>
+
+<p><span style="font-size:22px">Mỗi biểu thức chỉ c&oacute; một gi&aacute; trị nhất định. V&iacute; dụ ta c&oacute; biểu thức&nbsp;<code>($a + $b)</code>&nbsp;th&igrave; biểu thức n&agrave;y c&oacute; gi&aacute; trị l&agrave; tổng của&nbsp;<code>$a</code>&nbsp;v&agrave;&nbsp;<code>$b</code>.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p><span style="font-size:22px">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= </code><code>$a</code> <code>- </code><code>$b</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= 7 + 6;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= 3*</code><code>$x</code> <code>+ 4*</code><code>$y</code><code>;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">To&aacute;n tử g&aacute;n (Assignment Operator):</span></h3>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; to&aacute;n tử th&ocirc;ng dụng nhất trong mọi ng&ocirc;n ngữ, ta d&ugrave;ng dấu = để g&aacute;n gi&aacute; trị cho một biến bất kỳ n&agrave;o đ&oacute;.</span></p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$a</code> <code>= 12;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="font-size:22px">Nhiều biến c&oacute; thể được g&aacute;n c&ugrave;ng một gi&aacute; trị qua một c&acirc;u lệnh đơn gọi l&agrave; g&aacute;n li&ecirc;n tiếp.</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>$b</code> <code>= </code><code>$c</code> <code>= </code><code>$d</code> <code>= 12;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Biểu thức số học</span></h3>
+
+<p><span style="font-size:22px">C&aacute;c ph&eacute;p to&aacute;n thường được thực hiện theo một thứ tự cụ thể gọi l&agrave; độ ưu ti&ecirc;n để đưa ra gi&aacute; trị cuối c&ugrave;ng (sẽ đề cập đến sau). C&aacute;c biểu thức số học trong c&aacute;c ng&ocirc;n ngữ được thể hiện bằng c&aacute;ch sử dụng c&aacute;c to&aacute;n tử số học c&ugrave;ng với c&aacute;c to&aacute;n hạng dạng số hoặc k&yacute; tự (biến). Những biểu thức n&agrave;y gọi l&agrave; biểu thức số học.</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= </code><code>$a</code> <code>+ </code><code>$b</code><code>/2;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= </code><code>$a</code> <code>/ 7;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$ketqua</code> <code>= </code><code>$a</code> <code>+ (</code><code>$b</code> <code>= 5 + 6);</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Như ta thấy tr&ecirc;n to&aacute;n hạng c&oacute; thể l&agrave; hằng, biến hay kết hợp cả 2, v&agrave; mỗi biểu thức c&oacute; thể kết hợp của nhiều biểu thức con. Định nghĩa hằng v&agrave; biến như thế n&agrave;o ch&uacute;ng ta đ&atilde; đề cập ở Biến V&agrave; Hằng Số Trong PHP.</span></p>
+
+<h2><span style="font-size:22px">2. To&aacute;n tử quan hệ</span></h2>
+
+<p><span style="font-size:22px">To&aacute;n tử quan hệ cũng l&agrave; một định nghĩa trong b&agrave;i to&aacute;n tử v&agrave; biểu thức trong php, được d&ugrave;ng để kiểm tra mối quan hệ giữa hai biến hay giữa một biến v&agrave; một hằng số. V&iacute; dụ kiểm tra 2 biến&nbsp;<code>$a</code>&nbsp;v&agrave;&nbsp;<code>$b</code>&nbsp;xem biến n&agrave;o lớn hơn ta l&agrave;m như sau:&nbsp;<code>($a &gt; $b)</code>&nbsp;v&agrave; kết quả của biểu thức n&agrave;y sẽ trả về kiểu boolean TRUE hoặc FALSE.</span></p>
+
+<p><span style="font-size:22px">Như t&ocirc;i đ&atilde; đề cập ở b&agrave;i&nbsp;<a href="https://freetuts.net/cac-kieu-du-lieu-trong-php-3.html" target="_blank" title="các kiểu dữ liệu trong php"><span style="color:#3498db">c&aacute;c kiểu dữ liệu trong php</span></a>, kiểu boolean c&oacute; gi&aacute; trị l&agrave; FALSE cho tất cả c&aacute;c gi&aacute; trị bằng 0, k&yacute; tự rỗng hoặc null. Để so s&aacute;nh 2 to&aacute;n hạng ta l&agrave;m như sau&nbsp;<code>($a == $b)</code>. C&aacute;c bạn lưu &yacute; rằng ph&eacute;p to&aacute;n m&agrave; c&oacute; 1 dấu bằng l&agrave; ph&eacute;p g&aacute;n, c&ograve;n 2 dấu bằng l&agrave; ph&eacute;p so s&aacute;nh.</span></p>
+
+<p><span style="font-size:22px"><strong>Bảng sau đ&acirc;y m&ocirc; tả &yacute; nghĩa của c&aacute;c to&aacute;n tử quan hệ</strong>.</span></p>
+
+<p><span style="font-size:22px"><img alt="toan tu quan he png" src="https://freetuts.net/upload/tut_post/images/2014/08/02/4/toan-tu-quan-he.png" /></span></p>
+
+<p><span style="font-size:22px">Lưu &Yacute;: Tất cả c&aacute;c to&aacute;n tử quan hệ n&agrave;o c&oacute; 2 k&yacute; tự trở l&ecirc;n đều phải ghi liền kh&ocirc;ng được c&oacute; khoảng trắng. V&iacute; dụ ! = l&agrave; sai v&igrave; c&oacute; khoảng trắng giữa 2 k&yacute; tự.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$a</code> <code>= 12; </code><code>// Biến $a kiểu INT c&oacute; gi&aacute; trị = 12</code></span></p>
+
+			<p><span style="font-size:22px"><code>$t</code> <code>= (</code><code>$a</code> <code>== 12); </code><code>// Biến $t c&oacute; gi&aacute; trị l&agrave; TRUE v&igrave; biểu thức (12 == 12) đ&uacute;ng</code></span></p>
+
+			<p><span style="font-size:22px"><code>$t</code> <code>= (</code><code>$a</code> <code>&gt; 12);&nbsp; </code><code>// Biến $t c&oacute; gi&aacute; trị l&agrave; FALSE v&igrave; biểu thức (12 &gt; 12) sai</code></span></p>
+
+			<p><span style="font-size:22px"><code>$t</code> <code>= (</code><code>$a</code> <code>&gt;= 12); </code><code>// Biến $t c&oacute; gi&aacute; trị TRUE vief biểu thức (12 &gt;= 12) đ&uacute;ng</code></span></p>
+
+			<p><span style="font-size:22px"><code>$t</code> <code>= (</code><code>$a</code> <code>!= 12); </code><code>// Biến $t c&oacute; gi&aacute; trị FALSE v&igrave; biểu thức (12 != 12) sai</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">To&aacute;n Tử Quan Hệ&nbsp;<code>===</code>&nbsp;d&ugrave;ng để so s&aacute;nh gi&aacute; trị giữa c&aacute;c biến v&agrave; hằng đ&uacute;ng theo gi&aacute; trị v&agrave; kiểu dữ liệu của n&oacute;, nếu ta sử dụng 2 dấu bằng&nbsp;<code>==</code>&nbsp;để so s&aacute;nh&nbsp;<code>($a == $b)</code>&nbsp;th&igrave; l&uacute;c n&agrave;y&nbsp;<code>$a</code>&nbsp;v&agrave;&nbsp;<code>$b</code>&nbsp;chỉ so s&aacute;nh gi&aacute; trị v&agrave; trả về true nếu&nbsp;<code>$a</code>&nbsp;bằng&nbsp;<code>$b</code>.</span></p>
+
+<p><span style="font-size:22px">Giả sử&nbsp;<code>$a = &rsquo;123&prime;</code>&nbsp;l&agrave; kiểu string,&nbsp;<code>$b = 123</code>&nbsp;l&agrave; kiểu int th&igrave; ph&eacute;p&nbsp;<code>($a == $b)</code>&nbsp;cho kết quả l&agrave; true, c&ograve;n ph&eacute;p&nbsp;<code>($a === $b)</code>&nbsp;sẽ cho kết quả l&agrave; false v&igrave; 2 biến tuy gi&aacute; trị bằng nhau nhưng kh&ocirc;ng c&ugrave;ng kiểu dữ liệu.</span></p>
+
+<h2><span style="font-size:22px">3. To&aacute;n tử luận l&yacute;</span></h2>
+
+<p><span style="font-size:22px">To&aacute;n tử luận l&yacute; l&agrave; k&yacute; hiệu d&ugrave;ng để kết hợp hay phủ định biểu thức c&oacute; chứa c&aacute;c to&aacute;n tử quan hệ, những biểu thức d&ugrave;ng to&aacute;n tử luận l&yacute; trả về gi&aacute; trị TRUE hoặc FALSE.</span></p>
+
+<p><span style="font-size:22px">Bảng sau đ&acirc;y m&ocirc; tả c&aacute;c to&aacute;n tử luận l&yacute; trong PHP</span></p>
+
+<p><span style="font-size:22px"><img alt="toan tu luan ly png" src="https://freetuts.net/upload/tut_post/images/2014/08/02/4/toan-tu-luan-ly.png" /></span></p>
+
+<p><span style="font-size:22px">Lưu &yacute;: Tất cả c&aacute;c to&aacute;n tử luận l&yacute; n&agrave;o c&oacute; 2 k&yacute; tự trở l&ecirc;n đều phải ghi liền kh&ocirc;ng được c&oacute; khoảng trắng. V&iacute; dụ&nbsp;<code>| |</code>&nbsp;l&agrave; sai v&igrave; c&oacute; khoảng trắng giữa 2 k&yacute; tự.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$a</code> <code>= 100;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$b</code> <code>= 200;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$tong</code> <code>= </code><code>$a</code> <code>+ </code><code>$b</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$check</code> <code>= (</code><code>$a</code> <code>&lt; </code><code>$b</code><code>) &amp;&amp; (</code><code>$tong</code> <code>&gt; 200);</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Kết quả của đoạn m&atilde; tr&ecirc;n biến&nbsp;<code>$check</code>&nbsp;sẽ c&oacute; gi&aacute; trị l&agrave; TRUE v&igrave;:</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><code>($a &gt; $b) &lt;=&gt; (100 &lt; 200) =&gt; TRUE</code></span></li>
+	<li><span style="font-size:22px"><code>($tong &gt; 200) &lt;=&gt; (300 &gt; 200) =&gt; TRUE</code></span></li>
+	<li><span style="font-size:22px"><code>$check = (1) &amp;&amp; (2) &lt;=&gt; TRUE &amp;&amp; TRUE =&gt; TRUE</code></span></li>
+</ul>
+
+<h3><span style="font-size:22px">Độ ưu ti&ecirc;n to&aacute;n tử luận l&yacute;</span></h3>
+
+<p><span style="font-size:22px">Độ ưu ti&ecirc;n theo thứ tự như sau: NOT -&gt; AND -&gt; OR</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ</strong>: T&iacute;nh độ ưu ti&ecirc;n sau&nbsp;<code>( 7 &gt; 5 &amp;&amp; !(-5 &gt; 1) || 10 == 10 )&nbsp;</code>(1)</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: trong biểu thức n&agrave;y c&oacute; một ph&eacute;p to&aacute;n NOT đ&oacute; l&agrave;&nbsp;<code>!(-5 &gt; 1)</code>&nbsp;n&ecirc;n ta t&iacute;nh trước ph&eacute;p n&agrave;y. Trong PHP cũng như c&aacute;c ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c biểu thức&nbsp;<code>!(biểu thức)&nbsp;</code>c&ugrave;ng &yacute; nghĩa với biểu thức&nbsp;<code>(biểu thức) == false</code>&nbsp;n&ecirc;n biểu thức ở tr&ecirc;n ta biến đổi th&agrave;nh&nbsp;<code>( (-5 &gt; 1 ) == false )</code>. Biểu thức n&agrave;y trả về gi&aacute; trị TRUE v&igrave;&nbsp;<code>(-5 &gt; 1)</code>&nbsp;l&agrave; sai.</span></p>
+
+<p><span style="font-size:22px"><u>Bước 2</u>: Lấy kết quả bước 1 ta viết lại biểu thức (1) như sau:&nbsp;<code>((7&gt;5) &amp;&amp; true || 10 == 10)</code>&nbsp;Theo độ ưu ti&ecirc;n th&igrave; ta t&iacute;nh ph&eacute;p AND trước tức l&agrave; t&iacute;nh&nbsp;<code>((7 &gt; 5) &amp;&amp; true)</code>&nbsp;trước. Ph&eacute;p t&iacute;nh n&agrave;y trả về TRUE bởi v&igrave;&nbsp;<code>(7 &gt; 5) = true</code>&nbsp;suy ra&nbsp;<code>true &amp;&amp; true =&gt; true</code></span></p>
+
+<p><span style="font-size:22px"><u>Bước 3</u>: Bước n&agrave;y lấy kết quả ở bước 2 ta r&aacute;p v&agrave;o th&igrave; biểu thức (1) như sau:&nbsp;<code>(true || 10 == 10)</code>. Ph&eacute;p OR sẽ trả về TRUE nếu một trong 2 biểu thức c&oacute; gi&aacute; trị true =&gt; biểu thức (1) l&agrave; biểu thức c&oacute; gi&aacute; trị TRUE.</span></p>
+
+<h2><span style="font-size:22px">4. Độ ưu ti&ecirc;n c&aacute;c to&aacute;n tử</span></h2>
+
+<p><span style="font-size:22px">Độ ưu ti&ecirc;n c&aacute;c to&aacute;n tử thiết lập thứ tự ưu ti&ecirc;n t&iacute;nh to&aacute;n của một biểu thức. T&oacute;m lại độ ưu ti&ecirc;n trong PHP đề cập đến thứ tự c&aacute;c ph&eacute;p t&iacute;nh m&agrave; PHP sẽ bi&ecirc;n dịch trước. C&aacute;c to&aacute;n tử v&agrave; biểu thức trong php c&oacute; sự li&ecirc;n hệ lẫn nhau, to&aacute;n tử kết hợp to&aacute;n hạng tạo th&agrave;nh biểu thức.</span></p>
+
+<p><span style="font-size:22px">Bảng thứ tự ưu ti&ecirc;n của c&aacute;c to&aacute;n tử số học.</span></p>
+
+<p><span style="font-size:22px"><img alt="do uu tien cac toan tu png" src="https://freetuts.net/upload/tut_post/images/2014/08/02/4/do-uu-tien-cac-toan-tu.png" /></span></p>
+
+<p><span style="font-size:22px">Những to&aacute;n tử nằm c&ugrave;ng một h&agrave;ng c&oacute; c&ugrave;ng độ ưu ti&ecirc;n v&agrave; cấp độ ưu ti&ecirc;n đi từ tr&ecirc;n xuống dưới. Việc t&iacute;nh to&aacute;n biểu thức số học sẽ được t&iacute;nh to&aacute;n từ tr&aacute;i qua phải v&agrave; ưu ti&ecirc;n trong ngoặc trước kết hợp với độ ưu ti&ecirc;n trong bảng (như trong t&iacute;nh to&aacute;n thường th&igrave; nh&acirc;n chia trước, cộng trừ sau ưu ti&ecirc;n trong ngoặc).</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:&nbsp;</strong>$t = -8 * 4 &ndash; 3</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: t&iacute;nh -8 trước v&igrave; đ&acirc;y l&agrave; o&aacute;n tử một ng&ocirc;i cố độ ưu ti&ecirc;n cao nhất. Kết quả = -8<br />
+<u>Bước 2</u>: -8 *4 v&igrave; ph&eacute;p nh&acirc;n c&oacute; độ ưu ti&ecirc;n cao hơn ph&eacute;p -. Kết quả = -32<br />
+<u>Bước 3</u><strong>:</strong>&nbsp;-32 &ndash; 3: v&igrave; đ&acirc;y l&agrave; ph&eacute;p cuối c&ugrave;ng, ko cần phải so s&aacute;nh với ph&eacute;p t&iacute;nh kh&aacute;c nữa. Kết quả = -35</span></p>
+
+<h2><span style="font-size:22px">5. Lời kết</span></h2>
+
+<p><span style="font-size:22px">Trong b&agrave;i học n&agrave;y c&aacute;c bạn được&nbsp;<strong>t&igrave;m hiểu c&aacute;c to&aacute;n tử v&agrave; biểu thức trong php</strong>, n&oacute; l&agrave; c&aacute;c kiểu logic căn bản trong c&aacute;c ng&ocirc;n ngữ lập tr&igrave;nh, n&oacute; l&agrave; tiền đề để c&aacute;c bạn viết những biểu thức phức tạp trong qu&aacute; tr&igrave;nh l&agrave;m dự &aacute;n, nếu c&aacute;c bạn nắm vững phần n&agrave;y th&igrave; tư duy c&aacute;c bạn sẽ l&ecirc;n rất cao, gặp vấn đề l&agrave; c&oacute; &yacute; tưởng giải quyết ngay.&nbsp;</span></p>

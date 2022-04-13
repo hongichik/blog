@@ -30,18 +30,28 @@ import Info from './components/admin/Info.vue'
 import addPosts from './components/admin/posts/addPosts.vue';
 import addChildPost from './components/admin/posts/addChildPost.vue';
 import posts from './components/admin/posts/posts.vue';
+import AllPosts from './components/admin/posts/AllPosts.vue';
+import editPost from './components/admin/posts/editPost.vue';
 
 export const routes = [
+    {
+		path: '/editPost/:id/:type',
+        component: editPost
+    },
+    {
+		path: '/AllPosts',
+        component: AllPosts
+    },
     {
 		path: '/posts',
         component: posts
     },
     {
-		path: '/addChildPost',
+		path: '/addChildPost/:id/:type',
         component: addChildPost
     },
     {
-		path: '/addPosts/:name/:id',
+		path: '/addPosts/:name/:id/:type',
         component: addPosts
     },
     {

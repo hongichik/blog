@@ -1,0 +1,18 @@
+<p><span style="font-size:22px"><strong>Comment trong C++&nbsp;</strong>được sử dụng để cung cấp th&ocirc;ng tin (giải th&iacute;ch) c&aacute;c d&ograve;ng code. N&oacute; được sử dụng rộng r&atilde;i để t&agrave;i liệu h&oacute;a code. C&oacute; 2 loại comment trong ng&ocirc;n ngữ lập tr&igrave;nh C++.</span></p>
+
+<ol>
+	<li><span style="font-size:22px">Comment một d&ograve;ng.</span></li>
+	<li><span style="font-size:22px">Comment nhiều d&ograve;ng.</span></li>
+</ol>
+
+<h2><span style="font-size:22px">1. Comment một d&ograve;ng</span></h2>
+
+<p><span style="font-size:22px">Comment một d&ograve;ng trong C++ được đại diện bởi dấu gạch ch&eacute;o k&eacute;p //. H&atilde;y xem một v&iacute; dụ về comment d&ograve;ng đơn trong C.</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625644f1d46c6.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">2. Comment nhiều d&ograve;ng</span></h2>
+
+<p><span style="font-size:22px">Comment nhiều d&ograve;ng trong C++ được đại diện bởi dấu gạch ch&eacute;o /*...*/. N&oacute; c&oacute; thể chiếm nhiều d&ograve;ng nhưng n&oacute; kh&ocirc;ng thể được lồng nhau. C&uacute; ph&aacute;p:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62564536c0449.PNG" style="width:80%" /></span></p>

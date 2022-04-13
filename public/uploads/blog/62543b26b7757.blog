@@ -1,0 +1,61 @@
+<h1><span style="color:#3498db"><span style="font-size:36px"><strong>1. Cấu tr&uacute;c dữ liệu l&agrave; g&igrave;?</strong></span></span></h1>
+
+<p><span style="font-size:22px">Cấu tr&uacute;c dữ liệu (CTDL) l&agrave; c&aacute;ch lưu trữ hoặc tổ chức dữ liệu c&oacute; hệ thống v&agrave; theo một thứ tự nhất định để ch&uacute;ng c&oacute; thể được sử dụng một c&aacute;ch hiệu quả. Ch&uacute;ng được h&igrave;nh th&agrave;nh bởi hai kh&aacute;i niệm nền tảng l&agrave; Interface (giao diện) v&agrave; Implementation (sự triển khai). Mỗi CTDL sẽ c&oacute; một Interface. Interface thể hiện một tập hợp c&aacute;c ph&eacute;p t&iacute;nh m&agrave; CTDL hỗ trợ.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Interface chỉ cung cấp danh s&aacute;ch c&aacute;c ph&eacute;p t&iacute;nh được hỗ trợ v&agrave; c&aacute;c loại tham số m&agrave; n&oacute; c&oacute; thể chấp nhận của c&aacute;c ph&eacute;p t&iacute;nh ấy. Trong khi đ&oacute;, Implementation cung cấp sự biểu diễn nội bộ của một CTDL. Ngo&agrave;i ra, n&oacute; cũng cung cấp phần định nghĩa của giải thuật được sử dụng trong c&aacute;c ph&eacute;p t&iacute;nh của CTDL.</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543a0e45101.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Cấu tr&uacute;c dữ liệu l&agrave; c&aacute;ch lưu trữ hoặc tổ chức dữ liệu c&oacute; hệ thống</em></span></p>
+
+<h1><span style="font-size:36px"><span style="color:#3498db"><strong>2. Tầm quan trọng của cấu tr&uacute;c dữ liệu trong lập tr&igrave;nh</strong></span></span></h1>
+
+<p><span style="font-size:22px">Ng&agrave;y nay, để phục vụ nhiều nhu cầu kh&aacute;c nhau v&agrave; ng&agrave;y c&agrave;ng phức tạp của con người th&igrave; c&aacute;c ứng dụng cũng theo đ&oacute; phức tạp theo. Ch&iacute;nh điều n&agrave;y đ&atilde; khiến lượng dữ liệu ng&agrave;y c&agrave;ng lớn v&agrave; đa dạng. N&oacute; g&acirc;y nhiều bất lợi cho c&aacute;c lập tr&igrave;nh vi&ecirc;n như:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Việc t&igrave;m kiếm dữ liệu trở n&ecirc;n kh&oacute; khăn hơn do số lượng dữ liệu tăng. Việc t&igrave;m kiếm một dữ liệu nhỏ trong h&agrave;ng triệu, thậm ch&iacute; h&agrave;ng trăm triệu dữ liệu sẽ mất rất nhiều thời gian v&agrave; c&ocirc;ng sức.</span></li>
+	<li><span style="font-size:22px">Mặc d&ugrave; bộ vi xử l&yacute; c&oacute; tốc độ rất lớn nhưng n&oacute; cũng gặp trở ngại khi lượng dữ liệu l&ecirc;n tới h&agrave;ng tỷ bản ghi. Khi đ&oacute;, tốc độ xử l&yacute; cũng kh&ocirc;ng c&ograve;n nhanh nữa.</span></li>
+	<li><span style="font-size:22px">Việc h&agrave;ng ngh&igrave;n người d&ugrave;ng c&ugrave;ng l&uacute;c thực hiện một ph&eacute;p t&iacute;nh t&igrave;m kiếm tr&ecirc;n một Web Server th&igrave; d&ugrave; Web Server đ&oacute; nhanh đến mấy, việc xử l&yacute; h&agrave;ng ngh&igrave;n ph&eacute;p t&iacute;nh n&agrave;y l&agrave; rất kh&oacute;.</span></li>
+</ul>
+
+<p><span style="font-size:22px">Những vấn đề b&ecirc;n tr&ecirc;n sẽ được giải quyết dễ d&agrave;ng bởi c&aacute;c cấu tr&uacute;c dữ liệu. Với việc c&aacute;c dữ liệu được tổ chức c&oacute; hệ thống, c&oacute; thứ tự sẽ gi&uacute;p ch&uacute;ng ta nhanh ch&oacute;ng t&igrave;m thấy ngay lập tức một phần tử n&agrave;o đ&oacute; khi thực hiện t&igrave;m kiếm ch&uacute;ng.</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543a84bc846.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Nắm vững kiến thức n&agrave;y, bạn sẽ giải quyết được nhiều vấn đề trong lập tr&igrave;nh</em></span></p>
+
+<h2><span style="font-size:36px"><span style="color:#3498db"><strong>3. C&aacute;c loại cấu tr&uacute;c dữ liệu lập tr&igrave;nh vi&ecirc;n phải biết</strong></span></span></h2>
+
+<p><span style="font-size:22px">Một lập tr&igrave;nh vi&ecirc;n cần rất nhiều kiến thức v&agrave; kỹ năng. Trong đ&oacute;, bạn n&ecirc;n ch&uacute; trọng đặc biệt 6 loại sau đ&acirc;y để l&agrave;m việc hiệu quả v&agrave; chuẩn x&aacute;c nhất.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px"><strong>3.1. Array</strong></span></span></h3>
+
+<p><span style="font-size:22px">Array (hay Mảng) l&agrave; dạng cấu tr&uacute;c dữ liệu m&agrave; c&aacute;c lập tr&igrave;nh vi&ecirc;n thường xuy&ecirc;n sử dụng nhất. Ch&uacute;ng c&oacute; dạng giống như danh s&aacute;ch v&agrave; cho ph&eacute;p bạn lưu trữ nhiều phần tử, nhiều loại trong một biến. C&aacute;c phần tử n&agrave;y c&oacute; thể l&agrave; c&aacute;c kiểu tham chiếu như đối tượng, c&aacute;c kiểu dữ liệu nguy&ecirc;n thủy, c&aacute;c mảng kh&aacute;c,&hellip;</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543ad9e523c.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Cấu tr&uacute;c dữ liệu Array</em></span></p>
+
+<h3><span style="font-size:26px"><span style="color:#3498db"><strong>3.2. Linked list</strong></span></span></h3>
+
+<p><span style="font-size:22px">Linked list (hay Danh s&aacute;ch li&ecirc;n kết) l&agrave; một tập hợp tuyến t&iacute;nh c&aacute;c phần tử. Trong đ&oacute;, mỗi phần tử sẽ chỉ đến phần tử kế tiếp. N&oacute; l&agrave; một tập hợp c&aacute;c n&uacute;t, trong đ&oacute; chứa dữ liệu v&agrave; một tham chiếu đến n&uacute;t kế tiếp trong d&atilde;y.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Linked list kh&ocirc;ng cần lưu trữ li&ecirc;n tục trong bộ nhớ n&ecirc;n n&oacute; c&oacute; thể dễ d&agrave;ng bị ch&egrave;n hoặc x&oacute;a m&agrave; kh&ocirc;ng phải sắp xếp lại to&agrave;n bộ cấu tr&uacute;c. Cấu tr&uacute;c Linked list tu&acirc;n theo nguy&ecirc;n tắc LIFO (Last-in-first-out), nghĩa l&agrave; v&agrave;o sau th&igrave; ra trước.</span></p>
+
+<h3><span style="font-size:26px"><span style="color:#3498db"><strong>3.3. Stack</strong></span></span></h3>
+
+<p><span style="font-size:22px">Stack (hay Ngăn xếp, Bộ xếp chồng) ch&iacute;nh l&agrave; một dạng cấu tr&uacute;c dữ liệu ngăn xếp. Ch&uacute;ng tu&acirc;n theo nguy&ecirc;n tắc LIFO. Stack cho ph&eacute;p th&ecirc;m v&agrave; x&oacute;a một c&aacute;ch li&ecirc;n tục một mục nhưng ch&uacute;ng lại kh&ocirc;ng cung cấp quyền truy cập li&ecirc;n tục v&agrave;o mục thứ n trong ngăn xếp.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px"><strong>3.4. Queues</strong></span></span></h3>
+
+<p><span style="font-size:22px">Queues (hay H&agrave;ng đợi) l&agrave; một loại cấu tr&uacute;c dữ liệu dạng h&agrave;ng đợi. Mỗi h&agrave;ng đợi tương tự như một Stack, nhưng ch&uacute;ng lại sử dụng phương thức FIFO (first-in-first-out), hoặc phương thức nhập trước xuất trước.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px"><strong>3.5. Binary Trees</strong></span></span></h3>
+
+<p><span style="font-size:22px">Binary Trees (hay C&acirc;y nhị ph&acirc;n) bao gồm một loạt c&aacute;c n&uacute;t. Trong đ&oacute;, mỗi n&uacute;t c&oacute; một gi&aacute; trị v&agrave; c&oacute; thể c&oacute; tối đa hai n&uacute;t con. Root l&agrave; n&uacute;t tr&ecirc;n c&ugrave;ng trong cấu tr&uacute;c Binary Trees, n&oacute; kh&ocirc;ng c&oacute; n&uacute;t cha. Binary Search Tree l&agrave; một loại c&acirc;y nhị ph&acirc;n kh&aacute;c. N&oacute; c&oacute; tất cả c&aacute;c gi&aacute; trị n&uacute;t l&agrave; kh&aacute;c nhau, mỗi n&uacute;t cha c&oacute; 2 n&uacute;t con. N&uacute;t con b&ecirc;n tr&aacute;i c&oacute; gi&aacute; trị nhỏ hơn n&uacute;t cha. N&uacute;t con b&ecirc;n phải th&igrave; lại c&oacute; gi&aacute; trị lớn hơn n&uacute;t cha.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px"><strong>3.6. Graphs</strong></span></span></h3>
+
+<p><span style="font-size:22px">Graphs (hay Đồ thị) l&agrave; một cấu tr&uacute;c dữ liệu gồm c&aacute;c n&uacute;t c&oacute; c&aacute;c cạnh. Nếu biểu đồ được định hướng, mỗi cạnh sẽ c&oacute; một hướng được li&ecirc;n kết với n&oacute;. Ngược lại, biểu đồ v&ocirc; hướng th&igrave; kh&ocirc;ng c&oacute; hướng cạnh li&ecirc;n quan.</span></p>
+
+<p><span style="font-size:22px">Hy vọng, với những th&ocirc;ng tin m&agrave; b&agrave;i viết đ&atilde; chia sẻ, bạn đ&atilde; biết n&ecirc;n trang bị cho m&igrave;nh những kiến thức về loại&nbsp;<strong>cấu tr&uacute;c dữ liệu</strong>&nbsp;n&agrave;o để l&agrave;m việc hiệu quả hơn. Đừng qu&ecirc;n theo d&otilde;i những b&agrave;i viết sắp tới của Got It để c&oacute; th&ecirc;m nhiều th&ocirc;ng tin hữu &iacute;ch kh&aacute;c bạn nh&eacute;!</span></p>

@@ -1,0 +1,52 @@
+<p><span style="font-size:22px">C++ được coi như l&agrave; ng&ocirc;n ngữ&nbsp;<strong>bậc trung (middle-level)</strong>, khi n&oacute; kết hợp c&aacute;c đặc điểm v&agrave; t&iacute;nh năng của ng&ocirc;n ngữ bậc cao v&agrave; bậc thấp.</span></p>
+
+<p><span style="font-size:22px">C++ được ph&aacute;t triển bởi Bjarne Stroustrup năm 1979 tại Bell Labs ở Murray Hill, New Jersey, như l&agrave; một bản n&acirc;ng cao của ng&ocirc;n ngữ C v&agrave; với t&ecirc;n gọi đầu ti&ecirc;n l&agrave; &quot;C với c&aacute;c Lớp&quot;, nhưng sau đ&oacute; được đổi t&ecirc;n th&agrave;nh C++ v&agrave;o năm 1983.</span></p>
+
+<p><span style="font-size:22px">C++ l&agrave; một Superset của C, v&agrave; bất kỳ chương tr&igrave;nh C n&agrave;o cũng l&agrave; một chương tr&igrave;nh C++.</span></p>
+
+<p><span style="font-size:22px"><strong>Ghi ch&uacute;:</strong>&nbsp;Khi n&oacute;i một ng&ocirc;n ngữ lập tr&igrave;nh l&agrave; kiểu tĩnh khi việc kiểm tra kiểu được thực hiện trong thời gian bi&ecirc;n dịch (compile-time), chứ kh&ocirc;ng phải l&agrave; run-time.</span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px">C++ l&agrave; một ng&ocirc;n ngữ Lập tr&igrave;nh hướng đối tượng</span></span></h2>
+
+<p><span style="font-size:22px">C++ hỗ trợ đầy đủ lập tr&igrave;nh hướng đối tượng, bao gồm 4 t&iacute;nh năng trụ cột của lập tr&igrave;nh hướng đối tượng l&agrave;:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">T&iacute;nh bao đ&oacute;ng (Encapsulation)</span></li>
+	<li><span style="font-size:22px">Ẩn dữ liệu (Data hiding)</span></li>
+	<li><span style="font-size:22px">T&iacute;nh kế thừa (Inheritance)</span></li>
+	<li><span style="font-size:22px">T&iacute;nh đa h&igrave;nh (Polymorphism)</span></li>
+</ul>
+
+<h3><span style="color:#3498db"><span style="font-size:22px">Thư việc chuẩn C++ (C++ Standard Library)</span></span></h3>
+
+<p><span style="font-size:22px">C++ chuẩn gồm 3 phần quan trọng:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Core Language cung cấp tất cả c&aacute;c khối bao gồm biến, kiểu dữ liệu (data type) v&agrave; literals, &hellip;</span></li>
+	<li><span style="font-size:22px">Thư viện chuẩn C++ (C++ Standard Library) cung cấp tập hợp h&agrave;m đa dạng để thao t&aacute;c file, string, &hellip;</span></li>
+	<li><span style="font-size:22px">Standard Template Library (STL) cung cấp tập hợp phương thức đa dạng để thao t&aacute;c cấu tr&uacute;c dữ liệu, &hellip;</span></li>
+</ul>
+
+<h3><span style="color:#3498db"><span style="font-size:22px">ANSI Standard</span></span></h3>
+
+<p><span style="font-size:22px">ANSI Standard bảo đảm rằng C++ l&agrave; portable, nghĩa l&agrave;: code bạn viết cho compiler của Microsoft sẽ được bi&ecirc;n dịch m&agrave; kh&ocirc;ng xảy ra lỗi khi sử dụng một compiler tr&ecirc;n Mac, UNIX, v&agrave; Windows box hoặc một Alpha.</span></p>
+
+<p><span style="font-size:22px">ANSI Standard đ&atilde; tồn tại trong thời gian d&agrave;i, v&agrave; tất cả C++ compiler đều hỗ trợ ANSI Standard.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:22px">Học tập C++ như thế n&agrave;o?</span></span></h3>
+
+<p><span style="font-size:22px">Điều quan trọng nhất khi học tập C++ l&agrave; trọng t&acirc;m v&agrave;o c&aacute;c kh&aacute;i niệm.</span></p>
+
+<p><span style="font-size:22px">Mục đ&iacute;ch của việc học một ng&ocirc;n ngữ lập tr&igrave;nh l&agrave; trở th&agrave;nh một lập tr&igrave;nh vi&ecirc;n giỏi hơn, tức l&agrave; để thiết kế v&agrave; thực thi c&aacute;c hệ thống mới hiệu quả hơn, hoặc sửa đổi chương tr&igrave;nh cũ.</span></p>
+
+<p><span style="font-size:22px">C++ hỗ trợ c&aacute;c phong c&aacute;ch lập tr&igrave;nh đa dạng. Bạn c&oacute; thể viết trong Fortran, C, Smalltalk, &hellip; trong bất kỳ ng&ocirc;n ngữ n&agrave;o. Mỗi style c&oacute; thể đạt được mục ti&ecirc;u của n&oacute; một c&aacute;ch hiệu quả trong khi duy tr&igrave; runtime v&agrave; space hiệu quả.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:22px">Miền sử dụng của C++</span></span></h3>
+
+<p><span style="font-size:22px">C++ được sử dụng bởi h&agrave;ng ngh&igrave;n lập tr&igrave;nh vi&ecirc;n trong mỗi lĩnh vực ứng dụng cơ bản.</span></p>
+
+<p><span style="font-size:22px">C++ đang được sử dụng phổ biến để viết device driver v&agrave; c&aacute;c phần mềm kh&aacute;c m&agrave; dựa v&agrave;o thao t&aacute;c trực tiếp của phần cứng dưới r&agrave;ng buộc về realtime.</span></p>
+
+<p><span style="font-size:22px">C++ được sử dụng rộng r&atilde;i để đ&agrave;o tạo, nghi&ecirc;n cứu.</span></p>
+
+<p><span style="font-size:22px">Bất cứ hai đ&atilde; sử dụng Apple Macintosh hoặc một PC chạy tr&ecirc;n Windows đ&atilde; l&agrave; gi&aacute;n tiếp sử dụng C++, bởi v&igrave; User Interface của c&aacute;c hệ thống n&agrave;y được viết bằng C++.</span></p>

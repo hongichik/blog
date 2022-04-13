@@ -1,0 +1,25 @@
+<p>Một namespace được thiết kế để khắc phục vấn đề n&agrave;y v&agrave; được sử dụng l&agrave;m th&ocirc;ng tin bổ sung để ph&acirc;n biệt c&aacute;c h&agrave;m, lớp, biến vv với c&ugrave;ng t&ecirc;n c&oacute; sẵn trong c&aacute;c thư viện kh&aacute;c nhau. Sử dụng namespace trong C++, bạn c&oacute; thể x&aacute;c định ngữ cảnh trong đ&oacute; t&ecirc;n được chỉ định. Về bản chất, một namespace định nghĩa một phạm vi.</p>
+
+<h2>Định nghĩa namespace</h2>
+
+<p>Một định nghĩa namespace trong C++ bắt đầu với từ kh&oacute;a&nbsp;<strong>namespace</strong>&nbsp;theo sau l&agrave; t&ecirc;n namespace như sau:</p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/625646bd7489b.PNG" style="width:80%" /></p>
+
+<p>Để gọi phi&ecirc;n bản được k&iacute;ch hoạt namespace của một trong hai h&agrave;m hoặc biến, h&atilde;y th&ecirc;m 2 dấu 2 chấm (::) như sau:</p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/625646e1cae5e.PNG" style="width:80%" /></p>
+
+<h2>Chỉ thị using</h2>
+
+<p>Bạn cũng c&oacute; thể tr&aacute;nh việc sử dụng t&ecirc;n của namespace với dấu (::) bằng c&aacute;ch sử dụng chỉ thị&nbsp;<strong>using</strong>. Chỉ thị n&agrave;y cho tr&igrave;nh bi&ecirc;n dịch biết m&atilde; tiếp theo sẽ sử dụng c&aacute;c t&ecirc;n trong namespace đ&atilde; chỉ định. V&iacute; dụ:</p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/6256471a9b351.PNG" style="width:80%" /></p>
+
+<h2>Namespace kh&ocirc;ng li&ecirc;n quan</h2>
+
+<p>Một Namespace c&oacute; thể được định nghĩa trong một số phần v&agrave; do đ&oacute; một Namespace được tạo th&agrave;nh từ tổng c&aacute;c phần được định nghĩa của n&oacute;. C&aacute;c phần ri&ecirc;ng biệt của Namespace c&oacute; thể được trải rộng tr&ecirc;n nhiều tệp.</p>
+
+<p>V&igrave; vậy, nếu một phần của Namespace y&ecirc;u cầu t&ecirc;n được x&aacute;c định trong một tệp kh&aacute;c, t&ecirc;n đ&oacute; vẫn phải được khai b&aacute;o. Viết một định nghĩa v&ugrave;ng t&ecirc;n sau đ&acirc;y hoặc định nghĩa một kh&ocirc;ng gian t&ecirc;n mới hoặc th&ecirc;m c&aacute;c phần tử mới v&agrave;o một kh&ocirc;ng gian t&ecirc;n hiện c&oacute;:</p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/6256474fe0042.PNG" style="width:80%" /></p>

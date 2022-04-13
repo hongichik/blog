@@ -1,0 +1,402 @@
+<p><span style="font-size:22px">Trong b&agrave;i n&agrave;y ta sẽ t&igrave;m hiểu ba vấn đề ch&iacute;nh:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">C&acirc;u lệnh switch</span></li>
+	<li><span style="font-size:22px">Switch v&agrave; if</span></li>
+	<li><span style="font-size:22px">Switch lồng nhau</span></li>
+</ul>
+
+<h2><span style="font-size:22px">1. C&acirc;u lệnh switch trong PHP</span></h2>
+
+<p><span style="font-size:22px">C&acirc;u lệnh switch trong php cho ph&eacute;p ta đưa ra quyết định c&oacute; nhiều c&aacute;ch lựa chọn để gi&aacute; trị của biểu thức truyền v&agrave;o. Nếu gi&aacute; trị biểu thức truyền v&agrave;o tr&ugrave;ng với c&aacute;c gi&aacute; trị biểu thức điều kiện th&igrave; c&aacute;c c&acirc;u lệnh b&ecirc;n trong biểu thức điều kiện sẽ được thực hiện.</span></p>
+
+<p><span style="font-size:22px"><strong>C&uacute; ph&aacute;p:</strong></span></p>
+
+<p><span style="font-size:22px">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+
+			<p><span style="font-size:22px">11</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>switch</code> <code>(</code><code>$variable</code><code>) {</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>$value_1</code><code>:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// chuỗi c&acirc;u l&ecirc;nh</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>$value_2</code><code>:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// chuỗi c&acirc;u lệnh</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>default</code><code>:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// chuỗi c&acirc;u lệnh</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Trong đ&oacute; lệnh&nbsp;<strong>switch</strong>,&nbsp;<strong>case&nbsp;</strong>v&agrave;&nbsp;<strong>default&nbsp;</strong>l&agrave; c&aacute;c từ kh&oacute;a trong PHP. C&aacute;c chuỗi c&acirc;u lệnh c&oacute; thể l&agrave; lệnh đơn (1 lệnh) hoặc lệnh gh&eacute;p (kết hợp nhiều lệnh) v&agrave; kh&ocirc;ng cần đặt trong cặp dấu ngoặc nhọn {}. Ở mỗi d&ograve;ng lệnh lựa chọn (case) n&oacute; sẽ so s&aacute;nh xem biến truyền v&agrave;o&nbsp;<code>$variable</code>&nbsp;c&oacute; bằng với biến điều kiện&nbsp;<code>$value_1, $value_2</code>&nbsp;hay kh&ocirc;ng, nếu tr&ugrave;ng với case n&agrave;o th&igrave; những c&acirc;u lệnh b&ecirc;n trong case đ&oacute; sẽ được thực hiện, đồng thời d&ograve;ng lệnh break sẽ kết th&uacute;c c&acirc;u lệnh switch. Nếu kh&ocirc;ng c&oacute; lựa chọn (case) n&agrave;o đ&uacute;ng th&igrave; mặc định n&oacute; sẽ chạy v&agrave;o chuỗi d&ograve;ng lệnh trong default,&nbsp;<strong>lệnh default trong mệnh đề rẻ nh&aacute;nh switch</strong>&nbsp;c&oacute; thể c&oacute; hoặc kh&ocirc;ng.</span></p>
+
+<p><span style="font-size:22px">Gi&aacute; trị ở case chỉ chấp nhận&nbsp;<a href="https://freetuts.net/cac-kieu-du-lieu-trong-php-3.html" target="_blank" title="các kiểu dữ liệu"><span style="color:#3498db">c&aacute;c kiễu dữ liệu</span></a>&nbsp;string, INT, boolean, null, foat hoặc l&agrave; một biểu thức c&oacute; kết quả trả về một trong năm loại dữ liệu đ&oacute; v&agrave;&nbsp;<a href="https://freetuts.net/toan-tu-va-bieu-thuc-trong-php-4.html" target="_blank" title="toán tử quan hệ"><span style="color:#3498db">to&aacute;n tử quan hệ</span></a>&nbsp;so s&aacute;nh trong switch lu&ocirc;n lu&ocirc;n l&agrave;&nbsp;<code>==</code>.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong>&nbsp;Viết chương nhập v&agrave;o một số, d&ugrave;ng lệnh rẻ nh&aacute;nh switch kiểm tra số đ&oacute; nếu:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Bằng 0 th&igrave; xuất d&ograve;ng l&ecirc;nh &ldquo;Số kh&ocirc;ng&rdquo;</span></li>
+	<li><span style="font-size:22px">Bằng 1 th&igrave; xuất d&ograve;ng lệnh &ldquo;Số một&rdquo;</span></li>
+	<li><span style="font-size:22px">Bằng 2 th&igrave; xuất d&ograve;ng lệnh &ldquo;Số hai&rdquo;</span></li>
+	<li><span style="font-size:22px">Bằng 3 th&igrave; xuất d&ograve;ng lệnh &ldquo;Số ba&rdquo;</span></li>
+	<li><span style="font-size:22px">Bằng 4 th&igrave; xuất d&ograve;ng lệnh &ldquo;Số bốn&rdquo;</span></li>
+	<li><span style="font-size:22px">C&aacute;c số c&ograve;n lại xuất hiện d&ograve;ng lệnh &ldquo;Kh&ocirc;ng t&igrave;m thấy&rdquo;</span></li>
+</ul>
+
+<p><span style="font-size:22px"><u>B&agrave;i giải</u>:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+
+			<p><span style="font-size:22px">11</span></p>
+
+			<p><span style="font-size:22px">12</span></p>
+
+			<p><span style="font-size:22px">13</span></p>
+
+			<p><span style="font-size:22px">14</span></p>
+
+			<p><span style="font-size:22px">15</span></p>
+
+			<p><span style="font-size:22px">16</span></p>
+
+			<p><span style="font-size:22px">17</span></p>
+
+			<p><span style="font-size:22px">18</span></p>
+
+			<p><span style="font-size:22px">19</span></p>
+
+			<p><span style="font-size:22px">20</span></p>
+
+			<p><span style="font-size:22px">21</span></p>
+
+			<p><span style="font-size:22px">22</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$number</code> <code>= 1;</code></span></p>
+
+			<p><span style="font-size:22px"><code>switch</code> <code>(</code><code>$number</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>0 :</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số kh&ocirc;ng&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>1:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số một&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>2:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số hai&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>3:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số ba&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>4 :</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số bốn&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>default</code><code>:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Kh&ocirc;ng t&igrave;m thấy&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><u>Giải th&iacute;ch</u>:</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><u>Bước 1</u>: Biểu thức truyền v&agrave;o l&agrave; biến&nbsp;<code>$number</code>&nbsp;c&oacute; gi&aacute; trị = 10</span></li>
+	<li><span style="font-size:22px"><u>Bước 2</u>: Ở case thứ nhất điều kiện l&agrave;&nbsp;<code>$number = 0</code>&nbsp;th&igrave; mới thực hiện, m&agrave; $number = 10 n&ecirc;n kh&ocirc;ng thỏa điều kiện</span></li>
+	<li><span style="font-size:22px"><u>Bước 3</u>: Tương tự cho c&aacute;c lệnh case c&ograve;n lại đều kh&ocirc;ng thỏa điều kiện.</span></li>
+	<li><span style="font-size:22px"><u>Bước 4</u>: Đến lệnh default, đ&acirc;y l&agrave; lệnh được thực hiện khi c&aacute;c l&ecirc;nh case tr&ecirc;n kh&ocirc;ng c&oacute; c&aacute;i n&agrave;o thỏa điều kiện n&ecirc;n tr&ecirc;n m&agrave;n h&igrave;nh sẽ xuất hiện chữ &ldquo;Kh&ocirc;ng t&igrave;m thấy&rdquo;.</span></li>
+</ul>
+
+<p><span style="font-size:22px">Giả sử ta nhập bi&ecirc;n&nbsp;<code>$number = 2</code>, b&agrave;i to&aacute;n tr&ecirc;n sẽ được giải th&iacute;ch như sau:</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><u>Bước 1</u>: Nhập&nbsp;<code>$number = 2</code></span></li>
+	<li><span style="font-size:22px"><u>Bước 2</u>: Ở case thứ nhất kh&ocirc;ng thỏa điều kiện v&igrave; 2 kh&aacute;c 0 n&ecirc;n chương tr&igrave;nh sẽ qua Case tiếp theo.</span></li>
+	<li><span style="font-size:22px"><u>Bước 3</u>: Ở case thứ 2 vẫn kh&ocirc;ng thỏa điều kiện v&igrave; 2 kh&aacute;c 1 n&ecirc;n chương tr&igrave;nh sẽ qua Case tiếp theo</span></li>
+	<li><span style="font-size:22px"><u>Bước 4</u>: Ở case thứ 3 n&agrave;y thỏa điều kiện v&igrave; 2 bằng 2, l&uacute;c n&agrave;y chương tr&igrave;nh sẽ chạy v&agrave;o c&aacute;c c&acirc;u lệnh b&ecirc;n trong n&ecirc;n xuất ra m&agrave;n h&igrave;nh chữ &lsquo;Số hai&rsquo;, đồng thời d&ograve;ng Break dừng lu&ocirc;n cả chương tr&igrave;nh rẻ nh&aacute;nh n&agrave;y v&igrave; đ&atilde; thỏa m&atilde;n. Kết th&uacute;c chương tr&igrave;nh</span></li>
+</ul>
+
+<h2><span style="font-size:22px">2. Switch v&agrave; if</span></h2>
+
+<p><span style="font-size:22px"><strong>Lệnh If v&agrave; lệnh Switch</strong>&nbsp;l&agrave; 2 dạng&nbsp;<strong>lệnh rẻ nh&aacute;nh trong PHP</strong>, tuy nhi&ecirc;n lệnh if vẫn linh hoạt hơn switch v&agrave; tốc độ cũng nhanh hơn. Với những b&agrave;i to&aacute;n ta thể hiện bằng switch th&igrave; ho&agrave;n to&agrave;n c&oacute; thể chuyển th&agrave;nh if, ngược lại những b&agrave;i to&aacute;n ta d&ugrave;ng lệnh if để thể hiện th&igrave;&nbsp;<strong>chưa chắc đ&atilde; chuyển qua lệnh switch đươc</strong>.</span></p>
+
+<p><span style="font-size:22px">Với b&agrave;i to&aacute;n tr&ecirc;n ta thể hiện bằng c&acirc;u lệnh if như sau:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+
+			<p><span style="font-size:22px">11</span></p>
+
+			<p><span style="font-size:22px">12</span></p>
+
+			<p><span style="font-size:22px">13</span></p>
+
+			<p><span style="font-size:22px">14</span></p>
+
+			<p><span style="font-size:22px">15</span></p>
+
+			<p><span style="font-size:22px">16</span></p>
+
+			<p><span style="font-size:22px">17</span></p>
+
+			<p><span style="font-size:22px">18</span></p>
+
+			<p><span style="font-size:22px">19</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$number</code> <code>= 10;</code></span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$number</code> <code>== 0){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số kh&ocirc;ng&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$number</code> <code>== 1){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số một&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$number</code> <code>== 2){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số hai&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$number</code> <code>== 3){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số ba&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$number</code> <code>== 4){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số bốn&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Kh&ocirc;ng t&igrave;m thấy&#39;</code><code>;&nbsp;&nbsp; </code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">3. Switch lồng nhau</span></h2>
+
+<p><span style="font-size:22px">Cũng như lệnh if, lệnh switch cũng c&oacute; thể lồng nhau.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+
+			<p><span style="font-size:22px">11</span></p>
+
+			<p><span style="font-size:22px">12</span></p>
+
+			<p><span style="font-size:22px">13</span></p>
+
+			<p><span style="font-size:22px">14</span></p>
+
+			<p><span style="font-size:22px">15</span></p>
+
+			<p><span style="font-size:22px">16</span></p>
+
+			<p><span style="font-size:22px">17</span></p>
+
+			<p><span style="font-size:22px">18</span></p>
+
+			<p><span style="font-size:22px">19</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$number</code> <code>= 12;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$midle</code> <code>= null;</code></span></p>
+
+			<p><span style="font-size:22px"><code>switch</code> <code>(</code><code>$number</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>12 : </code><code>// nếu $number = 12</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>$midle</code> <code>= </code><code>$number</code> <code>% 2; </code><code>// lấy số dư</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>switch</code> <code>(</code><code>$midle</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>case</code> <code>0 : </code><code>// nếu số dư = 0</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số chẵn&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>default</code> <code>:</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số lẽ&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>default</code><code>: </code><code>// nếu kh&ocirc;ng phải 12 th&igrave; kh&ocirc;ng l&agrave;m g&igrave;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>break</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h2><span style="font-size:22px">3. Lời kết</span></h2>
+
+<p><span style="font-size:22px">Trong b&agrave;i học n&agrave;y hy vọng c&aacute;c bạn hiểu được c&aacute;ch sử dụng lệnh switch case trong php v&agrave; c&oacute; những quyết định s&aacute;ng suốt trong việc lựa chọn giữa&nbsp;<strong>lệnh switch v&agrave; lệnh if</strong>. Trong b&agrave;i học tới ch&uacute;ng ta sẽ nghi&ecirc;n cứu về v&ograve;ng lặp, c&oacute; 4 loại v&ograve;ng lặp trong php nhưng ch&uacute;ng ta nghi&ecirc;n cứu&nbsp;<a href="https://freetuts.net/vong-lap-for-trong-php-7.html" target="_blank" title="vòng lặp for trong php"><span style="color:#3498db">v&ograve;ng lặp for&nbsp;</span></a>trước.</span></p>

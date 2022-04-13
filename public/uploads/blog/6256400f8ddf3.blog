@@ -1,0 +1,104 @@
+<h2><span style="color:#000000"><span style="font-size:22px">Tạo table - phpMyAdmin</span></span></h2>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Click v&agrave;o database&nbsp;tintuc&nbsp;ở danh s&aacute;ch b&ecirc;n tr&aacute;i, click chọn tab&nbsp;Structure.</span></span></li>
+	<li><span style="color:#000000"><span style="font-size:22px">Ở phần&nbsp;Create table&nbsp;điền t&ecirc;n table (v&iacute; dụ: tin_xahoi) v&agrave; số cột (v&iacute; dụ: 5 cột).</span></span></li>
+</ul>
+
+<p><img alt="" src="/api/ShowImg/62563e8909f37.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Click v&agrave;o button&nbsp;Go&nbsp;để sang bước điền th&ocirc;ng tin cho từng cột.</span></span></li>
+	<li>
+	<p><span style="color:#000000"><span style="font-size:22px">Giả sử ta c&oacute; c&aacute;c cột với c&aacute;c t&ecirc;n gọi v&agrave; chọn dữ liệu như sau:</span></span></p>
+
+	<ul>
+		<li><span style="color:#000000"><span style="font-size:22px"><strong>id</strong>: Số thứ tự cho mỗi h&agrave;ng dữ liệu (record), số n&agrave;y sẽ cho tăng tự động (auto increment) v&agrave; thường chọn l&agrave; kh&oacute;a ch&iacute;nh (primary key), chọn dữ liệu l&agrave; số (INT), với chiều d&agrave;i 10 k&yacute; tự (tương ứng với thứ tự l&ecirc;n tới 10 số tự nhi&ecirc;n).</span></span></li>
+		<li><span style="color:#000000"><span style="font-size:22px"><strong>title</strong>: ti&ecirc;u đề cho tin tức, do ti&ecirc;u đề thường ngắn, ta chọn dữ liệu l&agrave; TEXT với chiều d&agrave;i 100 k&yacute; tự.</span></span></li>
+		<li><span style="color:#000000"><span style="font-size:22px"><strong>date</strong>: ng&agrave;y viết tin tức, chọn dữ liệu l&agrave; DATE.</span></span></li>
+		<li><span style="color:#000000"><span style="font-size:22px"><strong>description</strong>: d&ograve;ng m&ocirc; tả ngắn cho tin tức, chọn dữ liệu l&agrave; TEXT với chiều d&agrave;i 200 k&yacute; tự.</span></span></li>
+		<li><span style="color:#000000"><span style="font-size:22px"><strong>content</strong>: Nội dung cho tin tức, đ&acirc;y l&agrave; nội dung d&agrave;i, n&ecirc;n chọn kiểu dữ liệu l&agrave; LONGTEXT với chiều d&agrave;i 1000 k&yacute; tự.</span></span></li>
+	</ul>
+	</li>
+	<li><span style="color:#000000"><span style="font-size:22px">Trước mắt chỉ cần ch&uacute; &yacute; đến c&aacute;ch chọn dữ liệu như b&ecirc;n tr&ecirc;n.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563eb4daf13.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Click button&nbsp;Save&nbsp;b&ecirc;n dưới để kết th&uacute;c việc tạo table.</span></span></li>
+	<li><span style="color:#000000"><span style="font-size:22px">Table vừa tạo sẽ c&oacute; dạng như sau:</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563ece7b5f0.png" style="width:80%" /></p>
+
+<h4><span style="color:#000000"><span style="font-size:22px">Chỉnh AUTO INCREMENT cho id</span></span></h4>
+
+<p><span style="color:#000000"><span style="font-size:22px">Việc n&agrave;y cần thiết, v&igrave; mỗi khi th&ecirc;m một h&agrave;ng dữ liệu th&igrave; mục id sẽ tự động được tăng th&ecirc;m 1.</span></span></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Tại h&agrave;ng id, cột&nbsp;Action, Click chọn&nbsp;Change.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563ef1d1525.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Ở m&agrave;n h&igrave;nh điều chỉnh, t&igrave;m v&agrave; click chọn checkbox ở vị tr&iacute;&nbsp;A_I.</span></span></li>
+	<li><span style="color:#000000"><span style="font-size:22px">Click&nbsp;Save&nbsp;để thay đổi điều chỉnh v&agrave; xem kết quả.</span></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563f11d5228.png" style="width:80%" /></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563f40bea49.png" style="width:80%" /></p>
+
+<h4><span style="color:#000000"><span style="font-size:22px">Chỉnh KH&Oacute;A CH&Iacute;NH cho id</span></span></h4>
+
+<p><span style="color:#000000"><span style="font-size:22px">Mỗi table chỉ c&oacute; một kh&oacute;a ch&iacute;nh, kh&oacute;a ch&iacute;nh c&oacute; t&aacute;c dụng x&aacute;c định t&iacute;nh duy nhất của mỗi h&agrave;ng dữ liệu trong table, ngo&agrave;i ra được d&ugrave;ng để tạo mối li&ecirc;n hệ 1-n tham chiếu đến c&aacute;c table kh&aacute;c.</span></span></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Tại h&agrave;ng id, cột&nbsp;Action, Click chọn&nbsp;Primary, khi đ&oacute; sẽ c&oacute; m&agrave;n h&igrave;nh confirm xuất hiện, click Ok để x&aacute;c nhận.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563f624f4a7.png" style="width:80%" /></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563f78d0a4b.png" style="width:50%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Đ&acirc;y l&agrave; kết quả.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563fae117e1.png" style="width:80%" /></p>
+
+<h3><span style="color:#000000"><span style="font-size:22px">Tạo 1 record dữ liệu</span></span></h3>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Vẫn ở trong table&nbsp;tin_xahoi&nbsp;(nếu kh&ocirc;ng th&igrave; click table&nbsp;tin_xahoi&nbsp;ở danh s&aacute;ch b&ecirc;n tr&aacute;i), sau đ&oacute; click chọn tab&nbsp;Insert.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563fcb113ff.png" style="width:80%" /></p>
+
+<ul>
+	<li>
+	<p><span style="color:#000000"><span style="font-size:22px">Ở m&agrave;n h&igrave;nh ch&egrave;n record, điền dữ liệu tương tự như h&igrave;nh b&ecirc;n dưới:</span></span></p>
+
+	<ul>
+		<li><span style="color:#000000"><span style="font-size:22px">id: kh&ocirc;ng cần điền, dữ liệu sẽ tự tăng.</span></span></li>
+		<li><span style="color:#000000"><span style="font-size:22px">C&aacute;c vị tr&iacute; kh&aacute;c chỉ quan t&acirc;m đến trường&nbsp;Value</span></span></li>
+	</ul>
+	</li>
+	<li><span style="color:#000000"><span style="font-size:22px">Click&nbsp;Go&nbsp;để insert dữ liệu, nếu tất cả đ&uacute;ng sẽ xuất hiện c&acirc;u th&ocirc;ng b&aacute;o &quot;rows inserted&quot;, nếu b&aacute;o lỗi th&igrave; xem th&ocirc;ng b&aacute;o lỗi để chỉnh cho ph&ugrave; hợp.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563fe26b956.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Click chọn tab&nbsp;Browser&nbsp;để xem dữ liệu được insert.</span></span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62563ffad572d.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="color:#000000"><span style="font-size:22px">Đến đ&acirc;y ta đ&atilde; ho&agrave;n th&agrave;nh việc tạo table của database&nbsp;tintuc, đồng thời cũng insert v&agrave;o table một record.</span></span></li>
+</ul>

@@ -1,0 +1,57 @@
+<p><span style="font-size:22px"><strong>To&aacute;n tử trong C++</strong>&nbsp;l&agrave; một k&yacute; hiệu được sử dụng để thực hiện một ph&eacute;p t&iacute;nh/chức năng n&agrave;o đ&oacute;. Ng&ocirc;n ngữ lập tr&igrave;nh C++ cung cấp c&aacute;c dạng to&aacute;n tử sau:</span></p>
+
+<ol>
+	<li><span style="font-size:22px">To&aacute;n tử số học.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử quan hệ.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử logic.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử so s&aacute;nh bit.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử g&aacute;n.</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử hỗn hợp.</span></li>
+	<li><span style="font-size:22px">Thứ tự ưu ti&ecirc;n.</span></li>
+</ol>
+
+<p><span style="font-size:22px">1. To&aacute;n tử số học trong C++</span></p>
+
+<p><span style="font-size:22px">Bảng dưới đ&acirc;y m&ocirc; tả c&aacute;c to&aacute;n tử số học được hỗ trợ bởi ng&ocirc;n ngữ C++. Giả sử biến&nbsp;<strong>A = 10</strong>&nbsp;v&agrave; biến&nbsp;<strong>B = 20</strong>:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256430b4f228.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">2. To&aacute;n tử quan hệ trong C++</span></h2>
+
+<p><span style="font-size:22px">C&aacute;c to&aacute;n tử quan hệ được sử dụng kiểm tra mối quan hệ giữa hai to&aacute;n hạng. Kết quả của một biểu thức c&oacute; d&ugrave;ng c&aacute;c to&aacute;n tử quan hệ l&agrave; những gi&aacute; trị Boolean (logic &ldquo;<strong>true</strong>&rdquo; hoặc &ldquo;<strong>false</strong>&rdquo;). C&aacute;c to&aacute;n tử quan hệ được sử dụng trong c&aacute;c cấu tr&uacute;c điều khiển.</span></p>
+
+<p><span style="font-size:22px">Bảng dưới đ&acirc;y m&ocirc; tả c&aacute;c to&aacute;n tử quan hệ được hỗ trợ bởi ng&ocirc;n ngữ C++. Giả sử biến&nbsp;<strong>A = 10</strong>&nbsp;v&agrave; biến&nbsp;<strong>B = 20</strong>:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256433a18a6b.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">3. To&aacute;n tử logic trong C++</span></h2>
+
+<p><span style="font-size:22px">Bảng dưới đ&acirc;y m&ocirc; tả c&aacute;c to&aacute;n tử logic được hỗ trợ bởi ng&ocirc;n ngữ C++. Giả sử biến&nbsp;<strong>A = true (hoặc 1)</strong>&nbsp;v&agrave; biến&nbsp;<strong>B = false (hoặc 0)</strong>:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256436fe02ef.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">4. To&aacute;n tử bit trong C++</span></h2>
+
+<p><span style="font-size:22px">C&aacute;c to&aacute;n tử dạng bit cho ph&eacute;p ch&uacute;ng ta thao t&aacute;c tr&ecirc;n từng bit ri&ecirc;ng biệt trong c&aacute;c kiểu dữ liệu nguy&ecirc;n thủy. Giả sử A = 60 (=&nbsp;<strong>0011 1100</strong>) v&agrave; B = 13 (=&nbsp;<strong>0000 1101</strong>)</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625643a13cd3f.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">5. To&aacute;n tử g&aacute;n trong C++</span></h2>
+
+<p><span style="font-size:22px">To&aacute;n tử g&aacute;n d&ugrave;ng để g&aacute;n một gi&aacute; trị v&agrave;o một biến v&agrave; c&oacute; thể g&aacute;n nhiều gi&aacute; trị cho nhiều biến c&ugrave;ng một l&uacute;c.</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625643e166ac3.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">6. To&aacute;n tử hỗn hợp trong C++</span></h2>
+
+<p><span style="font-size:22px">C&oacute; một số to&aacute;n tử hỗn hợp quan trọng l&agrave;&nbsp;<strong>sizeof</strong>&nbsp;v&agrave;&nbsp;<strong>? :</strong>&nbsp;được hỗ trợ bởi ng&ocirc;n ngữ C++.</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256440bce90d.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">7. Thứ tự ưu ti&ecirc;n</span></h2>
+
+<h3><span style="font-size:22px">Thứ tự ưu ti&ecirc;n của c&aacute;c to&aacute;n tử trong C++</span></h3>
+
+<p><span style="font-size:22px">Thứ tự ưu ti&ecirc;n quyết định trật tự thực hiện c&aacute;c to&aacute;n tử tr&ecirc;n c&aacute;c biểu thức. Bảng dưới đ&acirc;y liệt k&ecirc; thứ tự thực hiện c&aacute;c to&aacute;n tử trong C.</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256444a1cb09.PNG" style="width:80%" /></span></p>

@@ -1,0 +1,31 @@
+<p><span style="font-size:22px">Chọn File -&gt; New -&gt; Source File v&agrave; viết m&atilde; sau:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563c6eb140c.PNG" style="width:80%" /></span></p>
+
+<p><span style="font-size:22px"><strong>#include &lt;iostream.h&gt;</strong>: bao gồm c&aacute;c phương thức input/output của thư viện chuẩn. N&oacute; cung cấp phương thức cin v&agrave; cout để đọc dữ liệu đầu v&agrave;o v&agrave; ghi dữ liệu đầu ra.</span></p>
+
+<p><span style="font-size:22px"><strong>#include &lt;conio.h&gt;</strong>: bao gồm c&aacute;c c&aacute;c chức năng thư viện console input output. H&agrave;m getch() được định nghĩa trong file conio.h.</span></p>
+
+<p><span style="font-size:22px"><strong>getch()</strong>: H&agrave;m getch() y&ecirc;u cầu người d&ugrave;ng nhập một k&yacute; tự đơn. Cho đến khi người d&ugrave;ng bấm ph&iacute;m bất kỳ, n&oacute; sẽ kh&oacute;a m&agrave;n h&igrave;nh.</span></p>
+
+<h2><span style="font-size:22px">L&agrave;m thế n&agrave;o để bi&ecirc;n dịch v&agrave; chạy chương tr&igrave;nh C++</span></h2>
+
+<p><span style="font-size:22px">C&oacute; 2 c&aacute;ch để bi&ecirc;n dịch v&agrave; chạy chương tr&igrave;nh C++ với&nbsp;<strong>Dev C++</strong>, theo menu v&agrave; ph&iacute;m tắt.</span></p>
+
+<p><span style="font-size:22px"><strong>Compile</strong>: chọn Execute -&gt; Compile (hoặc F9)</span></p>
+
+<p><span style="font-size:22px"><strong>Run</strong>: chọn Execute -&gt; Compile (hoặc F10)</span></p>
+
+<p><span style="font-size:22px"><strong>Compile v&agrave; Run</strong>: chọn Execute -&gt; Compile (hoặc F11)</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d0301e25.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">Bi&ecirc;n dịch v&agrave; chạy chương tr&igrave;nh tr&ecirc;n</span></h2>
+
+<p><span style="font-size:22px">Đầu ti&ecirc;n, bạn cầu Save đoạn code tr&ecirc;n v&agrave;o tập tin hello.cpp.</span></p>
+
+<p><span style="font-size:22px">Tại tr&igrave;nh Dev C++, nhấn ph&iacute;m F9 để bi&ecirc;n dịch chương tr&igrave;nh, sau đ&oacute; nhấn ph&iacute;m F10 để chạy chương tr&igrave;nh.</span></p>
+
+<p><span style="font-size:22px">Kết quả:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d203c43d.PNG" style="width:80%" /></span></p>

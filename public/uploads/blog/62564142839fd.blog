@@ -1,0 +1,36 @@
+<h2><span style="font-size:22px">Export database - phpMyAdmin</span></h2>
+
+<ul>
+	<li><span style="font-size:22px">Export database l&agrave; một trong c&aacute;c c&aacute;ch d&ugrave;ng để backup database thao t&aacute;c thủ c&ocirc;ng bằng tay, hoặc d&ugrave;ng để chuyển dữ liệu sang database kh&aacute;c.</span></li>
+	<li><span style="font-size:22px">Click chọn database (v&iacute; dụ&nbsp;tintuc) ở menu b&ecirc;n tr&aacute;i, click v&agrave;o tab&nbsp;Export</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62564107e13b6.png" style="width:80%" /></span></p>
+
+<ul>
+	<li>
+	<p><span style="font-size:22px">Ở vị tr&iacute;&nbsp;Export Method&nbsp;c&oacute; 2 lựa chọn:</span></p>
+
+	<ul>
+		<li><span style="font-size:22px"><strong>Quick:</strong>&nbsp;export tất cả c&aacute;c table v&agrave;o c&ugrave;ng 1 file .sql</span></li>
+		<li><span style="font-size:22px"><strong>Custom:</strong>&nbsp;mỗi một table sẽ được export ra một file .sql ri&ecirc;ng.</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:22px">Sau khi lựa chọn phương ph&aacute;p export xong, click&nbsp;<strong>Go</strong>&nbsp;để tiến h&agrave;nh export.</span></li>
+</ul>
+
+<h3><span style="font-size:22px">Import database - phpMyAdmin</span></h3>
+
+<ul>
+	<li><span style="font-size:22px">Khi c&oacute; file .sql, ch&uacute;ng ta cần đưa nội dung file v&agrave;o database, import database ch&iacute;nh l&agrave; c&aacute;ch l&agrave;m thủ c&ocirc;ng đơn giản nhất ch&uacute;ng ta c&oacute; thể l&agrave;m.</span></li>
+	<li><span style="font-size:22px">Tương tự như export, click chọn database (v&iacute; dụ&nbsp;tintuc) ở menu b&ecirc;n tr&aacute;i, click v&agrave;o tab&nbsp;Import</span></li>
+</ul>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/6256412e80906.png" style="width:80%" /></p>
+
+<ul>
+	<li><span style="font-size:22px">Click&nbsp;<strong>Chọn tệp</strong>&nbsp;trỏ đến file .sql cần import.</span></li>
+	<li><span style="font-size:22px"><strong>Character set of the file:</strong>&nbsp;chọn Charset cho ph&ugrave; hợp.</span></li>
+	<li><span style="font-size:22px">C&aacute;c th&ocirc;ng số kh&aacute;c bạn c&oacute; thể t&ugrave;y chỉnh cho ph&ugrave; hợp với database của m&igrave;nh, kh&ocirc;ng th&igrave; để mặc định v&agrave; click&nbsp;<strong>Go</strong>&nbsp;để import database c&oacute; trong file .sql</span></li>
+	<li><span style="font-size:22px">Ch&uacute; &yacute; b&ecirc;n tr&ecirc;n c&oacute; d&ograve;ng chữ&nbsp;<strong>(Max: 2MiB)</strong>, c&oacute; nghĩa l&agrave; chỉ được import file với dung lượng max 2mb, nếu muốn điều chỉnh d&ugrave;ng lượng lớn hơn, bạn c&oacute; truy cập v&agrave;o file&nbsp;C:\xampp\php\php.ini, t&igrave;m đến d&ograve;ng&nbsp;<strong>post_max_size</strong>&nbsp;v&agrave;&nbsp;<strong>upload_max_filesize</strong>&nbsp;tăng gi&aacute; trị 2M đến gi&aacute; trị dung lượng bạn mong muốn, save file php.ini</span></li>
+</ul>

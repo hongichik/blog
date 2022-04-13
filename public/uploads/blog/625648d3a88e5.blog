@@ -1,0 +1,30 @@
+<p><span style="font-size:22px">C++ cho ph&eacute;p c&aacute;c kiểu dữ liệu&nbsp;<strong>char, int v&agrave; double</strong>&nbsp;c&oacute; c&aacute;c Modifier đặt trước ch&uacute;ng. Một Modifier được sử dụng để th&ocirc;ng b&aacute;o &yacute; nghĩa của kiểu cơ sở, gi&uacute;p cho n&oacute; tăng sự ch&iacute;nh x&aacute;c hơn với sự cần thiết của c&aacute;c t&igrave;nh huống đa dạng.</span></p>
+
+<p><span style="font-size:22px">Dưới đ&acirc;y l&agrave; c&aacute;c Modifier trong C/C++:</span></p>
+
+<ul>
+	<li>
+	<p><span style="font-size:22px">signed (c&oacute; dấu)</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:22px">unsigned (kh&ocirc;ng c&oacute; dấu)</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:22px">long</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:22px">short</span></p>
+	</li>
+</ul>
+
+<p><span style="font-size:22px">C&aacute;c Modifier l&agrave;:&nbsp;<strong>signed, unsigned, long,</strong>&nbsp;v&agrave;&nbsp;<strong>short</strong>&nbsp;c&oacute; thể được &aacute;p dụng cho kiểu integer. Ngo&agrave;i ra,&nbsp;<strong>signed</strong>&nbsp;v&agrave;&nbsp;<strong>unsigned</strong>&nbsp;c&oacute; thể được &aacute;p dụng cho kiểu char, v&agrave;&nbsp;<strong>long</strong>&nbsp;c&oacute; thể &aacute;p dụng cho kiểu double.</span></p>
+
+<p><span style="font-size:22px">C&aacute;c Modifier l&agrave;&nbsp;<strong>signed</strong>&nbsp;v&agrave;&nbsp;<strong>unsigned</strong>&nbsp;cũng c&oacute; thể được sử dụng như l&agrave; tiền tố cho c&aacute;c Modifier l&agrave;&nbsp;<strong>long</strong>&nbsp;hoặc&nbsp;<strong>short</strong>&nbsp;modifiers. V&iacute; dụ:&nbsp;<strong>unsigned long int</strong>.</span></p>
+
+<p><span style="font-size:22px">C++ cho ph&eacute;p kiểu khai b&aacute;o tắt để khai b&aacute;o c&aacute;c&nbsp;<strong>unsigned, short,</strong>&nbsp;or&nbsp;<strong>long</strong>&nbsp;integer. Bạn c&oacute; thể chỉ đơn giản sử dụng từ&nbsp;<strong>unsigned, short,</strong>&nbsp;hoặc&nbsp;<strong>long</strong>, m&agrave; kh&ocirc;ng cần int.</span></p>
+
+<h2><span style="font-size:22px">Qualifier trong C/C++</span></h2>
+
+<h2><span style="font-size:22px">Qualifier cung cấp th&ocirc;ng tin bổ sung về c&aacute;c biến theo sau n&oacute;.</span></h2>
+
+<h2 style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625648a9237f8.PNG" style="width:80%" /></span></h2>

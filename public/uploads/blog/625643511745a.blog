@@ -1,0 +1,1069 @@
+<p><span style="font-size:22px"><strong>Trong php c&oacute; tổng cộng 7 kiểu dữ liệu:</strong></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Kiểu INT</span></li>
+	<li><span style="font-size:22px">Kiểu Boolean</span></li>
+	<li><span style="font-size:22px">Kiểu Số Thực (float, double)</span></li>
+	<li><span style="font-size:22px">Kiểu Chuỗi</span></li>
+	<li><span style="font-size:22px">Kiểu Mảng (array)</span></li>
+	<li><span style="font-size:22px">Kiểu NULL</span></li>
+	<li><span style="font-size:22px">Kiểu Đối Tượng (object)</span></li>
+</ul>
+
+<p><span style="font-size:22px">1. Kiểu dữ liệu INT</span></p>
+
+<p><span style="font-size:22px">Chữ INT l&agrave; viết tắt của chữ INTEGER, l&agrave; một kiểu dữ liệu dạng số v&agrave; c&oacute; thể ở viết ở nhiều cơ số kh&aacute;c nhau.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 1:</strong></span></p>
+
+<p><span style="font-size:22px">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$thap_phan</code> <code>= 123; </code><code>// Số thập ph&acirc;n</code></span></p>
+
+			<p><span style="font-size:22px"><code>$so_am</code> <code>= -123; </code><code>// Số &acirc;m</code></span></p>
+
+			<p><span style="font-size:22px"><code>$bat_phan</code> <code>= 0123; </code><code>// số b&aacute;t ph&acirc;n</code></span></p>
+
+			<p><span style="font-size:22px"><code>$thap_luc_phan</code> <code>= 0x1A; </code><code>// v&agrave; số thập lục ph&acirc;n</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Kiểu số INT Ch&uacute;ng ta kh&ocirc;ng d&ugrave;ng dấu nh&aacute;y để bao quanh n&oacute; v&agrave; k&iacute;ch thước của kiểu INT l&agrave; 32bit. Trong PHP kh&ocirc;ng hỗ trợ nhiều kiểu Unsigned Integer (Số nguy&ecirc;n dương) n&ecirc;n nếu bạn sử dụng vượt qu&aacute; giới hạn của n&oacute; th&igrave; mặc nhi&ecirc;n tr&igrave;nh bi&ecirc;n dịch sẽ hiểu đ&acirc;y l&agrave; kiểu Float (số thực), tuy nhi&ecirc;n kh&ocirc;ng phải l&uacute;c n&agrave;o điều n&agrave;y cũng đ&uacute;ng cho trường hợp số dương.</span></p>
+
+<h3><span style="font-size:22px">Khai b&aacute;o biến kiểu INT</span></h3>
+
+<p><span style="font-size:22px">Để khai b&aacute;o một biến kiểu INT bạn sẽ g&aacute;n gi&aacute; trị cho n&oacute; l&agrave; số nguy&ecirc;n (kể cả số &acirc;m).</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 2:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$tuoi</code> <code>= 12; </code><code>// biến $tuoi l&agrave; kiểu INT c&oacute; gi&aacute; trị = 12</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">&Eacute;p dữ liệu sang kiểu INT</span></h3>
+
+<p><span style="font-size:22px"><strong>C&uacute; Ph&aacute;p</strong>:&nbsp;<code>(int)$ten_bien;</code></span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 3:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$tuoi</code> <code>= </code><code>&#39;98&#39;</code><code>; </code><code>// biến tuổi l&agrave; một chuỗi c&oacute; gi&aacute; trị bằng &#39;98&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$tuoi</code> <code>= (int)</code><code>$tuoi</code><code>; </code><code>// l&uacute;c n&agrave;y biến $tuoi l&agrave; một kiểu int c&oacute; gi&aacute; trị 98</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Việc chuyển đổi n&agrave;y trong PHP đ&ocirc;i khi lại kh&ocirc;ng cần thiết v&igrave; c&aacute;c kiểu dữ liệu trong php tự động chuyển c&aacute;c biến sang c&aacute;c kiểu th&iacute;ch hợp để thực hiện ph&eacute;p t&iacute;nh, tuy nhi&ecirc;n sau khi thực hiện t&iacute;nh to&aacute;n th&igrave; biến đ&oacute; sẽ tự chuyển lại kiểu dữ liệu ban đầu.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 4:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>&#39;123&#39;</code><code>;&nbsp; </code><code>// Biến $a l&agrave; kiểu chuỗi c&oacute; gi&aacute; trị bằng &#39;123&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$b</code> <code>= 123; </code><code>// Biến $b l&agrave; kiểu INT c&oacute; gi&aacute; trị bằng 123</code></span></p>
+
+			<p><span style="font-size:22px"><code>$c</code> <code>= </code><code>$a</code> <code>+ </code><code>$b</code><code>; </code><code>// Biến C l&agrave; kết quả của ph&eacute;p to&aacute;n $a + $b v&agrave; sẽ c&oacute; gi&aacute; trị l&agrave; 246 n&ecirc;n n&oacute; l&agrave; kiểu INT</code></span></p>
+
+			<p><span style="font-size:22px"><code>var_dump(</code><code>is_int</code><code>(</code><code>$c</code><code>)); </code><code>// h&agrave;m is_int($tenbien) d&ugrave;ng để kiểm tra một biến c&oacute; phải l&agrave; kiểu INT hay kh&ocirc;ng</code></span></p>
+
+			<p><span style="font-size:22px"><code>var_dump(</code><code>is_int</code><code>(</code><code>$a</code><code>)); </code><code>// kết quả l&agrave; false v&igrave; biến $a l&agrave; kiểu string</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Trong v&iacute; dụ n&agrave;y c&aacute;c bạn thấy biến&nbsp;<code>$a</code>&nbsp;l&agrave; chuỗi c&ograve;n biến&nbsp;<code>$b</code>&nbsp;l&agrave; số, khi ta cộng 2 biến lại th&igrave; c&aacute;c biến sẽ tự động chuyển sang kiểu số INT th&iacute;ch hợp để cộng, v&agrave; kết quả l&agrave; kiểu INT g&aacute;n v&agrave;o biến&nbsp;<code>$c</code>. Để kiểm tra bạn d&ugrave;ng d&ograve;ng lệnh&nbsp;<code>var_dump(is_int($c));&nbsp;</code>để xuất ra m&agrave;n h&igrave;nh kết quả kiểm tra.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 5:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>&#39;a123&#39;</code><code>; </code><code>// biến $a c&oacute; gi&aacute; trị l&agrave; chuỗi &#39;a123&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= (int)</code><code>$a</code><code>; </code><code>// chuyển $a sang kiểu INT</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$a</code><code>; </code><code>// kết quả xuất ra m&agrave;n h&igrave;nh l&agrave; số 0</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Chạy đoạn lệnh n&agrave;y c&aacute;c bạn sẽ thấy kết quả ra số 0. Tại sao? v&igrave; bạn thấy biến&nbsp;<code>$a</code>&nbsp;c&oacute; k&yacute; tự đầu ti&ecirc;n kh&ocirc;ng phải ở dạng số n&ecirc;n n&oacute; sẽ tự động cắt bỏ tất cả những k&yacute; tự đằng sau k&yacute; tự a n&ecirc;n chuỗi n&agrave;y rỗng, m&agrave; gi&aacute; trị rỗng chuyển sang kiểu INT c&oacute; gi&aacute; trị bằng kh&ocirc;ng.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 6:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>&#39;123a&#39;</code><code>; </code><code>// biến $a c&oacute; gi&aacute; trị l&agrave; chuỗi &#39;123a&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= (int)</code><code>$a</code><code>; </code><code>// chuyển $a sang kiểu INT</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$a</code><code>; </code><code>// kết quả xuất ra m&agrave;n h&igrave;nh l&agrave; số 123</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Chạy đoạn code n&agrave;y kết quả xuất ra m&agrave;n h&igrave;nh l&agrave; 123, cũng như giải th&iacute;ch ở tr&ecirc;n n&oacute; sẽ x&oacute;a c&aacute;c k&yacute; tự bắt đầu từ k&yacute; tự a n&ecirc;n chuỗi sẽ c&ograve;n &rsquo;123&prime;, chuyển sang kiểu INT th&agrave;nh 123.</span></p>
+
+<h3><span style="font-size:22px">Kiểm tra dữ liệu c&oacute; phải kiểu INT.</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến n&agrave;o đ&oacute; c&oacute; phải kiểu INT kh&ocirc;ng bạn d&ugrave;ng 2 h&agrave;m&nbsp;<code>is_int($bien)</code>&nbsp;hoặc&nbsp;<code>is_integer($bien).</code>&nbsp;kết quả trả về gi&aacute; trị&nbsp;<strong>True&nbsp;</strong>nếu l&agrave; kiểu INT v&agrave;&nbsp;<strong>False&nbsp;</strong>nếu kh&ocirc;ng phải kiểu INT.</span></p>
+
+<h2><span style="font-size:22px">2. Kiểu dữ liệu boolean</span></h2>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; một kiểu dữ liệu đơn giản nhất trong c&aacute;c kiểu dữ liệu trong PHP, n&oacute; chỉ chứa 2 gi&aacute; trị l&agrave; đ&uacute;ng hoặc sai (TRUE hoặc FALSE). Để tạo biến&nbsp;<strong>kiểu boolean&nbsp;</strong>th&igrave; bạn g&aacute;n gi&aacute; trị cho n&oacute; l&agrave; TRUE hoặc FALSE. Lưu &yacute; TRUE, FALSE kh&ocirc;ng ph&acirc;n biệt hoa thường, nghĩa l&agrave; bạn g&otilde; thế n&agrave;o cũng được miễn l&agrave; đ&uacute;ng.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 7:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$is_admin = </code><code>false</code><code>; </code><code>// biến $admin l&agrave; kiểu boolean c&oacute; g&aacute;i trị l&agrave; false</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">&Eacute;p dữ liệu sang kiểu boolean.</span></h3>
+
+<p><span style="font-size:22px">Tương tự như kiểu&nbsp;<strong>INT</strong>&nbsp;bạn sử dụng (bool) hoặc (boolean) để &eacute;p kiểu sang kiểu bool. Như vậy trong PHP th&igrave; bool v&agrave; boolean l&agrave; 2 từ kh&oacute;a c&oacute; c&ugrave;ng một &yacute; nghĩa.<br />
+<br />
+<strong>V&iacute; dụ 8:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$bool</code> <code>= 1; </code><code>// biến $bool l&agrave; kiểu int</code></span></p>
+
+			<p><span style="font-size:22px"><code>$bool</code> <code>= (bool)</code><code>$bool</code><code>; </code><code>// l&uacute;c n&agrave;y biến $bool sẽ c&oacute; kiểu boolean</code></span></p>
+
+			<p><span style="font-size:22px"><code>// Hoặc</code></span></p>
+
+			<p><span style="font-size:22px"><code>$bool</code> <code>= (boolean)</code><code>$bool</code><code>; </code><code>// l&uacute;c n&agrave;y biến $bool sẽ c&oacute; kiểu boolean</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">C&aacute;c k&yacute; tự&nbsp;<strong>0</strong>, k&yacute; tự&nbsp;<strong>trống</strong>&nbsp;v&agrave;&nbsp;<strong>null</strong>&nbsp;đều được quy về gi&aacute; trị&nbsp;<strong>FALSE</strong>, c&aacute;c k&yacute; tự c&ograve;n lại quy về&nbsp;<strong>TRUE</strong>. Việc chuyển đổi n&agrave;y đ&ocirc;i khi cũng kh&ocirc;ng cần thiết v&igrave; php tự xem x&eacute;t gi&aacute; trị v&agrave; quy về&nbsp;<strong>TRUE&nbsp;</strong>hay&nbsp;<strong>FALSE</strong>.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 9:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= 123; </code><code>// TRUE</code></span></p>
+
+			<p><span style="font-size:22px"><code>$b</code> <code>= 0; </code><code>// FALSE</code></span></p>
+
+			<p><span style="font-size:22px"><code>$c</code> <code>= </code><code>&#39;0&#39;</code><code>; </code><code>// FALSE</code></span></p>
+
+			<p><span style="font-size:22px"><code>$d</code> <code>= </code><code>&#39;a123b&#39;</code> <code>// TRUE</code></span></p>
+
+			<p><span style="font-size:22px"><code>$e</code> <code>= null; </code><code>// FALSE</code></span></p>
+
+			<p><span style="font-size:22px"><code>$f</code> <code>= </code><code>&#39;&#39;</code><code>; </code><code>// FALSE</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Kiểm tra một biến kiểu boolean</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến c&oacute; phải kiểu boolean bạn d&ugrave;ng h&agrave;m&nbsp;<code>is_bool($bien);&nbsp;</code>để kiểm tra, kết quả của h&agrave;m n&agrave;y trả về TRUE nếu l&agrave; kiểu bool, ngược lại l&agrave; false nếu kh&ocirc;ng phải kiểu bool.</span></p>
+
+<h2><span style="font-size:22px">3. Kiểu số thực</span></h2>
+
+<p><span style="font-size:22px">Hiểu một c&aacute;ch n&ocirc;m na kiểu số thực l&agrave; những số c&oacute; phần dư, c&ograve;n kiểu&nbsp;<strong>INT</strong>&nbsp;l&agrave; những số kh&ocirc;ng dư phần n&agrave;o, như số 1.234 l&agrave; kiểu số thực, 1234 l&agrave; kiểu số nguy&ecirc;n (INT). K&iacute;ch cỡ của n&oacute; phụ thuộc x&aacute;c định phụ thuộc v&agrave;o từng platform nhưng gi&aacute; trị lớn nhất xấp xỉ 1.8e308, c&aacute;c kiểu dữ liệu trong php của kiểu số thực gồm c&oacute; kiểu float, double.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 10:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= 1.234; </code><code>// Kiểu số thực</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">&Eacute;p dữ liệu sang kiểu số thức.</span></h3>
+
+<p><span style="font-size:22px">Bạn d&ugrave;ng&nbsp;<strong>(float)</strong>,<strong>&nbsp;(double)</strong>&nbsp;để chuyển kiểu dữ liệu sang số thực cho một biến</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 11:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= 123; </code><code>// biến $a kiểu int</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= (float)</code><code>$a</code><code>; </code><code>// Biến $a l&uacute;c n&agrave;y kiểu số thực (float)</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= (double)</code><code>$a</code><code>; </code><code>// Biến $a l&uacute;c n&agrave;y kiểu ố thực (double)</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Kiểm tra một biến kiểu số thực.</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến phải kiểu số thực kh&ocirc;ng bạn d&ugrave;ng h&agrave;m&nbsp;<code>is_float($bien)</code>&nbsp;để kiểm tra cho kiểu float,&nbsp;<code>is_double($bien)</code>&nbsp;để kiểm tra cho kiểu double. Kết quả 2 h&agrave;m n&agrave;y trả về TRUE nếu đ&uacute;ng, FALSE nếu sai.</span></p>
+
+<h2><span style="font-size:22px">4. Kiểu chuỗi</span></h2>
+
+<p><span style="font-size:22px">C&aacute;c kiểu dữ liệu trong php th&igrave; kiểu chuỗi m&igrave;nh gồm kiểu string (chuỗi) v&agrave; char (k&yacute; tự), mỗi k&yacute; tự l&agrave; 1 byte v&agrave; l&agrave; một trong 256 k&yacute; tự kh&aacute;c nhau, để khai b&aacute;o b&aacute;o c&aacute;c bạn chỉ việc khai b&aacute;o một biến v&agrave; g&aacute;n gi&aacute; trị chuỗi cho n&oacute;, chuỗi phải được bao quanh bằng dấu nh&aacute;y đơn&nbsp;<code>&lsquo;</code>&nbsp;hoặc dấu nh&aacute;y k&eacute;p&nbsp;<code>&ldquo;</code>. &Eacute;p kiểu cũng như tr&ecirc;n ta d&ugrave;ng (string) để chuyển sang kiểu chuỗi.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 12</strong>:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= 123; </code><code>// khai b&aacute;o biến $a kiểu int c&oacute; gi&aacute; trị 123</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= (string)</code><code>$a</code><code>; </code><code>//Chuyển biến $a th&agrave;nh kiểu chuỗi v&agrave; c&oacute; gi&aacute; trị l&agrave; &#39;123&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Kiểm tra một biến kiểu string</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến kiểu chuỗi (string) ta d&ugrave;ng h&agrave;m&nbsp;<code>is_string($bien)</code>, kết quả h&agrave;m n&agrave;y trả về TRUE nếu đ&uacute;ng v&agrave; FALSE nếu kh&ocirc;ng đ&uacute;ng.</span></p>
+
+<p><span style="font-size:22px">Nếu bạn muốn t&igrave;m hiểu th&ecirc;m về chuỗi th&igrave; c&oacute; thể xem b&agrave;i&nbsp;<a href="https://freetuts.net/cac-ham-xu-ly-chuoi-trong-php-20.html" target="_blank" title="các hàm xử lý chuỗi trong php"><span style="color:#3498db">c&aacute;c h&agrave;m xử l&yacute; chuỗi trong php</span></a><span style="color:#3498db">.</span></span></p>
+
+<h2><span style="font-size:22px">5. Kiểu mảng (array)</span></h2>
+
+<p><span style="font-size:22px">Mảng l&agrave; danh s&aacute;ch c&aacute;c phần tử c&oacute; c&ugrave;ng kiểu dữ liệu v&agrave; n&oacute; l&agrave; một trong c&aacute;c kiểu dữ liệu trong php c&oacute; độ phức tạp t&iacute;nh to&aacute;n cao. C&oacute; 2 loại mảng l&agrave;&nbsp;<strong>mảng một chiều&nbsp;</strong>hoặc&nbsp;<strong>mảng nhiều chiều</strong>. Ri&ecirc;ng với PHP th&igrave; c&aacute;c phần tử của mảng c&oacute; thể kh&ocirc;ng c&ugrave;ng kiểu dữ liệu<strong>,&nbsp;</strong>v&agrave; c&aacute;c phần tử của mảng được truy xuất th&ocirc;ng qua c&aacute;c chỉ mục(vị tr&iacute;) của n&oacute; nằm trong mảng.</span></p>
+
+<h3><span style="font-size:22px">Khởi tạo v&agrave; truy xuất c&aacute;c hần tử trong mảng</span></h3>
+
+<p><span style="font-size:22px">Để khai b&aacute;o mảng ta d&ugrave;ng c&uacute; ph&aacute;p sau:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$ten_mang</code> <code>= </code><code>array</code><code>(); </code><code>// khởi tạo một mảng g&aacute;n v&agrave;o biến $ten_mang</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Giả sử t&ocirc;i c&oacute; 2 sinh vi&ecirc;n l&agrave; Nguyễn Văn A v&agrave; Nguyễn Văn B, giờ t&ocirc;i sẽ khởi tạo một mảng&nbsp;<code>$sinhvien</code>&nbsp;để lưu 2 sinh vi&ecirc;n n&agrave;y lại.</span></p>
+
+<p><span style="font-size:22px"><em>NOTE: C&aacute;c bạn d&ugrave;ng h&agrave;m&nbsp;<code>var_dump($mang);</code>&nbsp;để in ra c&aacute;c phần tử của mạng để test trong qu&aacute; tr&igrave;nh học nh&eacute;. H&agrave;m n&agrave;y c&oacute; thể sử dụng được tất cả c&aacute;c kiểu dữ liệu trong php.</em><br />
+<br />
+<strong>C&aacute;ch 1:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>(</code><code>&#39;Nguyễn Văn A&#39;</code><code>, </code><code>&#39;Nguyễn Văn B&#39;</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>C&aacute;ch 2:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>(</code></span></p>
+
+			<p><span style="font-size:22px"><code>0 =&gt; </code><code>&#39;Nguyễn Văn A&#39;</code><code>,</code></span></p>
+
+			<p><span style="font-size:22px"><code>1 =&gt; </code><code>&#39;Nguyễn Văn B&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>C&aacute;ch 3:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[0] = </code><code>&#39;Nguyễn Văn A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[1] = </code><code>&#39;Nguyễn Văn B&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>C&aacute;ch 4:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien = array();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien[] = </code><code>&#39;Nguyễn văn A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien[] = </code><code>&#39;Nguyễn Văn B&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r($sinhvien);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Cả 4 c&aacute;ch đều c&oacute; kết quả giống nhau nhưng c&uacute; ph&aacute;p lại kh&aacute;c nhau.</span></p>
+
+<h3><span style="font-size:22px">Mảng c&oacute; chỉ mục</span></h3>
+
+<p><span style="font-size:22px">L&agrave; mảng c&oacute; c&aacute;c phần tử được định danh một chỉ mục (kiểu số) v&agrave; bắt đầu bằng số 0 v&agrave; phần tử cuối c&ugrave;ng c&oacute; chỉ mục l&agrave;&nbsp;<code>(n-1)</code>, trong đ&oacute; n l&agrave; tổng số phần tử của mảng. Điều n&agrave;y c&oacute; nghĩa nếu mảng của bạn c&oacute; 10 phần từ th&igrave; lần lượt c&aacute;c vị tr&iacute; phần tử trong mảng l&agrave;:&nbsp;<code>[0] &ndash; [1] &ndash; [2] &ndash; [3] &ndash; [4] &ndash; [5] &ndash; [6] &ndash; [7] &ndash; [8] &ndash; [9]</code></span></p>
+
+<p><span style="font-size:22px"><strong>Quay lại 4 c&aacute;ch giải của v&iacute; dụ tr&ecirc;n:</strong></span></p>
+
+<p><span style="font-size:22px"><strong>Với c&aacute;ch 1</strong>: Bạn khởi tạo một mảng v&agrave; g&aacute;n trực tiếp 2 phần từ v&agrave;o, v&igrave; mảng bắt đầu từ 0 n&ecirc;n n&oacute; tự hiểu phần tử đầu ti&ecirc;n c&oacute; chỉ mục =0, v&agrave; phần tử thứ 2 = 1.</span></p>
+
+<p><span style="font-size:22px"><strong>Với c&aacute;ch 2</strong>: Bạn khởi taọ một mảng v&agrave; g&aacute;n trực tiếp 2 phần tử v&agrave;o, nhưng l&uacute;c g&aacute;n bạn c&oacute; ghi r&otilde; c&aacute;c chỉ mục cho từng phần tử.</span></p>
+
+<p><span style="font-size:22px"><strong>Với c&aacute;ch 3</strong>: Ban khởi tạo một mảng rỗng. sau đ&oacute; bạn d&ugrave;ng 2 lệnh để g&aacute;n 2 phần tử v&agrave;o, mỗi lệnh g&aacute;n bạn c&oacute; chỉ r&otilde; chỉ mục.</span></p>
+
+<p><span style="font-size:22px"><strong>Với c&aacute;ch 4</strong>: Bạn khởi tạo một mảng rỗng, sau đ&oacute; bạn d&ugrave;ng 2 lệnh g&aacute;n 2 phần tử v&agrave;o nhưng bạn lại kh&ocirc;ng chỉ r&otilde; chỉ mục, l&uacute;c n&agrave;y PHP sẽ kiểm tra thấy mảng đang rỗng n&ecirc;n phần tử đầu ti&ecirc;n n&oacute; sẽ mặc định g&aacute;n chỉ mục = 0, v&agrave; phần tử tiếp theo sẽ bằng phần tử trước n&oacute; + 1 tức l&agrave; sẽ = 1.</span></p>
+
+<p><span style="font-size:22px">Để&nbsp;<strong>truy xuất c&aacute;c phần tử của mảng chỉ mục</strong>&nbsp;ta d&ugrave;ng c&uacute; ph&aacute;p sau:&nbsp;<code>$tenmang[$index];</code>&nbsp;trong đ&oacute;&nbsp;<code>$index</code>&nbsp;l&agrave; chỉ mục bạn muốn lấy.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 14:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>(</code></span></p>
+
+			<p><span style="font-size:22px"><code>0 =&gt; </code><code>&#39;Nguyễn Văn A&#39;</code><code>,</code></span></p>
+
+			<p><span style="font-size:22px"><code>1 =&gt; </code><code>&#39;Nguyễn Văn B&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$sinhvien</code><code>[0]; </code><code>// Xuất ra m&agrave;n h&igrave;nh phần tử 0 =&gt; Nguyễn Văn A</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$sinhvien</code><code>[1]; </code><code>// Xuất ra m&agrave;n h&igrave;nh phần tử 1 =&gt; Nguyễn Văn B</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Mảng kết hợp</span></h3>
+
+<p><span style="font-size:22px">L&agrave; Mảng c&oacute; c&aacute;c phần tử được định danh bằng một c&aacute;i t&ecirc;n v&agrave; đương nhi&ecirc;n vị tr&iacute; c&aacute;c phần tử sẽ kh&ocirc;ng c&oacute; thứ tự.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 15:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>(</code></span></p>
+
+			<p><span style="font-size:22px"><code>&#39;sinhvien_a&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn A&#39;</code><code>,</code></span></p>
+
+			<p><span style="font-size:22px"><code>&#39;sinhvien_b&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn B&#39;</code></span></p>
+
+			<p><span style="font-size:22px"><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Tương tự như những v&iacute; dụ ở phần mảng c&oacute; chỉ mục<strong>,&nbsp;</strong>m&igrave;nh c&oacute; th&ecirc;m c&aacute;ch khai b&aacute;o.</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_a&#39;</code><code>] = </code><code>&#39;Nguyễn Văn A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_b&#39;</code><code>] = </code><code>&#39;Nguyễn Văn B&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><br />
+<span style="font-size:22px"><strong>X&eacute;t v&iacute; dụ sau:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_a&#39;</code><code>] = </code><code>&#39;Nguyễn Văn A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_b&#39;</code><code>] = </code><code>&#39;Nguyễn Văn B&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>print_r(</code><code>$sinhvien</code><code>);</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Trong v&iacute; dụ n&agrave;y điều đặc biệt l&agrave; l&uacute;c g&aacute;n sinh vi&ecirc;n Nguyễn Văn B ta kh&ocirc;ng truyền t&ecirc;n cho n&oacute; m&agrave; chỉ d&ugrave;ng dấu&nbsp;<code>[]</code>&nbsp;để th&ecirc;m v&agrave;o. Điều g&igrave; sẽ xảy ra? C&acirc;u trả lời như sau: Tr&igrave;nh bi&ecirc;n dịch sẽ chạy d&ograve;ng thứ 1 khởi tạo một mảng rỗng, d&ograve;ng thứ 2 th&ecirc;m một phần tử cho mảng với t&ecirc;n sinhvien_a, d&ograve;ng thứ 3 n&oacute; sẽ thấy ko c&oacute; truyền chỉ mục n&ecirc;n n&oacute; sẽ lưu gi&aacute; trị Nguyễn Văn B dưới dạng chỉ mục. N&oacute; x&eacute;t thấy trong mảng n&agrave;y chưa c&oacute; chỉ mục n&agrave;o (v&igrave; d&ograve;ng 2 truyền dạng kết hợp), n&ecirc;n sinh vi&ecirc;n Nguyễn Văn B sẽ được lấy chỉ mục = 0.</span></p>
+
+<p><span style="font-size:22px">Việc truy xuất c&aacute;c phần tử trong mảng kết hợp cũng tương tự như mảng chỉ mục ta d&ugrave;ng c&uacute; ph&aacute;p sau:&nbsp;<code>$tenmang[$name]</code>, trong đ&oacute;&nbsp;<code>$name</code>&nbsp;l&agrave; t&ecirc;n của phần tử bạn muốn lấy ra.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 16:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_a&#39;</code><code>] = </code><code>&#39;Nguyễn Văn A&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$sinhvien</code><code>[</code><code>&#39;sinhvien_b&#39;</code><code>] = </code><code>&#39;Nguyễn Văn B&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$sinhvien</code><code>[</code><code>&#39;sinhvien_a&#39;</code><code>]; </code><code>// xuất ra m&agrave;n h&igrave;nh sinh vi&ecirc;n Nguyễn Văn A</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$sinhvien</code><code>[</code><code>&#39;sinhvien_b&#39;</code><code>]; </code><code>// xuất ra m&agrave;n h&igrave;nh sinh vi&ecirc;n Nguyễn Văn B</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Mảng một chiều</span></h3>
+
+<p><span style="font-size:22px">Tất cả những v&iacute; dụ ở tr&ecirc;n gọi l&agrave; mảng 1 chiều (gồm mảng 1 chiều chi mục, mảng một chiều kết hợp)<br />
+<img alt="Mảng một chiều" longdesc="https://freetuts.net/M%E1%BA%A3ng%20m%E1%BB%99t%20chi%E1%BB%81u" src="https://freetuts.net/upload/tut_post/images/2014/08/02/3/mang-mot-chieu.png" /></span></p>
+
+<h3><span style="font-size:22px">Mảng nhiều chiều</span></h3>
+
+<p><span style="font-size:22px">L&agrave; mảng c&oacute; nhiều chỉ mục cho từng phần tử, v&iacute; dụ mảng 2 chiều th&igrave; mỗi phần tử c&oacute; 2 chỉ muc, 3 chiều th&igrave; mỗi phần tử c&oacute; 3 chỉ mục, &hellip;<br />
+Mảng nhiều chiều thực chất cũng chỉ l&agrave; mảng 1 chiều nhưng được thể hiện dưới dạng nhiều chiều.</span></p>
+
+<p><span style="font-size:22px">Xem h&igrave;nh minh họa mảng 2 chiều sau được biểu hiện bằng số d&ograve;ng v&agrave; số cột (nghĩa l&agrave; 2 chiều giống trong h&igrave;nh học kh&ocirc;ng gian 2 chiều), mỗi phần tử sẽ được định vị tr&iacute; ở điểm giao nhau của chỉ số cột v&agrave; d&ograve;ng hiện tại.<br />
+<img alt="mảng nhiều chiều" longdesc="https://freetuts.net/m%E1%BA%A3ng%20nhi%E1%BB%81u%20chi%E1%BB%81u" src="https://freetuts.net/upload/tut_post/images/2014/08/02/3/mang-nhieu-chieu.jpg" /><br />
+<strong>V&iacute; dụ 17</strong>: th&ecirc;m phần tử trong mảng 2 chiều:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code><code>[0][1] = 123;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code><code>[0][2] = 321;</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 18</strong>: truy xuất phần tử trong mảng 2 chiều<strong>:</strong></span></p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= </code><code>array</code><code>();</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code><code>[0][1] = 123;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code><code>[0][2] = 321;</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$a</code><code>[0][1]; </code><code>// in ra gi&aacute; trị 123</code></span></p>
+
+			<p><span style="font-size:22px"><code>echo</code> <code>$a</code><code>[0][2]; </code><code>// in ra gi&aacute; trị 321</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Kiểm tra một biến kiểu mảng</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến c&oacute; phải kiểu mảng (array) kh&ocirc;ng ta d&ugrave;ng h&agrave;m&nbsp;<code>is_array($bien)</code>, h&agrave;m n&agrave;y trả về TRUE nếu đ&uacute;ng v&agrave; FALSE nếu kh&ocirc;ng đ&uacute;ng.</span></p>
+
+<p><span style="font-size:22px">N&ecirc;u bạn muốn tham khảo th&ecirc;m về mảng th&igrave; c&oacute; thể đọc b&agrave;i&nbsp;<a href="https://freetuts.net/cac-ham-xu-ly-mang-trong-php-21.html" target="_blank" title="các hàm xử lý mảng trong php"><span style="color:#3498db">c&aacute;c h&agrave;m xử l&yacute; mảng trong php</span></a><span style="color:#3498db">.</span></span></p>
+
+<h2><span style="font-size:22px">6. Kiểu gi&aacute; trị Null</span></h2>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; kiểu đặc biệt trong PHP v&agrave; cũng như c&aacute;c ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c, n&oacute; mang gi&aacute; trị rỗng.</span></p>
+
+<p><span style="font-size:22px">L&uacute;c bạn khởi tạo một biến v&agrave; bạn g&aacute;n = NULL th&igrave; sẽ hệ th&ocirc;ng sẽ kh&ocirc;ng tốn bộ nhớ để lưu trữ, n&ecirc;n việc sử dụng n&oacute; rất c&oacute; lợi.</span></p>
+
+<p><span style="font-size:22px">Kiểu NULL khi &eacute;p kiểu sang kiểu INT th&igrave; bằng 0, khi &eacute;p kiểu sang kiểu chuỗi th&igrave; = rỗng, v&agrave; khi &eacute;p sang kiểu boolean th&igrave; mang gi&aacute; trị FALSE.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ 19:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>&lt;?php </code></span></p>
+
+			<p><span style="font-size:22px"><code>$a</code> <code>= null; </code><code>// Khởi tạo biến $a v&agrave; g&aacute;n gi&aacute; trị null</code></span></p>
+
+			<p><span style="font-size:22px"><code>$b</code> <code>= (int)</code><code>$a</code><code>; </code><code>// Biến $b c&oacute; gi&aacute; trị l&agrave; ( 0 )</code></span></p>
+
+			<p><span style="font-size:22px"><code>$c</code> <code>= (string)</code><code>$a</code><code>; </code><code>// Biến $c c&oacute; gi&aacute; trị rỗng ( &#39;&#39; )</code></span></p>
+
+			<p><span style="font-size:22px"><code>$d</code> <code>= (bool)</code><code>$a</code><code>; </code><code>// Biến $d c&oacute; gi&aacute; trị FALSE</code></span></p>
+
+			<p><span style="font-size:22px"><code>?&gt;</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<h3><span style="font-size:22px">Kiểm tra một biến c&oacute; gi&aacute; trị null</span></h3>
+
+<p><span style="font-size:22px">Để kiểm tra một biến c&oacute; gi&aacute; trị null hay kh&ocirc;ng ta d&ugrave;ng h&agrave;m&nbsp;<code>is_null($bien)</code>. Biến n&agrave;y trả về TRUE nếu đ&uacute;ng v&agrave; FALSE nếu kh&ocirc;ng đ&uacute;ng.</span></p>
+
+<h2><span style="font-size:22px">7. Kiểu Object (đối tượng)</span></h2>
+
+<p><span style="font-size:22px">Ri&ecirc;ng kiểu đối tượng (Object) th&igrave; n&oacute; li&ecirc;n quan đến kiến thức lập tr&igrave;nh n&acirc;ng cao n&ecirc;n tạm thời c&aacute;c bạn bỏ qua kiểu n&agrave;y nh&eacute;. Nếu bạn n&agrave;o quan t&acirc;m th&igrave; c&oacute; thể xem tại series&nbsp;<a href="https://freetuts.net/hoc-php/hoc-lap-trinh-php-nang-cao" target="_blank" title="php nâng cao"><span style="color:#3498db">php n&acirc;ng cao</span></a><span style="color:#3498db">.</span></span></p>
+
+<h2><span style="font-size:22px">8. Kết th&uacute;c b&agrave;i học</span></h2>
+
+<p><span style="font-size:22px">C&aacute;c bạn thấy c&aacute;c kiểu dữ liệu trong PHP rất l&agrave; nhiều v&agrave; c&aacute;ch sử dụng n&oacute; thật sự đơn giản hơn c&aacute;c kiểu dữ liệu trong ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c. Hy vọng b&agrave;i n&agrave;y sẽ l&agrave; tiền đề để c&aacute;c bạn đam m&ecirc; ng&agrave;nh&nbsp;<strong>lập tr&igrave;nh web php</strong>.&nbsp;</span></p>

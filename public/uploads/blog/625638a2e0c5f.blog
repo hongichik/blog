@@ -1,0 +1,142 @@
+<h2><span style="font-size:22px"><strong>XAMPP l&agrave; g&igrave;?</strong></span></h2>
+
+<p><span style="font-size:22px">Xampp l&agrave; chương tr&igrave;nh tạo m&aacute;y chủ Web được t&iacute;ch hợp sẵn Apache, PHP, MySQL, FTP Server, Mail Server, phpMyAdmin v&agrave; c&aacute;c c&ocirc;ng cụ như phpMyAdmin. Kh&ocirc;ng như Appserv, Xampp c&oacute; chương tr&igrave;nh quản l&yacute; kh&aacute; tiện lợi, cho ph&eacute;p chủ động bật tắt hoặc khởi động lại c&aacute;c dịch vụ m&aacute;y chủ bất kỳ l&uacute;c n&agrave;o.</span></p>
+
+<h3><span style="font-size:22px"><strong>Download XAMPP</strong></span></h3>
+
+<p><span style="font-size:22px">Lựa chọn phi&ecirc;n bản ph&ugrave; hợp v&agrave; download trực tiếp từ trang ch&iacute;nh của XAMPP:&nbsp;<a href="https://www.apachefriends.org/download.html" target="_blank"><span style="color:#3498db">https://www.apachefriends.org/download.html</span></a></span></p>
+
+<h3><span style="font-size:22px"><strong>C&agrave;i đặt XAMPP</strong></span></h3>
+
+<p>&nbsp;</p>
+
+<h4><span style="font-size:22px">Question</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Download v&agrave; c&agrave;i đặt file, v&iacute; dụ:&nbsp;xampp-win32-5.6.24-1-VC11-installer.exe</span></li>
+	<li><span style="font-size:22px">Double click file vừa download (hoặc chạy bằng quyền administrator bằng c&aacute;ch right click l&ecirc;n file vừa download &gt; Run as administrator), nếu m&aacute;y t&iacute;nh bạn c&oacute; chương tr&igrave;nh duyệt virus sẽ xuất hiện hộp thoại &quot;Question&quot;, kh&ocirc;ng cần lo lắng, cứ chọn &quot;Yes&quot;:</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625636b36511e.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Warning</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Ngay sau đ&oacute; l&agrave; hộp thoại &quot;Warning&quot; về quyền User điều khiển, nếu bạn chạy bằng quyền administrator th&igrave; kh&ocirc;ng cần quan t&acirc;m tới cảnh b&aacute;o n&agrave;y, chọn &quot;Ok&quot; để tiếp tục, c&ograve;n muốn an to&agrave;n hơn th&igrave; bạn cứ việc chọn c&agrave;i XAMPP ở ổ đĩa kh&aacute;c với ổ c&agrave;i Window l&agrave; được (chọn ổ đĩa tại bước Setup - Installation folder).</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625637451e656.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - XAMPP</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">M&agrave;n h&igrave;nh Welcome của setup th&igrave; click &quot;Next&quot;</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256376e7894c.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - Select Components</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Tại m&agrave;n h&igrave;nh n&agrave;y chọn c&aacute;c ứng dụng k&egrave;m theo của bộ XAMPP, bạn c&oacute; thể bỏ những phần kh&ocirc;ng cần thiết đi nhe, tuy nhi&ecirc;n cứ chọn hết v&agrave; &quot;Next&quot; th&ocirc;i, v&igrave; sau n&agrave;y sẽ c&oacute; dịp d&ugrave;ng đến.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563789886cf.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - Installation folder</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Chọn thư mục để c&agrave;i đặt, chứa thư mục XAMPP, thường để mặc định C:\xampp.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625637c0f2939.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - Bitnami for XAMPP</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Giới thiệu về bộ t&iacute;ch hợp Bitnami cho XAMPP, muốn xem giới thiệu th&igrave; click chọn &quot;Learn more about Bitnami for XAMPP&quot;, c&ograve;n kh&ocirc;ng th&igrave; bỏ chọn nh&eacute;.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625637e026159.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - Ready to Install</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">C&aacute;c bước chuẩn bị sơ bộ đ&atilde; xong, giờ th&igrave; click &quot;Next&quot; để c&agrave;i đặt.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625637fbac3c5.png" style="width:80%" /></span></p>
+
+<h4><span style="font-size:22px">Setup - Welcome to XAMPP!</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Đ&acirc;y l&agrave; m&agrave;n h&igrave;nh c&agrave;i đặt, cứ đợi chạy xong hết l&agrave; c&oacute; thể sử dụng được XAMPP.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256381862b6c.png" style="width:80%" /></span></p>
+
+<h3><span style="font-size:22px">Khởi động Apache v&agrave; MySQL</span></h3>
+
+<h4><span style="font-size:22px">C&agrave;i đặt ho&agrave;n th&agrave;nh</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">Đ&acirc;y l&agrave; giao diện đầu ti&ecirc;n sau khi c&agrave;i đặt XAMPP th&agrave;nh c&ocirc;ng.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256382ef0733.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">B&ecirc;n dưới &quot;Actions&quot; click v&agrave;o 2 button &quot;Start&quot; tương ứng của &quot;Apache&quot; v&agrave; &quot;MySQL&quot; để khởi động 2 ứng dụng.</span></li>
+</ul>
+
+<h4><span style="font-size:22px">Chỉnh lỗi</span></h4>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256384c45c56.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Th&ocirc;ng thường khi c&agrave;i xong, sẽ dễ gặp lỗi kh&ocirc;ng khởi động được Apache, nguy&ecirc;n nh&acirc;n dễ gặp nhất l&agrave; do xung đột port 80, port n&agrave;y c&oacute; rất nhiều chương tr&igrave;nh ưu ti&ecirc;n chạy, v&iacute; dụ như Skype, IIS, World Wide Web Publishing service, HTTP Server API, ...</span></li>
+	<li><span style="font-size:22px">C&aacute;ch giải quyết l&agrave; tắt c&aacute;c chương tr&igrave;nh tr&ecirc;n sau đ&oacute; khởi động lại Apache l&agrave; được:</span>
+	<ul>
+		<li><span style="font-size:22px">Skype, IIS hay HTTP Server API, ... th&igrave; close ứng dụng tương ứng.</span></li>
+		<li><span style="font-size:22px">World Wide Web Publishing service th&igrave; nhấn tổ hợp ph&iacute;m: Window + R &gt; g&otilde;&nbsp;services.msc&nbsp;&gt; t&igrave;m trong hộp thoại vừa hiện ra &quot;World Wide Web Publishing Service&quot; &gt; click chuột phải chọn &quot;Stop&quot;.</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:22px">Sau khi tắt ứng dụng tương ứng xong th&igrave; click chọn &quot;Start&quot; để khởi động lại Apache, m&agrave;n h&igrave;nh như b&ecirc;n dưới l&agrave; th&agrave;nh c&ocirc;ng.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563874c75fb.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">G&otilde; l&ecirc;n tr&igrave;nh duyệt&nbsp;<a href="http://localhost/"><span style="color:#3498db">http://localhost/</span></a>&nbsp;nếu xuất hiện chữ &quot;It works!&quot; (hoặc hiển thị m&agrave;n h&igrave;nh dashboard của Xampp) l&agrave; bạn đ&atilde; c&agrave;i đặt th&agrave;nh c&ocirc;ng.</span></li>
+</ul>
+
+<h4><span style="font-size:22px">phpMyAdmin</span></h4>
+
+<ul>
+	<li><span style="font-size:22px">phpMyAdmin đ&atilde; được t&iacute;ch hợp sẵn b&ecirc;n trong bộ c&agrave;i đặt Xampp, n&ecirc;n khi c&agrave;i xong Xampp ho&agrave;n th&agrave;nh th&igrave; ta c&oacute; thể sử dụng được phpMyAdmin.</span></li>
+	<li><span style="font-size:22px">Click v&agrave;o button &quot;Admin&quot; tương ứng với &quot;MySQL&quot; để mở trang phpMyAdmin</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256388f7bc74.png" style="width:80%" /></span></p>
+
+<h3><span style="font-size:22px">Thư mục l&agrave;m việc</span></h3>
+
+<ul>
+	<li><span style="font-size:22px">Thư mục thao t&aacute;c từ đ&acirc;y về sau ch&iacute;nh l&agrave;&nbsp;<strong>C:\xampp\htdocs\</strong></span></li>
+	<li><span style="font-size:22px">VD bạn c&oacute; project chứa trong folder c&oacute; t&ecirc;n l&agrave; &quot;myproject&quot;, copy folder n&agrave;y v&agrave;o thư mục l&agrave;m việc tr&ecirc;n XAMPP, ta c&oacute;&nbsp;<strong>C:\xampp\htdocs\myproject\</strong></span></li>
+	<li><span style="font-size:22px">Để chạy được c&aacute;c file c&oacute; trong project n&agrave;y, bạn cần g&otilde; l&ecirc;n tr&igrave;nh duyệt&nbsp;<strong>http://localhost/myproject/</strong>&nbsp;khi n&agrave;y nếu kh&ocirc;ng c&oacute; file index th&igrave; c&aacute;c file hay folder b&ecirc;n trong sẽ được liệt k&ecirc; đầy đủ.</span></li>
+	<li><span style="font-size:22px">Tiếp tục thử tạo file hello-world.php với nội dung b&ecirc;n trong l&agrave; đoạn code PHP</span></li>
+</ul>
+
+<pre>
+<span style="font-size:22px">&lt;?php
+echo &quot;Hello World!&quot;;
+?&gt;</span></pre>
+
+<ul>
+	<li><span style="font-size:22px">Sau đ&oacute; g&otilde; l&ecirc;n tr&igrave;nh duyệt&nbsp;<strong>http://localhost/myproject/hello-world.php</strong>&nbsp;ta sẽ thấy được kết quả như b&ecirc;n dưới:</span></li>
+</ul>
+
+<p><span style="font-size:22px">Hello World!</span></p>
+
+<p>&nbsp;</p>

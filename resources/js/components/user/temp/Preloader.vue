@@ -4,17 +4,9 @@
         <div class="preloader-inner position-relative">
             <div class="preloader-circle"></div>
             <div class="preloader-img pere-text">
-                <img :src="logo_load_page" alt="">
+                <img src="/api/ShowImg/logo.png" alt="">
             </div>
         </div>
     </div>
 </div>
 </template>
-
-<script>
-export default {
-
-props: ['logo_load_page'],
-
-}
-</script>

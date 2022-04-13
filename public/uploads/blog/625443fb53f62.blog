@@ -1,0 +1,187 @@
+<h2><strong><span style="font-size:22px"><span style="color:#000000">1. Cấu tr&uacute;c dữ liệu v&agrave; Giải&nbsp;thuật</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Name the differences between array and linked list in: storage allocation, order of the elements, accessing the elements, insertion and deletion, searching, memory utilization and memory required.</em></strong><br />
+(Kể ra sự kh&aacute;c nhau giữa mảng v&agrave; danh s&aacute;ch li&ecirc;n kết về: ph&acirc;n bổ lưu trữ, thứ tự của c&aacute;c phần tử, truy cập phần tử, ch&egrave;n v&agrave; x&oacute;a, t&igrave;m kiếm, tối ưu bộ nhớ v&agrave; cấp ph&aacute;t bộ nhớ.)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute; 1 (mức độ cơ bản):</strong><br />
+	&ndash; Trong mảng, c&aacute;c phần tử nằm cạnh nhau trong bộ nhớ. Trong danh s&aacute;ch li&ecirc;n kết, ch&uacute;ng được kết nối với nhau th&ocirc;ng qua c&aacute;c con trỏ.<br />
+	&ndash; Nh&igrave;n chung, độ phức tạp của kh&ocirc;ng gian ở danh s&aacute;ch li&ecirc;n kết lớn hơn do c&oacute; th&ecirc;m con trỏ.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute; 2 (mức độ trung cấp):</strong><br />
+	&ndash; Truy cập phần tử th&ocirc;ng qua chỉ mục: O(1) trong mảng v&agrave; O(n) trong danh s&aacute;ch li&ecirc;n kết.<br />
+	&ndash; Ch&egrave;n v&agrave; x&oacute;a khi đ&atilde; biết vị tr&iacute;: O(n) trong mảng v&agrave; O(1) trong danh s&aacute;ch li&ecirc;n kết.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute; 3 (mức độ n&acirc;ng cao):</strong><br />
+	&ndash; Danh s&aacute;ch li&ecirc;n kết c&oacute; nhiều lợi thế hơn khi bộ nhớ bị ph&acirc;n mảnh.<br />
+	&ndash; Mảng c&oacute; nhiều lợi thế hơn khi cấu tr&uacute;c dữ liệu thường được truy cập bằng chỉ mục.<br />
+	&ndash; Mảng c&oacute; bộ nhớ đệm nội bộ (cache locality) tốt hơn.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Find the reverse of a number. Example: 1234 -&gt; 4321.</em></strong><br />
+(T&igrave;m số đảo ngược của một số. V&iacute; dụ: 1234 -&gt; 4321<strong>.)</strong></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Trường hợp 1 (mức độ tốt):&nbsp;</strong>C&oacute; thể đưa ra c&aacute;ch giải m&agrave; kh&ocirc;ng cần bất kỳ gợi &yacute; n&agrave;o.</span></span></li>
+</ul>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Trường hợp 2 (mức độ cơ bản):&nbsp;</strong>C&oacute; thể t&igrave;m ra c&aacute;ch giải sau khi được cung cấp gợi &yacute; như sau:</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000">1234 c&oacute; thể viết dưới dạng 1234 = 1*10<sup>3</sup>&nbsp;+ 2*10<sup>2&nbsp;</sup>+ 3*10<sup>1&nbsp;</sup>+ 4</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Số đảo ngược 4321 c&oacute; thể viết lại dưới dạng 4321 = 4*10<sup>3</sup>&nbsp;+ 3*10<sup>2&nbsp;</sup>+ 2*10<sup>1&nbsp;</sup>+ 1</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000">Nếu phương &aacute;n đưa ra l&agrave; biến số th&agrave;nh chuỗi rồi đảo ngược th&igrave; cần đưa ra l&yacute; do hợp l&yacute;.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Given a list of integers, how to check if a number exists in that list?</em></strong><br />
+(Cho một danh s&aacute;ch c&aacute;c số nguy&ecirc;n, l&agrave;m thế n&agrave;o để kiểm tra liệu một số bất kỳ c&oacute; tồn tại trong danh s&aacute;ch đ&oacute; kh&ocirc;ng?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong><br />
+	D&ugrave;ng Linear search (t&igrave;m kiếm tuyến t&iacute;nh) v&agrave; Binary search (t&igrave;m kiếm nhị ph&acirc;n).</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What are the differences between Stack and Queue?</em></strong><br />
+(Sự kh&aacute;c biệt giữa Stack v&agrave; Queue l&agrave; g&igrave;?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What are the differences between a tree and a graph?</em></strong><br />
+(Sự kh&aacute;c biệt giữa c&acirc;y v&agrave; đồ thị l&agrave; g&igrave;?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; An HTML website contains many &lt;a&gt; tags, and each tag has an `href` attribute that contains the url link that navigates to the destination website. A web crawler will fetch the HTML content from a website and analyze its content to detect the url links which will be crawled next. This process will repeat until there is no new link for crawling.<br />
+Design the algorithm to build a web crawler.<br />
++ Input: URL link of a web site<br />
++ Output: A list of all the links that will be crawled.</em></strong><br />
+(Cho một trang web HTML chứa nhiều thẻ &lt;a&gt;, mỗi thẻ c&oacute; một thuộc t&iacute;nh`href`chứa li&ecirc;n kết URL điều hướng đến trang web đ&iacute;ch. Tr&igrave;nh thu thập dữ liệu web sẽ t&igrave;m nạp nội dung HTML từ trang web v&agrave; ph&acirc;n t&iacute;ch nội dung của n&oacute; để ph&aacute;t hiện li&ecirc;n kết URL n&agrave;o sẽ được thu thập th&ocirc;ng tin tiếp theo. Qu&aacute; tr&igrave;nh n&agrave;y sẽ lặp lại cho đến khi kh&ocirc;ng c&oacute; li&ecirc;n kết mới để thu thập th&ocirc;ng tin.<br />
+Thiết kế thuật to&aacute;n để x&acirc;y dựng tr&igrave;nh thu thập dữ liệu web.<br />
++ Đầu v&agrave;o: URL của một trang web<br />
++ Đầu ra: Một danh s&aacute;ch tất cả c&aacute;c li&ecirc;n kết cần được thu thập th&ocirc;ng tin.)</span></span></p>
+
+<h2><strong><span style="font-size:22px"><span style="color:#000000">2. Lập tr&igrave;nh hướng đối&nbsp;tượng</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What is OOP? Why should we use OOP?</em></strong><br />
+(OOP l&agrave; g&igrave;? V&igrave; sao ch&uacute;ng ta n&ecirc;n sử dụng OOP?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong><br />
+	&ndash; Ứng vi&ecirc;n c&oacute; thể kể t&ecirc;n 4 t&iacute;nh chất: t&iacute;nh đ&oacute;ng g&oacute;i (encapsulation), t&iacute;nh đa h&igrave;nh (polymorphism), t&iacute;nh kế thừa (inheritance) v&agrave; t&iacute;nh trừu tượng (abstraction).<br />
+	&ndash; Ứng vi&ecirc;n c&oacute; thể giải th&iacute;ch từng t&iacute;nh chất.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What is composition? Compare composition vs inheritance.</em></strong><br />
+(Composition l&agrave; g&igrave;? So s&aacute;nh composition v&agrave; inheritance.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>&ndash;&nbsp;<em>Explain class constructor.</em></strong><br />
+(Giải th&iacute;ch kh&aacute;i niệm class constructor.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash;&nbsp;<strong><em>Tell the differences between</em></strong>&nbsp;Interface and Abstract class.</em></strong>&nbsp;<em><strong>Give some examples of each</strong></em>.<br />
+(Ph&acirc;n biệt Interface v&agrave; Abstract class. Đưa ra một v&agrave;i v&iacute; dụ minh hoạ.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Tell the differences between Override and Overload.</em></strong><br />
+(Ph&acirc;n biệt Override v&agrave; Overload.)</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Bí kíp phỏng vấn Software Engineer ở Got It Vietnam" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2020/05/29164209/1_ZV4pS6TtfVsaj7TUDh6oQ.jpg" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trở th&agrave;nh một Got It-ian quả kh&ocirc;ng dễ d&agrave;ng ch&uacute;t n&agrave;o đ&uacute;ng kh&ocirc;ng? C&ugrave;ng tiếp tục&nbsp;nh&eacute;!</span></span></p>
+
+<h2><strong><span style="font-size:22px"><span style="color:#000000">3. Mẫu thiết kế phần&nbsp;mềm</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What are design patterns? Why should we use design patterns?</em></strong><br />
+(Design patterns l&agrave; g&igrave;? V&igrave; sao ch&uacute;ng ta n&ecirc;n sử dụng design patterns?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Describe the Singleton pattern.</em></strong><br />
+(H&atilde;y m&ocirc; tả Singleton pattern.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; (Observer pattern) Given a Controller that has a property named &ldquo;view&rdquo; representing a view it controls. How does the view notify the controller when a certain event occurs?</em></strong><br />
+((Observer pattern) Một Controller c&oacute; một thuộc t&iacute;nh c&oacute; t&ecirc;n l&agrave; &ldquo;view&rdquo; thể hiện một view m&agrave; n&oacute; điều khiển. L&agrave;m thế n&agrave;o để view th&ocirc;ng b&aacute;o cho controller biết khi một sự kiện nhất định xảy ra?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; (Architectural pattern) Explain microservices vs monolithic.</em></strong><br />
+((Architectural pattern) H&atilde;y giải th&iacute;ch hai kh&aacute;i niệm microservices v&agrave; monolithic.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; (Dependency injection) Given a class A which needs to use an instance of class B. How do you implement this idea without creating a direct dependency between 2 classes?</em></strong><br />
+((Dependency injection) Biết rằng lớp A cần sử dụng một thể hiện của lớp B. L&agrave;m thế n&agrave;o để thực hiện &yacute; tưởng n&agrave;y m&agrave; kh&ocirc;ng tạo ra sự phụ thuộc trực tiếp giữa 2 lớp?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; (Architectural pattern) Describe MVC. Provide a solution to solve the &ldquo;Massive controller&rdquo; issue.</em></strong><br />
+((Architectural pattern) H&atilde;y m&ocirc; tả m&ocirc; h&igrave;nh MVC. Đưa ra c&aacute;ch giải quyết vấn đề &ldquo;Massive controller&rdquo;.)</span></span></p>
+
+<h2><strong><span style="font-size:22px"><span style="color:#000000">4. Cơ sở dữ&nbsp;liệu</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; How do you represent the n-n relationship in a relational database?</em></strong><br />
+(M&ocirc; tả quan hệ nhiều &ndash; nhiều trong trong cơ sở dữ liệu quan hệ.)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong><br />
+	Sử dụng một bảng kết hợp (association table) với kh&oacute;a ngoại (foreign key) trỏ v&agrave;o hai bảng.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What is index used for?</em></strong><br />
+(Chỉ mục được d&ugrave;ng để l&agrave;m g&igrave;?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Compare primary key and foreign key.&nbsp;</em></strong><em>Does a table have</em>&nbsp;to have a&nbsp;<em>primary key?</em><br />
+(H&atilde;y so s&aacute;nh kh&oacute;a ch&iacute;nh v&agrave; kh&oacute;a ngoại. Một bảng c&oacute; nhất định phải c&oacute; kh&oacute;a ch&iacute;nh kh&ocirc;ng?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Compare SQL and noSQL databases.</em></strong><br />
+(H&atilde;y so s&aacute;nh hai cơ sở dữ liệu SQL v&agrave; noSQL.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; How do you represent key-value structure in a relational database?</em></strong><br />
+(M&ocirc; tả key-value structure trong cơ sở dữ liệu quan hệ.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What is database normalization? Why should we need to normalize when designing a new database?</em></strong>&nbsp;<br />
+(Chuẩn h&oacute;a cơ sở dữ liệu l&agrave; g&igrave;? V&igrave; sao ch&uacute;ng ta cần chuẩn h&oacute;a khi thiết kế một cơ sở dữ liệu mới?)</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Phần tiếp theo - Các câu hỏi phỏng vấn Software Engineer" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2020/05/29164212/1W6eN6mu3P_MVpdwLto5SwA.jpg" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Stay tune! Chỉ c&ograve;n 2 phần nữa&nbsp;th&ocirc;i!!</span></span></p>
+
+<h2><strong><span style="font-size:22px"><span style="color:#000000">5. Mạng m&aacute;y&nbsp;t&iacute;nh</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Compare UDP vs TCP.</em></strong><br />
+(H&atilde;y so s&aacute;nh UDP v&agrave; TCP.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Compare GET vs POST, POST vs PUT.</em></strong><br />
+(H&atilde;y so s&aacute;nh GET v&agrave; POST, POST v&agrave; PUT.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What happens from when we enter a domain (&ldquo;google.com&rdquo; for example) into browser to when the page is rendered?</em></strong><br />
+(Điều g&igrave; sẽ xảy ra từ khi nhập một t&ecirc;n miền (v&iacute; dụ: &ldquo;google.com&rdquo;) v&agrave;o tr&igrave;nh duyệt đến khi trang được hiển thị?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Name some of the protocols belonging to the application layer (OSI) that you know.</em></strong><br />
+(Kể t&ecirc;n một số giao thức thuộc tầng ứng dụng (OSI) m&agrave; bạn biết.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Describe the format of HTTP request and response.</em></strong><br />
+(M&ocirc; tả định dạng request v&agrave; response của HTTP.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Name layers of OSI Model.</em></strong><br />
+(Kể t&ecirc;n c&aacute;c tầng của M&ocirc; h&igrave;nh OSI.)</span></span></p>
+
+<h2><strong><span style="font-size:22px"><span style="color:#000000">6. Hệ điều&nbsp;h&agrave;nh</span></span></strong></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Compare thread vs process.</em></strong><br />
+(So s&aacute;nh luồng v&agrave; tiến tr&igrave;nh.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Explain the term &ldquo;Deadlock&rdquo;.</em></strong><br />
+(Giải th&iacute;ch thuật ngữ &ldquo;deadlock&rdquo;.)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Define &ldquo;cache&rdquo;. Why do we need to use cache?</em></strong><br />
+(H&atilde;y định nghĩa &ldquo;bộ nhớ đệm&rdquo;. V&igrave; sao ta cần sử dụng bộ nhớ đệm?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; Which criteria can be used to classify Operating Systems?</em></strong><br />
+(Những ti&ecirc;u ch&iacute; n&agrave;o c&oacute; thể được sử dụng để ph&acirc;n loại Hệ điều h&agrave;nh?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What does 32-bit mean in Windows 32-bit OS?</em></strong><br />
+(32-bit c&oacute; nghĩa l&agrave; g&igrave; trong Hệ điều h&agrave;nh Windows 32-bit?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>&ndash; What is round-robin scheduling?</em></strong><br />
+(Round-robin scheduling l&agrave; g&igrave;?)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Tr&ecirc;n đ&acirc;y l&agrave; một v&agrave;i c&acirc;u hỏi mẫu m&agrave; ch&uacute;ng m&igrave;nh nghĩ bạn c&oacute; thể gặp trong buổi phỏng vấn Software Engineer với Got It. Tuy nhi&ecirc;n, vẫn c&ograve;n rất nhiều c&acirc;u hỏi về Computer Science v&agrave; cả những lĩnh vực kh&aacute;c sẽ được đề cập tới m&agrave; ch&uacute;ng m&igrave;nh kh&ocirc;ng thể g&oacute;i gọn chỉ trong một b&agrave;i viết. Ch&uacute;ng m&igrave;nh đ&atilde; tổng hợp c&aacute;c c&acirc;u hỏi đ&oacute; ở đường link&nbsp;</span><a href="http://bit.ly/GotIt-InterviewQuestions" rel="noopener noreferrer" target="_blank"><span style="color:#000000"><strong><em>bit.ly/GotIt-InterviewQuestions</em></strong></span></a><span style="color:#000000"><strong><em>,&nbsp;</em></strong>bạn c&oacute; thể tham khảo để chuẩn bị kĩ lưỡng hơn cho v&ograve;ng phỏng vấn ở Got It nh&eacute;.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Quả thật c&oacute; rất nhiều kiến thức đ&uacute;ng kh&ocirc;ng? Cũng bởi vậy n&ecirc;n mỗi ch&uacute;ng m&igrave;nh đều cực kỳ tự h&agrave;o khi vượt qua biết bao cửa ải v&agrave; trở th&agrave;nh một Got It-ian. Vượt qua c&aacute;c v&ograve;ng phỏng vấn kh&oacute; nhằn kh&ocirc;ng chỉ đơn thuần l&agrave; đ&aacute;p ứng được y&ecirc;u cầu của nh&agrave; tuyển dụng.&nbsp;<strong>Đ&oacute; c&ograve;n l&agrave; khi bạn thử th&aacute;ch ch&iacute;nh m&igrave;nh, tự nh&igrave;n lại v&agrave; kiểm tra xem những kiến thức m&igrave;nh c&oacute; đang ở đ&acirc;u so với nhu cầu của thị trường, v&agrave; so với mục ti&ecirc;u m&agrave; bạn hướng đến.</strong></span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Got It Vietnam - Cơ hội việc làm cho Software Engineer" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2020/05/29164216/1X75FuI2GGfbETGsx_qg5Iw.jpg" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">At Got It, we&rsquo;re building global scale products while having&nbsp;fun!</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Ch&uacute;ng m&igrave;nh rất mong rằng khi đọc xong b&agrave;i viết n&agrave;y, d&ugrave; c&oacute; quyết định apply Got It hay kh&ocirc;ng, bạn cũng c&oacute; thể phần n&agrave;o hiểu hơn về bản th&acirc;n, để khi bước ch&acirc;n khỏi c&aacute;nh cổng đại học, bạn đ&atilde; kh&ocirc;ng c&ograve;n qu&aacute; non nớt v&agrave; bỡ ngỡ.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">C&ograve;n nếu bạn muốn phỏng vấn Software Engineer ở Got It, h&atilde;y nhớ rằng&nbsp;<strong>Got It lu&ocirc;n ch&agrave;o đ&oacute;n bạn v&agrave;o bất cứ thời điểm n&agrave;o bạn cảm thấy sẵn s&agrave;ng</strong>!</span></span></p>

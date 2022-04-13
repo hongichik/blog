@@ -1,0 +1,28 @@
+<p><span style="font-size:22px"><strong>Template trong C++</strong>&nbsp;l&agrave; nền tảng của lập tr&igrave;nh tổng qu&aacute;t (generic programming), tức l&agrave; viết code theo c&aacute;c m&agrave; độc lập với bất kỳ kiểu cụ thể n&agrave;o.</span></p>
+
+<p><span style="font-size:22px">Một Template l&agrave; một blueprint hoặc l&agrave; phương thức để tạo một lớp hoặc một h&agrave;m tổng qu&aacute;t. C&aacute;c Library Container như Iterator v&agrave; c&aacute;c thuật to&aacute;n l&agrave; c&aacute;c v&iacute; dụ của lập tr&igrave;nh tổng qu&aacute;t v&agrave; đ&atilde; được ph&aacute;t triển bởi sử dụng kh&aacute;i niệm Template.</span></p>
+
+<p><span style="font-size:22px">Mỗi container c&oacute; một định nghĩa đơn, v&iacute; dụ vector, nhưng ch&uacute;ng ta c&oacute; thể định nghĩa nhiều loạt vector kh&aacute;c nhau, v&iacute; dụ:&nbsp;<strong>vector &lt;int&gt;</strong>&nbsp;hoặc&nbsp;<strong>vector &lt;string&gt;</strong>.</span></p>
+
+<p><span style="font-size:22px">Template l&agrave; từ kh&oacute;a trong C++, ch&uacute;ng ta c&oacute; thể hiểu rằng l&agrave; n&oacute; một kiểu dữ liệu trừu tượng, đặc trưng cho c&aacute;c kiểu dữ liệu cơ bản. Template l&agrave; từ kh&oacute;a b&aacute;o cho tr&igrave;nh bi&ecirc;n dịch rằng đoạn m&atilde; sau đ&acirc;y định nghĩa cho nhiều kiểu dữ liệu v&agrave; m&atilde; nguồn của n&oacute; sẽ được bi&ecirc;n dịch sinh ra tương ứng cho từng kiểu dữ liệu trong qu&aacute; tr&igrave;nh bi&ecirc;n dịch. C&oacute; hai kiểu Template trong C++:</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong>Function Template</strong>: l&agrave; một khu&ocirc;n mẫu h&agrave;m, cho ph&eacute;p định nghĩa c&aacute;c h&agrave;m tổng qu&aacute;t thao t&aacute;c cho nhiều kiểu dữ liệu.</span></li>
+	<li><span style="font-size:22px"><strong>Class template</strong>: l&agrave; một khu&ocirc;n mẫu lớp, cho ph&eacute;p định nghĩa c&aacute;c lớp tổng qu&aacute;t cho nhiều kiểu dữ liệu.</span></li>
+</ul>
+
+<h2><span style="font-size:22px">Function Template trong C++</span></h2>
+
+<p><span style="font-size:22px">C&uacute; ph&aacute;p Function Template trong C++:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/625647d695367.PNG" style="width:80%" /></span></p>
+
+<p><span style="font-size:22px">Trong đ&oacute;,&nbsp;<strong>kieu_du_lieu</strong>&nbsp;l&agrave; một t&ecirc;n một kiểu dữ liệu được sử dụng bởi h&agrave;m. T&ecirc;n n&agrave;y c&oacute; thể được sử dụng b&ecirc;n trong định nghĩa h&agrave;m.</span></p>
+
+<h2><span style="font-size:22px">Class Template trong C++</span></h2>
+
+<p><span style="font-size:22px">Giống như khi ch&uacute;ng ta c&oacute; thể định nghĩa Function Template, ch&uacute;ng ta cũng c&oacute; thể định nghĩa Class Template trong C++. C&uacute; ph&aacute;p chung của định nghĩa Class Template trong C++ l&agrave;:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256481f3819b.PNG" style="width:80%" /></span></p>
+
+<p><span style="font-size:22px">Trong đ&oacute;, kieu_du_lieu l&agrave; t&ecirc;n kiểu, m&agrave; sẽ được x&aacute;c định khi một lớp được khai b&aacute;o. Bạn c&oacute; thể định nghĩa nhiều hơn một kiểu dữ liệu tổng qu&aacute;t (generic) bởi sử dụng một danh s&aacute;ch ph&acirc;n biệt nhau bởi dấu phảy.</span></p>

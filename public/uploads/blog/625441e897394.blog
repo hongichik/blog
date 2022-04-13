@@ -1,0 +1,61 @@
+<h2><span style="color:#3498db"><span style="font-size:26px"><strong>Visual Studio Code l&agrave; g&igrave; v&agrave; d&agrave;nh cho ai?</strong></span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Visual Studio Code l&agrave; một tr&igrave;nh bi&ecirc;n tập code được ph&aacute;t triển bởi Microsoft d&agrave;nh cho Windows, Linux v&agrave; macOS. N&oacute; hỗ trợ chức năng debug, đi k&egrave;m với Git, c&oacute; syntax highlighting, tự ho&agrave;n th&agrave;nh code th&ocirc;ng minh, snippets, v&agrave; cải tiến m&atilde; nguồn.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Hầu hết c&aacute;c lập tr&igrave;nh vi&ecirc;n Frontend đều ứng dụng tr&igrave;nh soạn thảo m&atilde; nguồn mở miễn ph&iacute; n&agrave;y cho việc viết code JavaScript, HTML hoặc CSS. Ngo&agrave;i ra, tr&ecirc;n thực tế, cũng c&oacute; kh&ocirc;ng &iacute;t c&aacute;c lập tr&igrave;nh vi&ecirc;n Backend d&ugrave;ng VS Code để viết m&atilde; Scala.&nbsp;</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Với VS Code, việc viết mọi loại code trở n&ecirc;n đơn giản v&agrave; thuận tiện hơn rất nhiều.&nbsp;Ngo&agrave;i ra, những ai đang l&agrave;m c&ocirc;ng việc kiểm thử phần mềm hay quản l&yacute; dữ liệu cũng c&oacute; thể sử dụng tr&igrave;nh soạn thảo n&agrave;y.&nbsp;&nbsp;</span></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:26px">Phi&ecirc;n bản Visual Studio Code n&agrave;o l&agrave; tốt nhất?</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Với số lượng người d&ugrave;ng ng&agrave;y c&agrave;ng tăng, qua mỗi năm, Microsoft lại tiến h&agrave;nh cải tiến, bổ sung v&agrave; cập nhật c&aacute;c t&iacute;nh năng mới cho phần mềm của m&igrave;nh. Ch&iacute;nh v&igrave; thế, để khai th&aacute;c hiệu quả c&aacute;c ưu điểm nổi bật của VS Code, bạn n&ecirc;n c&agrave;i đặt phi&ecirc;n bản mới nhất.&nbsp;</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Hiện tại, trang chủ của VS Code đ&atilde; cập nhập phi&ecirc;n bản mới nhất v&agrave;o T4/2021. Bạn c&oacute; thể truy cập v&agrave;o&nbsp;đường dẫn n&agrave;y&nbsp;để tham khảo th&ocirc;ng tin về phi&ecirc;n bản đ&oacute; v&agrave; tải về m&aacute;y nh&eacute;!</span></span></p>
+
+<h2><span style="font-size:26px"><span style="color:#3498db">C&aacute;ch sử dụng Visual Studio Code căn bản</span></span></h2>
+
+<h3><span style="font-size:22px"><span style="color:#000000">C&agrave;i đặt Visual Studio Code</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để tải VS Code về m&aacute;y, bạn v&agrave;o&nbsp;đường dẫn n&agrave;y&nbsp;v&agrave; chọn hệ điều h&agrave;nh tương ứng.&nbsp;</span></span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/6254417772b03.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><span style="color:#000000"><em>C&agrave;i đặt Visual Studio Code</em></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Lấy v&iacute; dụ với hệ điều h&agrave;nh Windows, bạn chọn mục Windows. Sau đ&oacute; bạn chạy file VSCodeUserSetup-x64-1.52.1 v&agrave; c&agrave;i đặt như b&igrave;nh thường.&nbsp;</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">Sử dụng Visual Studio Code</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Mặc d&ugrave; VS Code c&oacute; rất nhiều t&iacute;nh năng, nhưng v&igrave; thời lượng b&agrave;i viết c&oacute; hạn, ch&uacute;ng m&igrave;nh sẽ chỉ tập trung hướng dẫn c&aacute;ch sử dụng t&iacute;nh năng quan trọng của VS Code l&agrave; Source Control, cũng như c&aacute;ch sử dụng Extensions.</span></span></p>
+
+<h4><span style="font-size:22px"><span style="color:#000000">Source Control</span></span></h4>
+
+<p><span style="font-size:22px"><span style="color:#000000">Visual Studio Code mới chỉ hỗ trợ 1 chương tr&igrave;nh Source Code l&agrave; GIT. Nếu bạn muốn d&ugrave;ng cả SVN th&igrave; phải c&agrave;i đặt Extensions.&nbsp;</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để khởi tạo một kho chứa m&atilde; nguồn mới trong Git, bạn nhấp v&agrave;o biểu tượng GIT tr&ecirc;n thanh c&ocirc;ng cụ của VS Code.&nbsp;</span></span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/625441a3d2429.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><span style="color:#000000"><em>T&iacute;nh năng Source Control</em></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Biểu tượng chữ U m&agrave;u xanh cạnh c&aacute;c tệp cho biết tệp đ&atilde; được cập nhật kể từ lần commit cuối c&ugrave;ng.&nbsp;</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để tạo commit mới, bạn viết commit message v&agrave;o hộp tr&ecirc;n, rồi nhấn tổ hợp ph&iacute;m&nbsp;<em>cmd &ndash; enter</em>, hoặc chọn biểu tượng chữ V. Bạn c&oacute; thể chọn chế độ Automatic State sau khi commit.&nbsp;</span></span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/625441c4f003e.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><span style="color:#000000"><em>Tạo commit mới trong VS Code</em></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><em><span style="color:#000000">T&igrave;m hiểu th&ecirc;m:&nbsp;<strong>C&aacute;ch sử dụng ph&iacute;m tắt sắp xếp code trong Visual Studio Code</strong></span></em></span></li>
+</ul>
+
+<h4><span style="font-size:22px"><span style="color:#000000">Extensions</span></span></h4>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để mở rộng c&aacute;c t&iacute;nh năng của VS Code cho nhiều loại ng&ocirc;n ngữ v&agrave; ph&ugrave; hợp với nhiều dự &aacute;n, bạn sẽ cần đến Extensions. Tuy nhi&ecirc;n việc chạy c&aacute;c Extensions sẽ &iacute;t nhiều ảnh hưởng đến hiệu năng của tr&igrave;nh soạn thảo n&agrave;y. V&igrave; thế, bạn chỉ n&ecirc;n c&agrave;i đặt những Extensions thật sự cần thiết để tr&aacute;nh l&agrave;m cho tốc độ phần mềm bị giảm.&nbsp;</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Bạn cũng c&oacute; thể v&ocirc; hiệu h&oacute;a Extensions đ&atilde; c&agrave;i đặt v&agrave; tắt v&ocirc; hiệu h&oacute;a khi muốn d&ugrave;ng lại. Đối với những ai đang thực hiện nhiều dự &aacute;n c&ugrave;ng một l&uacute;c với những loại ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c nhau, bạn cũng c&oacute; thể v&ocirc; hiệu h&oacute;a c&aacute;c Extensions cho từng m&ocirc;i trường l&agrave;m việc (workspace). Để t&igrave;m kiếm Extensions theo &yacute; muốn, bạn nhập t&ecirc;n v&agrave;o hộp t&igrave;m kiếm.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><em>T&iacute;nh năng Extensions</em></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Với những t&iacute;nh năng vượt trội của m&igrave;nh, Visual Studio Code c&oacute; thể đ&aacute;p ứng được hầu hết những nhu cầu cơ bản trong thiết kế ứng dụng web v&agrave; cloud của c&aacute;c lập tr&igrave;nh vi&ecirc;n. Nếu bạn quan t&acirc;m đến&nbsp;c&aacute;ch sử dụng Visual Studio Code&nbsp;căn bản v&agrave; muốn trải nghiệm tr&igrave;nh soạn thảo n&agrave;y th&igrave; h&atilde;y thực hiện theo hướng dẫn trong b&agrave;i viết tr&ecirc;n nh&eacute;.&nbsp;</span></span></p>

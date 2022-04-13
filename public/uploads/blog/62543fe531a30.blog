@@ -1,0 +1,183 @@
+<h1><span style="color:#3498db"><span style="font-size:36px">1. Kh&oacute;a học tổng quan về CS Foundation miễn ph&iacute;</span></span></h1>
+
+<p><span style="font-size:22px">Để học v&agrave; &ocirc;n lại kiến thức tổng quan về CS Foundation, một trong những kho&aacute; học bạn n&ecirc;n tham khảo l&agrave; kho&aacute; học&nbsp;<a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x" rel="noreferrer noopener" target="_blank">CS50&rsquo;s Introduction to Computer Science</a>. Kh&oacute;a học n&agrave;y được thiết kế v&agrave; giảng dạy bởi c&aacute;c gi&aacute;o sư thuộc Đại học Harvard.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Kh&oacute;a học CS50 bắt đầu bằng những b&agrave;i giảng mang lại hiểu biết kh&aacute;i qu&aacute;t về khoa học m&aacute;y t&iacute;nh. Sau đ&oacute;, bạn sẽ tiếp cận với một loạt c&aacute;c b&agrave;i giảng về cấu tr&uacute;c dữ liệu (<em>data structures</em>), thuật to&aacute;n (<em>algorithm</em>s), quản l&yacute; t&agrave;i nguy&ecirc;n (<em>resource management</em>), lập tr&igrave;nh web&nbsp;<em>(web development</em>) hay bảo mật th&ocirc;ng tin (<em>information security system</em>).</span></p>
+
+<p><span style="font-size:22px">Điểm đặc biệt của CS50 l&agrave; bạn sẽ được dạy c&aacute;ch tư duy sử dụng thuật to&aacute;n v&agrave; c&aacute;ch &aacute;p dụng thuật to&aacute;n để giải quyết c&aacute;c vấn đề khi lập tr&igrave;nh một c&aacute;ch hiệu quả.&nbsp;</span></p>
+
+<p><span style="font-size:22px"><em>Kh&oacute;a học CS50 của đại học Harvard thu h&uacute;t hơn 2,8 triệu người học</em></span></p>
+
+<p><span style="font-size:22px">Ngo&agrave;i ra, cuối kh&oacute;a CS50, bạn được giao thực hiện một final project (dự &aacute;n cuối kho&aacute;). Final project l&agrave; nơi bạn c&oacute; thể vận dụng những kiến thức đ&atilde; học để tự m&igrave;nh ph&aacute;t triển một phần mềm hữu &iacute;ch. Tech stack của kho&aacute; học n&agrave;y cũng rất đa dạng, trải d&agrave;i từ C, Python, SQL, Javascript, HTML đến CSS. Do vậy, bạn c&oacute; thể y&ecirc;n t&acirc;m học ng&ocirc;n ngữ ph&ugrave; hợp với mục ti&ecirc;u tương lai của m&igrave;nh.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Harvard CS50 l&agrave; kho&aacute; học được đ&aacute;nh gi&aacute; rất cao trong giới chuy&ecirc;n m&ocirc;n, với gần 3,000,000 bạn đ&atilde; tham gia học. B&ecirc;n cạnh đ&oacute;, đ&acirc;y cũng l&agrave; một kho&aacute; học v&ocirc; c&ugrave;ng hữu &iacute;ch nếu bạn đang ph&acirc;n v&acirc;n về con đường tương lai của m&igrave;nh.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Th&ocirc;ng qua c&aacute;c b&agrave;i học v&agrave; dự &aacute;n thực chiến, CS50 sẽ gi&uacute;p bạn trả lời c&acirc;u hỏi: Liệu lập tr&igrave;nh vi&ecirc;n c&oacute; phải con đường sự nghiệp thực sự d&agrave;nh cho bạn kh&ocirc;ng? Bởi nếu kh&ocirc;ng thực sự hứng th&uacute; v&agrave; đam m&ecirc; với nội dung, b&agrave;i tập của CS50, bạn c&oacute; thể c&acirc;n nhắc chuyển sang c&aacute;c ng&agrave;nh nghề d&ugrave;ng đến kiến thức tech kh&aacute;c ph&ugrave; hợp với bạn hơn như Quality Assurance, thay v&igrave; l&agrave;m Software Engineer.</span></p>
+
+<h2><span style="font-size:36px"><span style="color:#3498db">2. T&agrave;i liệu tham khảo về từng yếu tố trong CS Foundation</span></span></h2>
+
+<p><span style="font-size:22px"><em>Đọc c&aacute;c s&aacute;ch chuy&ecirc;n ng&agrave;nh cũng l&agrave; một trong những c&aacute;ch gi&uacute;p bạn n&acirc;ng cao CS Foundation</em></span></p>
+
+<p><span style="font-size:22px">Nếu bạn đ&atilde; nắm chắc c&aacute;c kiến thức chung về CS Foundation v&agrave; chỉ quan t&acirc;m một số yếu tố nhất định, bạn c&oacute; thể tham khảo th&ecirc;m c&aacute;c cuốn s&aacute;ch v&agrave; c&aacute;c trang web tham khảo hữu &iacute;ch được Got It tổng hợp dưới đ&acirc;y.</span></p>
+
+<p><span style="font-size:22px">Cả 6 yếu tố trong CS Foundation đều c&oacute; những nguồn t&agrave;i liệu tham khảo hay, gi&uacute;p bạn đ&agrave;o s&acirc;u v&agrave; n&acirc;ng cao hiểu biết của m&igrave;nh đ&oacute;!&nbsp;</span></p>
+
+<h3><span style="font-size:26px"><span style="color:#3498db">2.1. Ng&ocirc;n ngữ lập tr&igrave;nh</span></span></h3>
+
+<p><span style="font-size:22px">Như đ&atilde; đề cập ở b&agrave;i&nbsp;<a href="https://vn.got-it.ai/blog/cs-foundation-101-6-yeu-to-quan-trong-trong-cs-foundation-la-gi" rel="noreferrer noopener" target="_blank">CS Foundation 101 (Phần 1)</a>, hiện c&oacute; rất nhiều ng&ocirc;n ngữ lập tr&igrave;nh như Python, Java, C, C++,&hellip; Mỗi ng&ocirc;n ngữ đều c&oacute; những điểm mạnh, yếu ri&ecirc;ng. Bạn sẽ l&agrave; người lựa chọn học ng&ocirc;n ngữ lập tr&igrave;nh n&agrave;o ph&ugrave; hợp với định hướng ng&agrave;nh nghề của m&igrave;nh.</span></p>
+
+<p><span style="font-size:22px">Ở Got It, ch&uacute;ng m&igrave;nh sử dụng hai ng&ocirc;n ngữ ch&iacute;nh l&agrave; Python v&agrave; JavaScript. V&igrave; vậy, những t&agrave;i liệu, trang web tham khảo được chia sẻ dưới đ&acirc;y sẽ xoay quanh hai ng&ocirc;n ngữ n&agrave;y.</span></p>
+
+<h4><span style="color:#3498db"><span style="font-size:26px"><strong>2.1.1 Python</strong></span></span></h4>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.udemy.com/course/complete-python-bootcamp/?ranMID=39197&amp;ranEAID=jU79Zysihs4&amp;ranSiteID=jU79Zysihs4-0SUvx6CtShbS3HnaNXGVtg&amp;LSNPUBID=jU79Zysihs4&amp;utm_source=aff-campaign&amp;utm_medium=udemyads" rel="noreferrer noopener" target="_blank">Kho&aacute; học &ldquo;Complete Python Bootcamp From Zero to Hero in Python&rdquo;</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="https://www.udemy.com/course/complete-python-bootcamp/?ranMID=39197&amp;ranEAID=jU79Zysihs4&amp;ranSiteID=jU79Zysihs4-0SUvx6CtShbS3HnaNXGVtg&amp;LSNPUBID=jU79Zysihs4&amp;utm_source=aff-campaign&amp;utm_medium=udemyads" rel="noreferrer noopener" target="_blank">Complete Python Bootcamp From Zero to Hero in Python</a>&nbsp;l&agrave; một trong những kho&aacute; học online phổ biến v&agrave; được đ&aacute;nh gi&aacute; cao về ng&ocirc;n ngữ Python d&agrave;nh cho người mới bắt đầu (beginners).</span></p>
+
+<p><span style="font-size:22px">Kho&aacute; học được giảng dạy tr&ecirc;n nền tảng Udemy bởi Jose Portilla, một chuy&ecirc;n gia về Data Science. Hiện, Complete Python Bootcamp đ&atilde; nhận được điểm 4.6/5 cho hơn 360,000 lượt đ&aacute;nh gi&aacute; v&agrave; c&oacute; hơn 1 triệu người lựa chọn theo học.</span></p>
+
+<p><span style="font-size:22px"><em>Kh&oacute;a học của Jose Portilla tr&ecirc;n Udemy được thu h&uacute;t được hơn 1 triệu học sinh&nbsp;</em></span></p>
+
+<p><span style="font-size:22px">Điểm mạnh của kh&oacute;a học n&agrave;y nằm ở chương tr&igrave;nh giảng dạy thực tế v&agrave; dễ hiểu. Nội dung b&agrave;i giảng đi từ c&aacute;c kiến thức cơ bản (<em>v&iacute; dụ: c&aacute;c c&uacute; ph&aacute;p v&agrave; c&aacute;c kh&aacute;i niệm</em>) cho đến c&aacute;c kiến thức n&acirc;ng cao hơn (<em>v&iacute; dụ: lập tr&igrave;nh hướng đối tượng trong Python</em>). Đồng thời, song song với l&yacute; thuyết sẽ c&oacute; nhiều b&agrave;i tập coding cho bạn thực luyện.</span></p>
+
+<p><span style="font-size:22px">Tất cả gi&uacute;p người học dễ &ldquo;thấm&rdquo; v&agrave; nắm chắc c&aacute;c kiến thức Python.&nbsp;Bạn sẽ kh&ocirc;ng cảm thấy c&aacute;c kiến thức m&igrave;nh học chỉ l&agrave; tr&ecirc;n s&aacute;ch vở. Ngo&agrave;i ra, giống như CS50, ở cuối kh&oacute;a học n&agrave;y của Udemy, bạn sẽ được l&agrave;m một capstone project. Project n&agrave;y gi&uacute;p bạn vận dụng kiến thức đ&atilde; học, d&ugrave;ng ng&ocirc;n ngữ lập tr&igrave;nh Python tạo n&ecirc;n một phần mềm của ri&ecirc;ng m&igrave;nh.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong>&nbsp;<a href="https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1492056359/ref=sr_1_1?dchild=1&amp;keywords=fluent+python+3rd+edition&amp;qid=1620194985&amp;s=books&amp;sr=1-1" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Fluent Python (2nd edition)</a></strong><a href="https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1492056359/ref=sr_1_1?dchild=1&amp;keywords=fluent+python+3rd+edition&amp;qid=1620194985&amp;s=books&amp;sr=1-1" rel="noreferrer noopener" target="_blank"><strong>&ldquo;</strong></a></span></li>
+</ul>
+
+<p><span style="font-size:22px">B&ecirc;n cạnh kh&oacute;a học của Udemy, nếu bạn đ&atilde; c&oacute; kiến thức cơ bản về Python,&nbsp;<a href="https://www.amazon.com/Fluent-Python-Concise-Effective-Programming/dp/1492056359/ref=sr_1_1?dchild=1&amp;keywords=fluent+python+3rd+edition&amp;qid=1620194985&amp;s=books&amp;sr=1-1" rel="noreferrer noopener" target="_blank">Fluent Python (2nd edition</a>) sẽ l&agrave; c&ocirc;ng cụ rất hữu &iacute;ch hỗ trợ bạn th&agrave;nh thạo lập tr&igrave;nh bằng ng&ocirc;n ngữ si&ecirc;u phổ biến n&agrave;y.</span></p>
+
+<p><span style="font-size:22px">Cuốn s&aacute;ch 800 trang của&nbsp;<a href="https://www.amazon.com/Luciano-Ramalho/e/B00O6IY1S4/ref=dp_byline_cont_book_1" rel="noreferrer noopener" target="_blank">Luciano Ramalho</a>&nbsp;mang đến cho bạn những kiến thức n&acirc;ng cao về python c&ugrave;ng những coding example cụ thể. Quan trọng hơn cả, s&aacute;ch cung cấp cho bạn những c&ocirc;ng cụ, libraries hữu &iacute;ch, gi&uacute;p bạn học c&aacute;ch viết code dễ hiểu dễ đọc v&agrave; tối ưu hơn.</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543eda02c53.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Cuốn s&aacute;ch d&agrave;y 800 trang gi&uacute;p bạn n&acirc;ng cao khả năng code bằng ng&ocirc;n ngữ Python</em></span></p>
+
+<h4><span style="color:#3498db"><span style="font-size:26px"><strong>2.1.2. JavaScript</strong></span></span></h4>
+
+<p><span style="font-size:22px">JavaScript, được ứng dụng trong cả lập tr&igrave;nh frontend, backend, mobile hay cả desktop app, l&agrave; ng&ocirc;n ngữ phổ biến nhất thế giới trong v&agrave;i năm trở lại đ&acirc;y.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.udemy.com/course/the-complete-javascript-course/" rel="noreferrer noopener" target="_blank">Kho&aacute; học &ldquo;The Complete JavaScript Course 2021: From Zero to Expert</a></strong><a href="https://www.udemy.com/course/the-complete-javascript-course/"><strong>&ldquo;</strong></a></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="https://www.udemy.com/course/the-complete-javascript-course/" rel="noreferrer noopener" target="_blank">The Complete JavaScript Course 2021: From Zero to Expert</a>&nbsp;l&agrave; một kho&aacute; học về JavaScript được đ&aacute;nh gi&aacute; cao tr&ecirc;n Udemy. Tuy chưa c&oacute; độ phổ biến như kh&oacute;a học Python của Jose Portilla, nhưng kh&oacute;a học n&agrave;y đ&atilde; thu h&uacute;t hơn 400,000 học sinh v&agrave; nhận được đ&aacute;nh gi&aacute; 4.7 tr&ecirc;n 5 sao.&nbsp;</span></p>
+
+<p><span style="font-size:22px"><em>Một kh&oacute;a học kh&aacute;c tr&ecirc;n Udemy về Ng&ocirc;n ngữ lập tr&igrave;nh m&agrave; bạn kh&ocirc;ng n&ecirc;n bỏ lỡ</em></span></p>
+
+<p><span style="font-size:22px">Một điểm cộng lớn cho kh&oacute;a học của Jonas Schmedtmann l&agrave; chương tr&igrave;nh học bắt đầu từ những concept cơ bản, rất th&iacute;ch hợp cho c&aacute;c bạn c&oacute; một ch&uacute;t kiến thức về lập tr&igrave;nh v&agrave; mới &ldquo;chập chững&rdquo; t&igrave;m hiểu về JS. Đan xen giữa c&aacute;c b&agrave;i giảng l&agrave; c&aacute;c dự &aacute;n, gi&uacute;p bạn &aacute;p dụng ngay những nội dung đ&atilde; được học v&agrave;o lập tr&igrave;nh project thực tế.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.amazon.com/Eloquent-JavaScript-3rd-Introduction-Programming/dp/1593279507" rel="noreferrer noopener" target="_blank">Eloquent JavaScript</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; một cuốn s&aacute;ch cực hay đặc biệt d&agrave;nh cho c&aacute;c bạn beginner kh&ocirc;ng th&iacute;ch học &ldquo;online&rdquo;. Bởi, bạn c&oacute; thể &ldquo;c&agrave;y&rdquo; cuốn s&aacute;ch n&agrave;y để nạp c&aacute;c kiến thức cơ bản về JavaScript thay cho việc học trực tuyến.</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543f4be695f.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Một cuốn s&aacute;ch cực hay đặc biệt d&agrave;nh cho c&aacute;c bạn beginner kh&ocirc;ng th&iacute;ch học &ldquo;online&rdquo;</em></span></p>
+
+<p><span style="font-size:22px">Cũng như kho&aacute; học của Udemy, cuốn s&aacute;ch chia sẻ c&aacute;c kiến thức lập tr&igrave;nh JavaScript từ dễ đến kh&oacute;. Một số nội dung nổi bật m&agrave; cuốn s&aacute;ch bao qu&aacute;t l&agrave;:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Syntax</span></li>
+	<li><span style="font-size:22px">Control</span></li>
+	<li><span style="font-size:22px">Data</span></li>
+	<li><span style="font-size:22px">C&aacute;ch d&ugrave;ng DOM để tương t&aacute;c với browsers một c&aacute;ch hiệu quả</span></li>
+	<li><span style="font-size:22px">C&aacute;ch d&ugrave;ng OOP v&agrave; functional programming để tổ chức code</span></li>
+</ul>
+
+<p><span style="font-size:22px">Ngo&agrave;i ra, tuy kh&ocirc;ng thể thực h&agrave;nh trực quan như c&aacute;c kho&aacute; học online, cuốn s&aacute;ch vẫn gi&uacute;p người đọc luyện tập cơ bản. Bạn sẽ được hướng dẫn tạo ra một Web application hoặc d&ugrave;ng Node.js để lập tr&igrave;nh backend.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px">2.2. Lập tr&igrave;nh hướng đối tượng (OOP)</span></span></h3>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Design Patterns: Elements of Reusable Object-Oriented Software</a></strong><a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612"><strong>&ldquo;</strong></a></span></li>
+</ul>
+
+<p><span style="font-size:22px">Một trong c&aacute;c cuốn s&aacute;ch bạn n&ecirc;n tham khảo để học th&ecirc;m về OOP l&agrave;&nbsp;<a href="https://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612" rel="noreferrer noopener" target="_blank">Design Patterns: Elements of Reusable Object-Oriented Software</a>. Cuốn s&aacute;ch được chắp b&uacute;t bởi 4 t&aacute;c giả Erich Gamma, Richard Helm, Ralph Johnson, v&agrave; John Vlissides. Họ đều l&agrave; những người c&oacute; kinh nghiệm l&acirc;u năm nghi&ecirc;n cứu về Computer Science.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; một cuốn s&aacute;ch rất đầy đủ v&agrave; đặc biệt dễ hiểu về kh&aacute;i niệm, &yacute; nghĩa của OOP cũng như c&aacute;ch vận dụng c&aacute;c design patterns (mẫu thiết kế) khi lập tr&igrave;nh hướng đối tượng.</span></p>
+
+<p style="text-align:center"><img alt="" src="/api/ShowImg/62543f80669ce.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>&ldquo;Design Patterns: Elements of Reusable Object-Oriented Software&rdquo; l&agrave; một cuốn s&aacute;ch đầy đủ v&agrave; đặc biệt dễ hiểu về design patterns</em></span></p>
+
+<p><span style="font-size:22px">Đặc biệt, ở chương hai, c&aacute;c t&aacute;c giả sử dụng case study l&agrave; một project thực tế l&agrave;m v&iacute; dụ minh hoạ cho bạn. Từ project đ&oacute;, cuốn s&aacute;ch chỉ ra chi tiết c&aacute;c c&aacute;ch giải quyết một số vấn đề trong lập tr&igrave;nh hướng đối tượng bằng c&aacute;ch sử dụng c&aacute;c design patterns.</span></p>
+
+<p><span style="font-size:22px">Design Patterns: Elements of Reusable Object-Oriented Software c&oacute; thể l&agrave;m cuốn s&aacute;ch gối đầu giường, gi&uacute;p bạn n&acirc;ng cấp kiến thức về OOP.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.javatpoint.com/" rel="noreferrer noopener" target="_blank">Website của JavaTpoint</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px">Ngo&agrave;i ra, nếu bạn muốn t&igrave;m một địa chỉ để &ocirc;n tập nhanh c&aacute;c kiến thức về OOP, bạn c&oacute; thể gh&eacute; phần OOP trong trang&nbsp;<a href="https://www.javatpoint.com/" rel="noreferrer noopener" target="_blank">JavaTPoint</a>. JavaTPoint l&agrave; một website cung cấp kiến thức về lập tr&igrave;nh, c&aacute;c ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c nhau v&agrave; tổng hợp một số c&acirc;u hỏi cho c&aacute;c vị tr&iacute; kh&aacute;c nhau của c&aacute;c c&ocirc;ng ty lớn như IBM, MS, Adobe,&hellip;&nbsp;</span></p>
+
+<p><em>JavaTPoint l&agrave; một website cung cấp kiến thức về lập tr&igrave;nh, c&aacute;c ng&ocirc;n ngữ lập tr&igrave;nh kh&aacute;c nhau</em></p>
+
+<p>Việc t&igrave;m kiếm th&ocirc;ng tin tr&ecirc;n JavaTPoint rất dễ d&agrave;ng do c&aacute;c kiến thức được ph&acirc;n loại th&agrave;nh c&aacute;c đề mục nhỏ, n&ecirc;n bạn c&oacute; thể tra cứu v&agrave; &ocirc;n tập c&aacute;c trường kiến thức m&igrave;nh c&ograve;n thiếu rất nhanh ch&oacute;ng.&nbsp;</p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px">2.3. Hệ điều h&agrave;nh</span></span></h3>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.amazon.com/Operating-Systems-Three-Easy-Pieces-ebook/dp/B00TPZ17O4#:~:text=The%20%22Three%20Easy%20Pieces%22%20are,concurrency%20and%203)%20data%20persistency." rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Operating Systems: Three Easy Pieces</a></strong><a href="https://www.amazon.com/Operating-Systems-Three-Easy-Pieces-ebook/dp/B00TPZ17O4#:~:text=The%20%22Three%20Easy%20Pieces%22%20are,concurrency%20and%203)%20data%20persistency.">&ldquo;</a></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="https://www.amazon.com/Operating-Systems-Three-Easy-Pieces-ebook/dp/B00TPZ17O4#:~:text=The%20%22Three%20Easy%20Pieces%22%20are,concurrency%20and%203)%20data%20persistency." rel="noreferrer noopener" target="_blank">Operating Systems: Three Easy Pieces</a>&nbsp;sẽ l&agrave; một lựa chọn ph&ugrave; hợp nếu mối quan t&acirc;m của bạn thi&ecirc;n nhiều hơn về Operating System. Cuốn s&aacute;ch xoay quanh ba kh&aacute;i niệm của hệ điều h&agrave;nh l&agrave; virtualization (<em>ảo ho&aacute;</em>), concurrency v&agrave; persistence với c&aacute;ch diễn đạt cực kỳ ngắn gọn v&agrave; dễ hiểu.</span></p>
+
+<p><span style="font-size:22px"><em>Với lối viết c&ocirc; đọng v&agrave; thực tế, &ldquo;Operating System: Three Easy Pieces&rdquo; l&agrave; cuốn s&aacute;ch gi&uacute;p bạn &ldquo;master&rdquo; kiến thức về hệ điều h&agrave;nh</em></span></p>
+
+<p><span style="font-size:22px">Sau khi chia sẻ c&aacute;c kh&aacute;i niệm, cuốn s&aacute;ch của 2 t&aacute;c giả Remzi Arpaci-Dusseau v&agrave; Andrea Arpaci-Dusseau sẽ tập trung giải th&iacute;ch c&aacute;ch một hệ điều h&agrave;nh hoạt động dựa tr&ecirc;n CPU scheduling, quản l&yacute; bộ nhớ (memory), v&agrave; file storage. Với lối viết c&ocirc; đọng v&agrave; thực tế, nội dung cuốn s&aacute;ch chắc chắn sẽ gi&uacute;p bạn &ldquo;master&rdquo; c&aacute;c kiến thức quan trọng về Operating System.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px">2.4. Mạng m&aacute;y t&iacute;nh</span></span></h3>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Computer Network</a><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">ing</a><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">: A Top Down Approach&rdquo;</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">Computer Network</a><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">ing</a><a href="https://eclass.teicrete.gr/modules/document/file.php/TP326/%CE%98%CE%B5%CF%89%CF%81%CE%AF%CE%B1%20(Lectures)/Computer_Networking_A_Top-Down_Approach.pdf" rel="noreferrer noopener" target="_blank">: A Top Down Approach</a>&nbsp;của Kurose v&agrave; Ross l&agrave; cuốn s&aacute;ch bao h&agrave;m c&aacute;c kiến thức xoay quanh c&aacute;c lớp của mạng m&aacute;y t&iacute;nh, c&ugrave;ng c&aacute;c kh&aacute;i niệm li&ecirc;n quan đến network như: security, protocols,&hellip;</span></p>
+
+<p><span style="font-size:22px">Được sử dụng l&agrave;m textbook ch&iacute;nh thức của kh&oacute;a học Computer Networking tại Đại học Stanford, Computer Networking: A Top Down Approach l&agrave; cuốn s&aacute;ch gối đầu của nhiều sinh vi&ecirc;n Computer Science. Do vậy, nếu bạn kh&ocirc;ng lựa chọn học Mạng m&aacute;y t&iacute;nh tr&ecirc;n giảng đường, h&atilde;y tham khảo cuốn s&aacute;ch n&agrave;y để chuẩn bị phỏng vấn thật tốt nh&eacute;!</span></p>
+
+<p><span style="font-size:22px"><em>Cuốn s&aacute;ch l&agrave; textbook ch&iacute;nh thức của kh&oacute;a Computer Networking của Đại học Stanford</em></span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px">2.5. Cấu tr&uacute;c dữ liệu v&agrave; Giải thuật</span></span></h3>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Cracking the Coding Interview</a></strong><a href="https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf"><strong>&ldquo;</strong></a></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="https://cin.ufpe.br/~fbma/Crack/Cracking%20the%20Coding%20Interview%20189%20Programming%20Questions%20and%20Solutions.pdf" rel="noreferrer noopener" target="_blank">Cracking the Coding Interview</a>&nbsp;l&agrave; một trong những cuốn s&aacute;ch được &ldquo;c&agrave;y&rdquo; nhiều nhất bởi c&aacute;c sinh vi&ecirc;n năm cuối hoặc sinh vi&ecirc;n mới ra trường để ứng tuyển v&agrave;o c&aacute;c tập đo&agrave;n c&ocirc;ng nghệ h&agrave;ng đầu thế giới. Cuốn s&aacute;ch chia ra c&aacute;c dạng b&agrave;i v&agrave; lời giải cho c&aacute;c c&acirc;u hỏi li&ecirc;n quan đến Cấu tr&uacute;c dữ liệu v&agrave; Giải thuật.</span></p>
+
+<p><span style="font-size:22px">C&aacute;c c&acirc;u hỏi trong cuốn s&aacute;ch thường gặp trong c&aacute;c buổi phỏng vấn với Google, Amazon, Facebook hay Microsoft. Do đ&oacute;, bạn h&atilde;y lưu &yacute; t&igrave;m đọc v&agrave; luyện tập theo cuốn s&aacute;ch n&agrave;y nếu muốn n&acirc;ng cao khả năng th&agrave;nh c&ocirc;ng trong v&ograve;ng phỏng vấn với c&aacute;c c&ocirc;ng ty &ldquo;mơ ước&rdquo;.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Data Structure</a><a href="https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275" rel="noreferrer noopener" target="_blank">s</a><a href="https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275" rel="noreferrer noopener" target="_blank">&nbsp;and Algorithms in Python&rdquo;</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px"><a href="http://amazon.com/Structures-Algorithms-Python-Michael-Goodrich/dp/1118290275(opens%20in%20a%20new%20tab)">Data Structures and Algorithms in Python</a>&nbsp;l&agrave; một cuốn s&aacute;ch được bi&ecirc;n soạn cẩn thận với lối viết rất dễ hiểu. Python đang trở th&agrave;nh ng&ocirc;n ngữ lập tr&igrave;nh được ưa chuộng số một thế giới, g&acirc;y tiếng vang bởi sự đơn giản trong syntax (c&uacute; ph&aacute;p) v&agrave; c&oacute; một cộng đồng developer rất mạnh mẽ. Data Structures and Algorithms in Python sẽ gi&uacute;p bạn tự học v&agrave; luyện tập c&aacute;ch giải quyết c&aacute;c b&agrave;i to&aacute;n về dữ liệu v&agrave; giải thuật bằng ng&ocirc;n ngữ nổi bật n&agrave;y.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Điểm mạnh m&agrave; bạn kh&ocirc;ng thể bỏ qua của cuốn s&aacute;ch ch&iacute;nh l&agrave; c&aacute;ch định nghĩa v&agrave; giải th&iacute;ch c&aacute;c b&agrave;i tập v&iacute; dụ chi tiết dễ hiểu. &ldquo;C&agrave;y&rdquo; xong cuốn s&aacute;ch, kiến thức v&agrave; kỹ năng vận dụng của bạn sẽ được n&acirc;ng cao đ&aacute;ng kể.</span></p>
+
+<h3><span style="color:#3498db"><span style="font-size:26px">2.6. Cơ sở dữ liệu</span></span></h3>
+
+<ul>
+	<li><span style="font-size:22px"><strong><a href="https://www.db-book.com/db7" rel="noreferrer noopener" target="_blank">S&aacute;ch &ldquo;Database System Concepts&rdquo; (7th edition)</a></strong></span></li>
+</ul>
+
+<p><span style="font-size:22px"><em>Cuốn s&aacute;ch được d&ugrave;ng l&agrave;m textbook của California Institute of Technology</em></span></p>
+
+<p><span style="font-size:22px">Một cuốn s&aacute;ch về Database được đ&aacute;nh gi&aacute; cao l&agrave;&nbsp;<a href="https://www.db-book.com/db7" rel="noreferrer noopener" target="_blank">Database System Concepts (7th edition)</a>&nbsp;viết bởi Silberschatz, Korth v&agrave; Sudarshan. Đ&acirc;y l&agrave; cuốn s&aacute;ch ph&ugrave; hợp cả với những bạn mới bắt đầu t&igrave;m hiểu về cơ sở dữ liệu hay c&aacute;c bạn đ&atilde; học qua, cần tra cứu, đọc th&ecirc;m về một v&agrave;i điểm quan trọng để &ocirc;n tập phỏng vấn.&nbsp;</span></p>
+
+<p><span style="font-size:22px">Database System Concepts l&agrave; cuốn s&aacute;ch được nhiều giảng vi&ecirc;n, gi&aacute;o sư đại học giới thiệu t&igrave;m đọc. Ngo&agrave;i ra, đ&acirc;y cũng l&agrave; s&aacute;ch gi&aacute;o khoa của m&ocirc;n &ldquo;CS101b &ndash; Introduction to Relational Databases&rdquo; tại California Institute of Technology. Bởi vậy, nếu bạn đang muốn củng cố kiến thức về Database, đ&acirc;y sẽ l&agrave; người &ldquo;trợ l&yacute;&rdquo; rất được việc của bạn.</span></p>
+
+<ul>
+	<li><span style="font-size:22px"><strong>Website&nbsp;</strong><a href="https://sqlzoo.net/" rel="noreferrer noopener" target="_blank"><strong>SQLZoo</strong></a><strong>&nbsp;v&agrave;&nbsp;</strong><a href="https://www.hackerrank.com/" rel="noreferrer noopener" target="_blank"><strong>HackerRank</strong></a></span></li>
+</ul>
+
+<p><span style="font-size:22px">Ngo&agrave;i ra, một gợi &yacute; gi&uacute;p c&aacute;c bạn sinh vi&ecirc;n c&ocirc;ng nghệ n&acirc;ng cao kiến thức về Database của ch&uacute;ng m&igrave;nh l&agrave;:&nbsp;<em>H&atilde;y d&agrave;nh thời gian luyện tập về SQL qua c&aacute;c quizzes trực tuyến</em>.</span></p>
+
+<p><span style="font-size:22px">Luyện tập với c&aacute;c quizzes l&agrave; một trong những c&aacute;ch hiệu quả nhất để bạn th&agrave;nh thạo khả năng viết c&aacute;c c&acirc;u lệnh query khi trả lời phỏng vấn. Bạn n&ecirc;n tham khảo c&aacute;c b&agrave;i quizzes tr&ecirc;n&nbsp;<a href="https://sqlzoo.net/" rel="noreferrer noopener" target="_blank">SQLZoo</a>&nbsp;v&agrave;&nbsp;<a href="https://www.hackerrank.com/" rel="noreferrer noopener" target="_blank">HackerRank</a>.</span></p>

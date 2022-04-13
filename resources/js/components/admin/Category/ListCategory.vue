@@ -80,7 +80,7 @@ export default {
 
       async Delete($id,$name)
       {
-        let text = "Bạn có chắc chắn muốn xóa danh mục : "+$name;
+        let text = "Bạn có chắc chắn muốn xóa danh mục "+$name+" và các bài viết liên quan chứ ?";
         if (confirm(text) == true) {
             let fromData = new FormData();
             fromData.append('id',$id);

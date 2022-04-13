@@ -1,0 +1,76 @@
+<h3><strong><span style="font-size:22px">Khởi động XAMPP</span></strong></h3>
+
+<ul>
+	<li><span style="font-size:22px">Khởi động XAMPP, click v&ocirc;&nbsp;Start&nbsp;k&iacute;ch hoạt&nbsp;Apache&nbsp;v&agrave;&nbsp;MySQL.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563cb75f01c.png" style="width:80%" /></span></p>
+
+<h4><strong><span style="font-size:22px">Mở trang phpMyAdmin</span></strong></h4>
+
+<ul>
+	<li><span style="font-size:22px">Trong XAMPP đ&atilde; c&oacute; sẵn phpMyAdmin, ch&uacute;ng ta chỉ cần mở trang bằng c&aacute;ch click v&agrave;o button&nbsp;Admin&nbsp;tương ứng với&nbsp;MySQL, giao diện phpMyAdmin c&oacute; dạng.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563cd8adcc0.png" style="width:80%" /></span></p>
+
+<p><span style="font-size:22px">Ta thấy l&uacute;c n&agrave;y phpMyAdmin c&oacute; dạng ban đầu với một số database c&oacute; sẵn.</span></p>
+
+<h3><span style="font-size:22px">Tạo database</span></h3>
+
+<ul>
+	<li>
+	<p><span style="font-size:22px">Click v&agrave;o tab&nbsp;Databases, m&agrave;n h&igrave;nh tạo database sẽ hiện ra, ở m&agrave;n h&igrave;nh n&agrave;y ta chỉ ch&uacute; &yacute; phần&nbsp;Create database:</span></p>
+
+	<ul>
+		<li><span style="font-size:22px"><strong>Database name</strong>: điền t&ecirc;n database cần tạo, v&iacute; dụ: tintuc.</span></li>
+		<li><span style="font-size:22px"><strong>Collation</strong>: chọn dạng ng&ocirc;n ngữ hiển thị, bạn c&oacute; thể chọn utf8_general_ci.</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:22px">Click button&nbsp;Create&nbsp;để tạo database.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d0666f04.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Sau khi tạo xong, nh&igrave;n b&ecirc;n tr&aacute;i ta thấy xuất hiện database c&oacute; t&ecirc;n&nbsp;tintuc.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d29c4e12.png" style="width:80%" /></span></p>
+
+<h3><span style="font-size:22px">Tạo user kết nối database</span></h3>
+
+<ul>
+	<li><span style="font-size:22px">Th&ocirc;ng thường ta c&oacute; thể sử dụng lu&ocirc;n username&nbsp;root&nbsp;của MySQL để kết nối database, tuy nhi&ecirc;n về l&yacute; do security, ch&uacute;ng ta n&ecirc;n tạo ri&ecirc;ng cho mỗi database một username ri&ecirc;ng.</span></li>
+	<li><span style="font-size:22px">Click v&agrave;o database c&oacute; t&ecirc;n&nbsp;tintuc&nbsp;từ danh s&aacute;ch database b&ecirc;n tr&aacute;i, để thao t&aacute;c những g&igrave; li&ecirc;n quan chỉ mỗi database&nbsp;tintuc.</span></li>
+	<li><span style="font-size:22px">Chọn tab&nbsp;Privileges&nbsp;để tạo user.</span></li>
+	<li><span style="font-size:22px">Click chọn&nbsp;Add user account&nbsp;để bắt đầu tạo:</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d51172a3.png" style="width:80%" /></span></p>
+
+<ul>
+	<li>
+	<p><span style="font-size:22px">Tại m&agrave;n h&igrave;nh tạo account, ch&uacute; &yacute; những vị tr&iacute; được đ&aacute;nh dấu trong h&igrave;nh:</span></p>
+
+	<ul>
+		<li><span style="font-size:22px">①: Đặt t&ecirc;n&nbsp;username, v&iacute; dụ user_tintuc.</span></li>
+		<li><span style="font-size:22px">②: Chọn host name, th&ocirc;ng thường chọn&nbsp;local, b&ecirc;n c&ograve;n lại sẽ tự động hiển thị&nbsp;localhost, c&aacute;ch chọn n&agrave;y cũng ph&ugrave; hợp khi cấu h&igrave;nh server thực tế.</span></li>
+		<li><span style="font-size:22px">③: Đặt password, v&iacute; dụ đặt 123456.</span></li>
+		<li><span style="font-size:22px">④: X&aacute;c nhận lại password, g&otilde; như tr&ecirc;n.</span></li>
+		<li><span style="font-size:22px">⑤: Click chọn để tạo user cho database&nbsp;tintuc.</span></li>
+	</ul>
+	</li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d720bf81.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Cũng ở m&agrave;n h&igrave;nh tạo account n&agrave;y, click chọn&nbsp;Check all&nbsp;để cấp quyền truy cập cho user vừa tạo, tất nhi&ecirc;n bạn cũng c&oacute; thể c&oacute; lựa chọn ri&ecirc;ng để giới hạn quyền của user.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563d91874f8.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Click button&nbsp;Go&nbsp;b&ecirc;n dưới để kết th&uacute;c việc tạo username.</span></li>
+</ul>

@@ -1,0 +1,57 @@
+<p style="text-align:center"><img alt="" src="/api/ShowImg/625442af1b098.jpg" style="width:80%" /></p>
+
+<p style="text-align:center"><span style="font-size:18px"><em>Hệ thống c&aacute;c ph&iacute;m tắt trong VS Code tr&ecirc;n nền tảng Windows</em></span></p>
+
+<p><span style="font-size:22px">Một trong những t&iacute;nh năng nổi bật của VS Code ch&iacute;nh l&agrave; định dạng lại m&atilde; nguồn theo &yacute; tưởng của lập tr&igrave;nh vi&ecirc;n. C&oacute; 2 t&ugrave;y chọn cho bạn trong t&igrave;nh huống n&agrave;y:&nbsp;</span></p>
+
+<h3><span style="font-size:22px">Định dạng t&agrave;i liệu (Format Document)</span></h3>
+
+<p><span style="font-size:22px">T&ugrave;y chọn cho ph&eacute;p bạn định dạng lại to&agrave;n bộ tệp đang hoạt động. Để lựa chọn loại định dạng n&agrave;y, bạn nhấn tổ hợp ph&iacute;m Shift+Alt+F (nếu d&ugrave;ng Windows), ⇧+⌥+F (nếu d&ugrave;ng macOS) hoặc Ctrl+Shift+I (nếu d&ugrave;ng Linux).&nbsp;</span></p>
+
+<p><span style="font-size:22px"><em>Ph&iacute;m tắt sắp xếp code trong Visual Studio Code tr&ecirc;n nền tảng Windows</em></span></p>
+
+<h3><span style="font-size:22px">Định dạng c&oacute; chọn lựa (Format Selection)</span></h3>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; t&ugrave;y chọn chỉ định dạng lại văn bản đ&atilde; chọn. Để lựa chọn loại định dạng n&agrave;y, bạn nhấn tổ hợp ph&iacute;m Ctrl+K Ctrl+F (nếu d&ugrave;ng Windows hoặc Linux), ⌘K ⌘F (nếu d&ugrave;ng macOS).&nbsp;</span></p>
+
+<p><span style="font-size:22px">Bạn c&oacute; thể nhấn tổ hợp Ctrl+Shift+P (nếu d&ugrave;ng Windows hoặc Linux) hoặc ⇧⌘P để t&igrave;m kiếm t&iacute;nh năng định dạng trong Command Palette.&nbsp;</span></p>
+
+<p><span style="font-size:22px"><em>Mở Command Palette</em></span></p>
+
+<p><span style="font-size:22px">VS Code c&oacute; c&aacute;c formatter mặc định cho TypeScript, JavaScript, HTML v&agrave; JSON. Mỗi ng&ocirc;n ngữ sẽ c&oacute; những t&ugrave;y chọn định dạng ri&ecirc;ng (v&iacute; dụ với HTML l&agrave; html.format.indentInnerHtml). Bạn c&oacute; thể điều chỉnh t&ugrave;y chọn theo &yacute; m&igrave;nh trong c&agrave;i đặt người d&ugrave;ng hoặc kh&ocirc;ng gian l&agrave;m việc. Ngo&agrave;i ra, bạn cũng c&oacute; thể v&ocirc; hiệu h&oacute;a formatter của ng&ocirc;n ngữ mặc định nếu bạn c&oacute; tiện &iacute;ch mở rộng (extension) kh&aacute;c đ&atilde; được c&agrave;i đặt m&agrave; cung cấp định dạng cho c&ugrave;ng ng&ocirc;n ngữ. B&ecirc;n cạnh c&aacute;c định dạng mặc định, bạn c&oacute; thể t&igrave;m th&ecirc;m c&aacute;c extensions kh&aacute;c trong Marketplace để hỗ trợ c&aacute;c c&ocirc;ng cụ định dạng hoặc ng&ocirc;n ngữ kh&aacute;c. VS Code c&oacute; sẵn một danh mục c&aacute;c formatter để bạn c&oacute; thể t&igrave;m cho m&igrave;nh c&aacute;c extensions ph&ugrave; hợp. H&atilde;y nhập định dạng m&agrave; bạn cần v&agrave;o hộp t&igrave;m kiếm trong mục Extensions để xem danh s&aacute;ch c&aacute;c tiện &iacute;ch mở rộng đ&atilde; được lọc trong VS Code.&nbsp;</span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:36px">C&aacute;c ph&iacute;m tắt hữu dụng kh&aacute;c trong Visual Studio Code</span></span></h2>
+
+<p><span style="font-size:22px">Ngo&agrave;i ph&iacute;m tắt sắp xếp code, Visual Studio Code c&ograve;n c&oacute; rất nhiều c&aacute;c ph&iacute;m tắt kh&aacute;c hỗ trợ đắc lực cho bạn trong việc lập tr&igrave;nh. B&agrave;i viết n&agrave;y chỉ đề cập đến một số ph&iacute;m tắt được &aacute;p dụng cho VS Code tr&ecirc;n nền tảng Windows.&nbsp;</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Hiển thị bảng danh s&aacute;ch c&aacute;c ph&iacute;m tắt hiện c&oacute; tr&ecirc;n VS Code, sắp xếp theo thứ tự Alphabet: Ctrl + K + S</span></li>
+</ul>
+
+<p><span style="color:#3498db"><span style="font-size:26px"><em>Hiển thị c&aacute;c ph&iacute;m tắt hiện c&oacute; tr&ecirc;n VS Code</em></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Di chuyển giữa c&aacute;c tệp đang l&agrave;m việc: Ctrl + Shift + Tab</span></li>
+	<li><span style="font-size:22px">X&oacute;a d&ograve;ng nơi con trỏ đang đứng: Ctrl + Shift + K</span></li>
+	<li><span style="font-size:22px">Th&ecirc;m ch&uacute; th&iacute;ch kiểu block cho đoạn code: Ctrl + Shift + A</span></li>
+	<li><span style="font-size:22px">Ẩn/hiện bảng Problems để xem lỗi v&agrave; c&aacute;c vấn đề trong dự &aacute;n: Ctrl + Shift + M</span></li>
+</ul>
+
+<p><span style="color:#3498db"><span style="font-size:26px"><em>Mở bảng Problems để xem lỗi dự &aacute;n</em></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Xem bảng t&igrave;m kiếm từ kh&oacute;a trong thanh b&ecirc;n: Ctrl + Shift + F</span></li>
+	<li><span style="font-size:22px">Mở lại tệp đ&atilde; đ&oacute;ng cuối c&ugrave;ng: Ctrl + Shift + T</span></li>
+	<li><span style="font-size:22px">T&igrave;m kiếm từ kh&oacute;a trong tệp hiện tại: Ctrl + F</span></li>
+	<li><span style="font-size:22px">Thay đổi mức độ hiển thị của thanh b&ecirc;n: Ctrl + B</span></li>
+	<li><span style="font-size:22px">Đ&oacute;ng tệp đang l&agrave;m việc: Ctrl + W</span></li>
+	<li><span style="font-size:22px">Ẩn/hiện Terminal: Ctrl + `&nbsp;</span></li>
+</ul>
+
+<p><span style="color:#3498db"><span style="font-size:26px"><em>Mở Terminal trong VS Code</em></span></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Sửa code theo y&ecirc;u cầu m&agrave; kh&ocirc;ng l&agrave;m ảnh hưởng đến c&aacute;c đoạn code kh&aacute;c hoặc cấu tr&uacute;c widget: Ctrl + .</span></li>
+</ul>
+
+<p><span style="font-size:22px">Để tăng tốc độ thao t&aacute;c v&agrave; gi&uacute;p c&ocirc;ng việc lập tr&igrave;nh trở n&ecirc;n hiệu quả hơn, bạn h&atilde;y sử dụng c&aacute;c ph&iacute;m tắt được nhắc đến trong b&agrave;i viết tr&ecirc;n nh&eacute;. Đặc biệt l&agrave;&nbsp;<strong>ph&iacute;m tắt sắp xếp code trong Visual Studio Code</strong>&nbsp;sẽ gi&uacute;p những đoạn code của bạn trở n&ecirc;n ngay ngắn, đẹp mắt v&agrave; thuận tiện cho việc so&aacute;t lỗi hơn.&nbsp;</span></p>

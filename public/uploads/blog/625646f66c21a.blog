@@ -1,0 +1,427 @@
+<h2><span style="font-size:22px"><span style="color:#000000">1. C&uacute; ph&aacute;p v&ograve;ng lặp foreach trong PHP</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">C&uacute; ph&aacute;p v&ograve;ng lặp foreach trong php:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$array</code> <code>as</code> <code>$key</code> <code>=&gt; </code><code>$value</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// C&aacute;c d&ograve;ng lệnh</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Hoặc:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$array</code> <code>as</code> <code>$value</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// C&aacute;c d&ograve;ng lệnh</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong đ&oacute;&nbsp;<code>$array</code>&nbsp;l&agrave; mảng cần lặp,<code>&nbsp;$key</code>&nbsp;l&agrave; số chỉ mục (<em>mảng c&oacute; chỉ mục)</em>&nbsp;hoặc l&agrave; key (<em>trong mảng kết hợp</em>),&nbsp;<code>$value</code>&nbsp;l&agrave; gi&aacute; trị của phần tử ở vị tr&iacute;&nbsp;<code>$key</code>.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ 1:</strong></span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">14</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Danh s&aacute;ch c&aacute;c năm</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$nam</code> <code>= </code><code>array</code><code>(</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1990,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1991,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1992,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1993,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1994,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1995</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>);</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>//D&ugrave;ng foreach xuất ra c&aacute;c năm trong $nam</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$nam</code> <code>as</code> <code>$key</code> <code>=&gt; </code><code>$value</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$value</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&ograve;ng lặp foreach tự động lặp qua c&aacute;c phần tử trong mảng, n&oacute; lặp cho khi n&agrave;o tới phần tử cuối c&ugrave;ng th&igrave; th&ocirc;i. Như ở v&iacute; dụ tr&ecirc;n th&igrave;&nbsp;<code>$nam</code>&nbsp;l&agrave; mảng ta truyền v&agrave;o,&nbsp;<code>$key</code>&nbsp;v&agrave;&nbsp;<code>$value</code>&nbsp;l&agrave; 2 tham số m&agrave; ở mỗi v&ograve;ng lặp n&oacute; tự động truyền gi&aacute; trị v&agrave;o đ&oacute; v&agrave; ch&uacute;ng ta chỉ việc sử dụng. Kết quả xuất ra m&agrave;n h&igrave;nh l&agrave;:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>0 =&gt; 1990</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1 =&gt; 1991</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>2 =&gt; 1992</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>3 =&gt; 1993</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>4 =&gt; 1994</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>5 =&gt; 1995</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Nếu để &yacute; kỹ th&igrave; c&aacute;c bạn sẽ thấy trong v&ograve;ng lặp t&ocirc;i chỉ truyền&nbsp;<code>$nam</code>&nbsp;v&agrave;o, c&ograve;n&nbsp;<code>$key</code>&nbsp;v&agrave;&nbsp;<code>$value</code>&nbsp;kh&ocirc;ng thay đổi, phải chăng n&oacute; lu&ocirc;n lu&ocirc;n như vậy? C&acirc;u trả lời l&agrave; kh&ocirc;ng phải, bạn c&oacute; thể đặt n&oacute; l&agrave; một c&aacute;i t&ecirc;n bất k&igrave; nh&eacute;, v&iacute; dụ chương tr&igrave;nh sau l&agrave; tương đương:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">14</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Danh s&aacute;ch c&aacute;c năm</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$nam</code> <code>= </code><code>array</code><code>(</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1990,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1991,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1992,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1993,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1994,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1995</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>);</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>//D&ugrave;ng foreach xuất ra c&aacute;c năm trong $nam</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$nam</code> <code>as</code> <code>$chimuc</code> <code>=&gt; </code><code>$giatri</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$chimuc</code> <code>. </code><code>&#39; =&gt; &#39;</code> <code>. </code><code>$giatri</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Với b&agrave;i to&aacute;n tr&ecirc;n ta c&oacute; thể d&ugrave;ng c&uacute; ph&aacute;p thứ 2 của v&ograve;ng lặp foreach trong php để giải n&oacute;:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">14</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Danh s&aacute;ch c&aacute;c năm</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$nam</code> <code>= </code><code>array</code><code>(</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1990,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1991,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1992,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1993,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1994,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>1995</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>);</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>//D&ugrave;ng foreach xuất ra c&aacute;c năm trong $nam</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$nam</code> <code>as</code> <code>$value</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$value</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong v&iacute; dụ n&agrave;y ta kh&ocirc;ng lấy được&nbsp;<code>$key</code>&nbsp;m&agrave; chỉ lấy được mỗi&nbsp;<code>$value</code>&nbsp;bởi v&igrave; ta kh&ocirc;ng truyền biến&nbsp;<code>$key</code>&nbsp;v&agrave;o. Kết quả xuất ra m&agrave;n h&igrave;nh l&agrave;:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1990</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1991</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1992</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1993</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1994</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>1995</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>V&iacute; dụ 2:</strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong v&iacute; dụ n&agrave;y danh s&aacute;ch sinh vi&ecirc;n truyền v&agrave;o l&agrave; một mảng kết hợp theo quy tắc&nbsp;<strong>mssv =&gt; tensv</strong>, trong v&ograve;ng lặp sẽ xuất ra m&atilde; số sinh vi&ecirc;n v&agrave; t&ecirc;n sinh vi&ecirc;n tương ứng. Với c&aacute;ch giải sau th&igrave; chỉ lấy được t&ecirc;n chứ kh&ocirc;ng lấy được m&atilde; số sinh vi&ecirc;n:</span></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000">1</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">2</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">3</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">4</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">5</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">6</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">7</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">8</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">9</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">10</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">11</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">12</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000">13</span></span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Danh s&aacute;ch m&atilde; số sinh vi&ecirc;n v&agrave; sinh vi&ecirc;n tương ứng</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>$sinhvien</code> <code>= </code><code>array</code><code>(</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&#39;SV001&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn A&#39;</code><code>,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&#39;SV002&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn B&#39;</code><code>,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&#39;SV003&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn C&#39;</code><code>,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&#39;SV004&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn D&#39;</code><code>,</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>&#39;SV005&#39;</code> <code>=&gt; </code><code>&#39;Nguyễn Văn E&#39;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>);</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;</code>&nbsp;</span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>// Xuất ra danh s&aacute;ch sinh vi&ecirc;n</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>foreach</code> <code>(</code><code>$sinhvien</code> <code>as</code> <code>$tensv</code><code>){</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>$tensv</code> <code>. </code><code>&#39;&lt;br/&gt;&#39;</code><code>;</code></span></span></p>
+
+			<p><span style="font-size:22px"><span style="color:#000000"><code>}</code></span></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Đấy ch&iacute;nh l&agrave; sự kh&aacute;c biệt giữa hai c&aacute;ch lặp.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Để hiểu r&otilde; hơn về v&ograve;ng lặp foreach trong PHP th&igrave; mời c&aacute;c bạn đọc b&agrave;i viết &quot;</span><a href="https://freetuts.net/tim-hieu-ban-chat-vong-lap-foreach-trong-php-83.html" target="_blank" title="bản chất vòng lặp foreach trong php"><span style="color:#000000">bản chất v&ograve;ng lặp foreach trong php</span></a><span style="color:#000000">&quot;, đ&acirc;y l&agrave; một b&agrave;i thảo luận về tốc độ cũng như quy tr&igrave;nh hoạt động của v&ograve;ng lặp foreach.</span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">2. Lời kết</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">Kết th&uacute;c b&agrave;i n&agrave;y t&ocirc;i hy vọng c&aacute;c bạn nắm được c&aacute;ch sử dụng&nbsp;<strong>v&ograve;ng lặp foreach trong php</strong>&nbsp;để xử l&yacute; mảng. Xin lưu &yacute; với c&aacute;c bạn rằng v&ograve;ng lặp foreach c&oacute; thể lặp lồng nhau để xử l&yacute; mảng nhiều chiều, m&igrave;nh sẽ kh&ocirc;ng cho v&iacute; dụ v&igrave; b&agrave;i qu&aacute; d&agrave;i đọc dễ nh&agrave;m ch&aacute;n v&agrave; cũng một phần v&igrave; trong qu&aacute; tr&igrave;nh học ch&uacute;ng ta sẽ đụng tới vấn đề n&agrave;y n&ecirc;n coi như t&ocirc;i duyệt n&oacute; ở phần sau. Trong b&agrave;i tới ch&uacute;ng ta học c&aacute;c lệnh&nbsp;</span><a href="https://freetuts.net/lenh-break-continue-goto-die-exit-trong-php-10.html" target="_blank" title="break continue go to die exit"><span style="color:#000000">break, continiue, go to, die, exit</span></a><span style="color:#000000">, đ&oacute; l&agrave; những lệnh kết th&uacute;c v&ograve;ng lặp hoặc tho&aacute;t chương tr&igrave;nh.</span></span></p>

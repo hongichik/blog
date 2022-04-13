@@ -39,7 +39,7 @@
                 </div> 
                 <div class="form-group col-12">
                     <label>Tóm tắt</label>
-                    <textarea v-model="summary" class="form-control" rows="4" cols="50" type="text" autocomplete="off" ></textarea>
+                    <textarea v-model="summary" class="form-control col-6" rows="4" cols="50" type="text" autocomplete="off"></textarea>
                 </div>
                 <div class="col-lg-12 mt-1 mb-1 ">
                     <span  style="color:red;font-size: 1em">{{errors.summary}}</span>
@@ -60,9 +60,9 @@
                 <div class="row">
                     <div class="col-sm-6 pl-0">
                         <p class="text-right">
-                            <button v-if="!(parentName === 'Blog')" @click="addPost()" class="btn btn-space btn-primary">Thêm các bài viết con</button>
-                            <button v-if="(parentName === 'Blog')" @click="addPostBlog()" class="btn btn-space btn-primary">Lưu bài blog</button>
-                            <button class="btn btn-space btn-secondary" @click="Calcel(1)">Làm mới trang web</button>
+                            <button v-if="!(parentName === 'Blog')" @click="addPost()" class="btn btn-space btn-primary">Lưu</button>
+                            <button v-if="(parentName === 'Blog')" @click="addPostBlog()" class="btn btn-space btn-primary">Lưu</button>
+                            <button class="btn btn-space btn-secondary" @click="Calcel(1)">Làm lại</button>
                         </p>
                     </div>
                 </div>
@@ -120,7 +120,9 @@ export default {
       this.CheckPermissin()
       this.getCategory()
       if(this.$route.params.id == 0)
-        this.Category_id = null
+      {
+        this.Category_id = null          
+      }
       else 
         this.Category_id = this.$route.params.id
       this.parentName = this.$route.params.name;
@@ -159,7 +161,13 @@ export default {
                 }
             })
             .then(data => {
-                this.$router.push({path: '/posts'});
+
+                if(this.$route.params.type == 0)
+                {
+                    this.$router.push({path: '/posts'});   
+                }
+                else
+                    this.$router.push({path: '/AllPosts'});  
                 this.Success = "Đã thêm thành công bài Blog mới"
                 this.Calcel(1);
             })
@@ -186,11 +194,13 @@ export default {
                 }
             })
             .then(data => {
+                // console.log(data.data);
+                this.$router.push({path: '/posts'});
                 this.Success = "Đã thêm thành công bài viết mới"
                 this.Calcel(1);
             })
             .catch(error=>{
-                console.log(error);
+                console.log(error.response.data);
             })
         }
       },
@@ -201,13 +211,12 @@ export default {
       async getCategory()
       {
         axios.defaults.headers.post['Accept'] = 'application/json'
-        await axios.get('/api/CategoryAll',{
+        await axios.get('/api/CategoryShowChild',{
                 headers: {
                 Accept: 'application/json'
             }
         })
         .then(data => {
-            console.log(data);
             this.Categories = data.data;
         })
         .catch(error=>{

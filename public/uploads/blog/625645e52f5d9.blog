@@ -1,0 +1,488 @@
+<h2><span style="font-size:22px">1. C&acirc;u lệnh điều kiện l&agrave; g&igrave; ?</span></h2>
+
+<p><span style="font-size:22px"><strong>C&acirc;u lệnh điều kiện if else</strong>&nbsp;cho ph&eacute;p ta thay đổi luồng của chương tr&igrave;nh dựa tr&ecirc;n một điều kiện n&agrave;o đ&oacute;. Nếu điều kiện l&agrave; đ&uacute;ng (true) th&igrave; chương tr&igrave;nh sẽ được thực hiện, ngược lại nếu điều kiện đưa ra l&agrave; sai (false) th&igrave; nội dung c&ocirc;ng việc đ&oacute; sẽ kh&ocirc;ng được thực hiện.</span></p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong>&nbsp;để kiểm tra một số l&agrave; số chẵn hay số lẻ ta thực hiện c&aacute;c bước sau:</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Lấy số cần kiểm tra<br />
+<u>Bước 2</u>: Chia số đ&oacute; cho 2 để x&aacute;c định số dư<br />
+<u>Bước 3</u>: Kiểm tra số dư đ&oacute; c&oacute; bằng 0 hay kh&ocirc;ng, nếu bằng 0 th&igrave; đ&oacute; l&agrave; số chẵn, ngược lại đ&oacute; l&agrave; số lẻ.<br />
+<br />
+Để giải b&agrave;i to&aacute;n n&agrave;y qua ng&ocirc;n ngữ PHP th&igrave; trước ti&ecirc;n ta t&igrave;m hiểu&nbsp;<strong>c&uacute; ph&aacute;p c&acirc;u điều kiện if else trong php&nbsp;</strong>đ&atilde; nh&eacute;.</span></p>
+
+<h2><span style="font-size:22px">2. C&acirc;u lệnh điều kiện if</span></h2>
+
+<p><span style="font-size:22px">C&acirc;u lệnh if cho ph&eacute;p ta đưa ra c&aacute;c quyết định dựa tr&ecirc;n việc kiểm tra điều kiện n&agrave;o đ&oacute; đ&uacute;ng (true) hay sai (false). C&uacute; ph&aacute;p như sau:</span></p>
+
+<p><span style="font-size:22px">B&agrave;i viết n&agrave;y được đăng tại [free tuts .net]</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$bieuthuc</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// C&aacute;c C&acirc;u Lệnh</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:&nbsp;</strong>Chương tr&igrave;nh kiểm tra một số chẵn hay lẻ</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$so_can_kiem_tra</code> <code>= 12;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$so_du</code> <code>= </code><code>$so_can_kiem_tra</code> <code>% 2;</code></span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$so_du</code> <code>== 0){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số &#39;</code><code>.</code><code>$so_can_kiem_tra</code><code>.</code><code>&#39; L&agrave; Số Chẵn&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><u>D&ograve;ng thứ 1</u>: G&aacute;n cho biến&nbsp;<code>$so_can_kiem_tra gi&aacute; trị = 12</code></span></p>
+
+<p><span style="font-size:22px"><u>D&ograve;ng thứ 2</u>: Chia biến&nbsp;<code>$so_can_kiem_tra / 2</code>&nbsp;v&agrave; lấy số dư của ph&eacute;p chia (to&aacute;n tử % d&ugrave;ng để chia lấy số dư, nếu bạn chưa biết to&aacute;n tử n&agrave;y vui l&ograve;ng đọc lại b&agrave;i&nbsp;<a href="https://freetuts.net/toan-tu-va-bieu-thuc-trong-php-4.html" target="_blank" title="toan tu va bieu thuc trong php">to&aacute;n tử v&agrave; biểu thức trong php</a>).</span></p>
+
+<p><span style="font-size:22px"><u>D&ograve;ng thứ 3</u>: Kiểm tra số dư c&oacute; bằng 0 hay kh&ocirc;ng? Nếu bằng kh&ocirc;ng th&igrave; n&oacute; sẽ chạy d&ograve;ng lệnh b&ecirc;n trong thẻ mở&nbsp;<code>{</code>&nbsp;v&agrave; thẻ đ&oacute;ng&nbsp;<code>}</code>. Nội dung c&acirc;u lệnh b&ecirc;n trong sẽ xuất ra m&agrave;n h&igrave;nh thống b&aacute;o l&agrave; số chẵn<strong>.</strong></span></p>
+
+<p><span style="font-size:22px">Chạy chương tr&igrave;nh n&agrave;y kết quả sẽ xuất ra l&agrave; &quot;Số 12 L&agrave; Số Chẵn&quot;. B&acirc;y giờ giả sử ta đổi gi&aacute; trị 12 th&agrave;nh 13 th&igrave; kết quả sẽ kh&ocirc;ng xuất ra m&agrave;n h&igrave;nh v&igrave; số 13 chia cho 2 sẽ dư = 1, m&agrave; điều kiện để xuất ra c&acirc;u th&ocirc;ng b&aacute;o l&agrave; số dư phải bằng 0 =&gt; kh&ocirc;ng đ&uacute;ng điều kiện n&ecirc;n tr&igrave;nh bi&ecirc;n dịch sẽ kh&ocirc;ng chạy v&agrave;o đoạn code b&ecirc;n trong lệnh if.</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Biểu Thức chứa trong cặp dấu ngoặc&nbsp;<code>()</code>&nbsp;ch&iacute;nh l&agrave; c&aacute;c bi&ecirc;u thức quan hệ</span></li>
+	<li><span style="font-size:22px">To&aacute;n tử dấu chấm&nbsp;<code>.</code>&nbsp;d&ugrave;ng để nối hai chuỗi lại với nhau.</span></li>
+	<li><span style="font-size:22px">Trong một khối lệnh nếu b&ecirc;n trong chứa nhiều hơn 2 lệnh th&igrave; phải c&oacute; cặp ngoặc nhọn&nbsp;<code>{}</code>&nbsp;d&ugrave;ng để mở khối lệnh v&agrave; đ&oacute;ng khối l&ecirc;nh, như vậy tr&igrave;nh bi&ecirc;n dịch sẽ hiểu đ&acirc;y l&agrave; một khối lệnh v&agrave; n&oacute; sẽ thực thi hết khối lệnh n&agrave;y. Ở v&iacute; dụ tr&ecirc;n trong c&acirc;u if chỉ c&oacute; một lệnh xuất ra m&agrave;n h&igrave;nh n&ecirc;n cặp ngoặc nhọn n&agrave;y ta c&oacute; thể c&oacute; hoặc kh&ocirc;ng c&oacute; cũng kh&ocirc;ng sao.</span></li>
+</ul>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:&nbsp;</strong>Chương tr&igrave;nh kiểm tra c&oacute; phải năm nhuận hay kh&ocirc;ng?</span></p>
+
+<p><span style="font-size:22px"><strong>(</strong><em>Năm nhuận l&agrave; năm chia hết cho 4 hoặc 400 nhưng kh&ocirc;ng chia hết cho 100</em>)</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u><strong>:</strong>&nbsp;Nhập v&agrave;o năm cần kiểm tra.<br />
+<u>Bước 2</u><strong>:</strong>&nbsp;kiểm tra xem năm đ&oacute; c&oacute; chia hết cho 4 hoặc l&agrave; 400 hay kh&ocirc;ng<br />
+<u>Bước 3</u><strong>:</strong>&nbsp;Xuất ra m&agrave;n h&igrave;nh nếu điều kiện ở bước 2 l&agrave; đ&uacute;ng.</span></p>
+
+<p><span style="font-size:22px">B&agrave;i giải:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$nam</code> <code>= 1990;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$kiem_tra</code> <code>= (</code><code>$nam</code> <code>% 4 == 0 &amp;&amp; </code><code>$nam</code> <code>% 100 != 0 || </code><code>$nam</code> <code>% 400 == 0);</code></span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$kiem_tra</code> <code>== true){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Năm &#39;</code> <code>. </code><code>$nam</code> <code>. </code><code>&#39; L&agrave; Năm Nhuận&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Trong đoạn code tr&ecirc;n th&igrave; biểu thức điều kiện l&agrave; kh&oacute; nhất n&ecirc;n m&igrave;nh sẽ giải th&iacute;ch n&oacute;. Để t&iacute;nh được biểu thức n&agrave;y trước ti&ecirc;n ta phải biết&nbsp;<strong>độ ưu ti&ecirc;n trong to&aacute;n tử luận l&yacute;</strong>&nbsp;theo quy luật l&agrave; :&nbsp;<code>NOT -&gt; AND -&gt; OR</code><br />
+Trong biểu thức ta kh&ocirc;ng thấy to&aacute;n tử NOT, c&oacute; to&aacute;n tử AND n&ecirc;n ta thực hiện ph&eacute;p n&agrave;y trước, tức l&agrave;:<br />
+<code>($nam % 4 == 0 &amp;&amp; $nam % 100 != 0)</code>&nbsp;&lt;=&gt;&nbsp;<code>(1990 % 4 == 0 &amp;&amp; 19900 != 0)&nbsp;</code>&lt;=&gt;<code>(false &amp;&amp; true) =&gt; false</code></span></p>
+
+<p><span style="font-size:22px">L&uacute;c n&agrave;y biểu thức<code>&nbsp;($nam % 4 == 0 &amp;&amp; $nam % 100 != 0 || $nam % 400 == 0)</code>&nbsp;sẽ th&agrave;nh:<br />
+<code>(false || $nam % 400 = 0)</code>&nbsp;&lt;=&gt;<code>(false || false) =&gt; false</code></span></p>
+
+<p><span style="font-size:22px">Vậy kết quả của biểu thức l&agrave; false. V&igrave; trong c&acirc;u if điều kiện nhập v&agrave;o l&agrave; phải true mới thực hiện xuất ra m&agrave;n h&igrave;nh, nhưng biến kiểm tra lại mang gi&aacute; trị false n&ecirc;n những d&ograve;ng lệnh b&ecirc;n trong cặp ngoặc nhọn kh&ocirc;ng được thực hiện =&gt; n&ecirc;n chương tr&igrave;nh kh&ocirc;ng in ra c&acirc;u th&ocirc;ng b&aacute;o.</span></p>
+
+<h2><span style="font-size:22px">3. C&acirc;u lệnh If else trong php</span></h2>
+
+<p><span style="font-size:22px"><strong>Lệnh if</strong>&nbsp;d&ugrave;ng để kiểm tra một điều kiện c&oacute; đ&uacute;ng hay kh&ocirc;ng? Giả sử trường hợp ngược lại điều kiện kh&ocirc;ng đ&uacute;ng th&igrave; sẽ thực hiện điều g&igrave; ? để giải đ&aacute;p c&acirc;u hỏi n&agrave;y ta sẽ nghi&ecirc;n cứu đến&nbsp;<strong>lệnh if else trong php</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$bieuthuc</code><code>){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// Những C&acirc;u Lệnh 1;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// Những c&acirc;u lệnh 2;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>Giải th&iacute;ch &yacute; nghĩa</strong><u>:</u></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Nếu&nbsp;<code>$bieuthuc</code>&nbsp;đ&uacute;ng th&igrave; Những C&acirc;u Lệnh 1 sẽ được thực hiện v&agrave; Những C&acirc;u Lệnh 2 sẽ kh&ocirc;ng được thực hiện.</span></li>
+	<li><span style="font-size:22px">Ngược lại th&igrave; n&oacute; sẽ kh&ocirc;ng cần kiểm tra nữa v&agrave; thực hiện Những C&acirc;u Lệnh 2.</span></li>
+</ul>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:&nbsp;</strong>kiểm tra năm nay l&agrave; năm chẵn hay năm lẽ, xuất ra m&agrave;n h&igrave;nh kết quả chẵn hay lẽ.</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập năm<br />
+<u>Bước 2</u>: Chia cho 2 v&agrave; lấy số dư<br />
+<u>Bước 3</u><strong>:</strong>&nbsp;Kiểm tra xem số dư c&oacute; bằng 0 hay kh&ocirc;ng? Nếu bằng kh&ocirc;ng l&agrave; năm chẵn, ngược lại l&agrave; năm lẽ</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$nam</code> <code>= 2014;</code></span></p>
+
+			<p><span style="font-size:22px"><code>$so_du</code> <code>= </code><code>$nam</code> <code>% 2;</code></span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$so_du</code> <code>== 0){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Năm &#39;</code> <code>. </code><code>$nam</code> <code>. </code><code>&#39; L&agrave; Năm Chẵn&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Năm &#39;</code> <code>. </code><code>$nam</code> <code>. </code><code>&#39; L&agrave; Năm Lẻ&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>Giải th&iacute;ch</strong></span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập v&agrave;o biến&nbsp;<code>$nam</code>&nbsp;gi&aacute; trị&nbsp;<code>2014</code>;<br />
+<u>Bước 2</u>: Lấy số dư khi chia năm 2014 cho 2 v&agrave; g&aacute;n v&agrave;o biến<strong>&nbsp;</strong><code>$so_du</code>&nbsp;(l&uacute;c n&agrave;y số dư = 0)<br />
+<u>Bước 3</u>: Kiểm tra xem&nbsp;<code>$so_du == 0</code>&nbsp;hay kh&ocirc;ng? v&igrave; số dư bằng 0 n&ecirc;n th&otilde;a m&atilde;n điều kiện n&ecirc;n n&oacute; chạy v&agrave;o biểu thức trong khối<strong>&nbsp;if</strong>&nbsp;v&agrave; xuất ra m&agrave;n h&igrave;nh &ldquo;Năm 2014 L&agrave; Năm Chẵn&rdquo;. N&oacute; sẽ kh&ocirc;ng đoạn code ở trong c&acirc;u lệnh else.</span></p>
+
+<p><span style="font-size:22px">Giả sử ta nhập&nbsp;<code>$nam =2013</code>&nbsp;ta thực hiện tương tự:</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập v&agrave;o biến $nam gi&aacute; trị 2013<br />
+<u>Bước 2</u>: Lấy số dư khi chia năm 2014 cho 2 v&agrave; g&aacute;n v&agrave;o biến&nbsp;<code>$so_du</code>&nbsp;(l&uacute;c n&agrave;y số dư = 1)<br />
+<u>Bước 3</u>: Kiểm tra xem&nbsp;<code>$so_du == 0</code>&nbsp;hay kh&ocirc;ng? v&igrave; số dư bằng 1 kh&aacute;c 0 n&ecirc;n n&oacute; sẽ bỏ qua khối lệnh trong if v&agrave; chạy v&agrave;o khối lệnh trong else n&ecirc;n xuất ra m&agrave;n h&igrave;nh &ldquo;Năm 2013 L&agrave; Năm Lẻ&rdquo;.</span></p>
+
+<h2><span style="font-size:22px">4. Kết hợp nhiều c&acirc;u lệnh if else trong php</span></h2>
+
+<p><span style="font-size:22px">Trong thực tế kh&ocirc;ng phải l&uacute;c n&agrave;o cũng chỉ c&oacute; 2 điều kiện m&agrave; sẽ c&oacute; h&agrave;ng chục điều kiện kh&aacute;c nhau, l&uacute;c n&agrave;y ta phải kết hợp nhuần nhuyễn giữa 2 lệnh&nbsp;<strong>if v&agrave; else</strong>&nbsp;để xử l&yacute;.<br />
+<br />
+<strong>V&iacute; dụ</strong>: Nhập v&agrave;o một m&agrave;u v&agrave; kiểm tra:</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Nếu l&agrave; m&agrave;u xanh th&igrave; xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;Đ&acirc;y L&agrave; M&agrave;u Xanh&rdquo;.</span></li>
+	<li><span style="font-size:22px">Nếu l&agrave; m&agrave;u đỏ th&igrave; xuất ra d&ograve;ng chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u đỏ&rdquo;.</span></li>
+	<li><span style="font-size:22px">Nếu l&agrave; m&agrave;u v&agrave;ng th&igrave; xuất ra d&ograve;ng chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u v&agrave;ng&rdquo;.</span></li>
+	<li><span style="font-size:22px">C&aacute;c m&agrave;u c&ograve;n lại th&igrave; xuất ra d&ograve;ng chữ &ldquo;C&aacute;c m&agrave;u kh&aacute;c&rdquo;.</span></li>
+</ul>
+
+<p><span style="font-size:22px"><strong>Hướng dẫn:</strong></span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u><strong>:</strong>&nbsp;Nhập m&agrave;u<br />
+<u>Bước 2</u>: Kiểm tra gi&aacute; trị của m&agrave;u xem :</span></p>
+
+<ul>
+	<li><span style="font-size:22px">Nếu m&agrave;u bằng &lsquo;m&agrave;u xanh&rsquo; th&igrave; xuất ra m&agrave;n h&igrave;nh &ldquo;Đ&acirc;y l&agrave; m&agrave;u xanh&rdquo;,</span></li>
+	<li><span style="font-size:22px">Ngược lại nếu bằng &lsquo;m&agrave;u đỏ&rsquo; th&igrave; xuất ra m&agrave;n h&igrave;nh &ldquo;Đ&acirc;y l&agrave; m&agrave;u đỏ&rdquo;,</span></li>
+	<li><span style="font-size:22px">Ngược lại nếu bằng &lsquo;m&agrave;u v&agrave;ng&rsquo; th&igrave; xuất ra m&agrave;n h&igrave;nh &lsquo;Đ&acirc;y l&agrave; m&agrave;u v&agrave;ng&rsquo;,</span></li>
+	<li><span style="font-size:22px">Ngược lại kh&ocirc;ng cần kiểm tra g&igrave; nữa v&igrave; l&agrave; trương hợp cuối c&ugrave;ng, kh&ocirc;ng phải l&agrave; c&aacute;c trưởng hợp ở tr&ecirc;n n&ecirc;n ta xuất ra m&agrave;n h&igrave;nh &ldquo;C&aacute;c m&agrave;u kh&aacute;c&rdquo;.</span></li>
+</ul>
+
+<p><span style="font-size:22px"><strong>B&agrave;i giải:</strong></span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+
+			<p><span style="font-size:22px">11</span></p>
+
+			<p><span style="font-size:22px">12</span></p>
+
+			<p><span style="font-size:22px">13</span></p>
+
+			<p><span style="font-size:22px">14</span></p>
+
+			<p><span style="font-size:22px">15</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$mau</code> <code>= </code><code>&#39;m&agrave;u xanh&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;</code>&nbsp;</span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$mau</code> <code>== </code><code>&#39;m&agrave;u xanh&#39;</code><code>){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Đ&acirc;y l&agrave; m&agrave;u xanh&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$mau</code> <code>== </code><code>&#39;m&agrave;u đỏ&#39;</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&quot;Đ&acirc;y l&agrave; m&agrave;u đỏ&quot;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code> <code>if</code> <code>(</code><code>$mau</code> <code>== </code><code>&#39;m&agrave;u v&agrave;ng&#39;</code><code>){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Đ&acirc;y l&agrave; m&agrave;u v&agrave;ng&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>else</code><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;C&aacute;c m&agrave;u kh&aacute;c&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>Giải th&iacute;ch</strong>:</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập m&agrave;u xanh v&agrave;o biến&nbsp;<code>$mau</code></span></p>
+
+<p><span style="font-size:22px"><u>Bước 2</u>: Đến d&ograve;ng lệnh kiểm tra phải m&agrave;u xanh kh&ocirc;ng, v&igrave; n&oacute; bằng &lsquo;m&agrave;u xanh&rsquo; n&ecirc;n b&ecirc;n trong khối lệnh if của m&agrave;u xanh sẽ được chạy v&agrave; xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u xanh&rdquo;, đồng thời n&oacute; kh&ocirc;ng chạy c&aacute;c d&ograve;ng lệnh b&ecirc;n dưới nữa.</span></p>
+
+<p><span style="font-size:22px">Giả sử ta nhập biến&nbsp;<code>$mau = &lsquo;m&agrave;u v&agrave;ng&rsquo;</code>&nbsp;th&igrave; c&aacute;c bước chạy sẽ như sau:</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập m&agrave;u v&agrave;ng v&agrave;o biến $mau<br />
+<u>Bước 2</u>: Đến d&ograve;ng lệnh kiểm tra c&oacute; phải m&agrave;u xanh kh&ocirc;ng? V&igrave; kh&ocirc;ng đ&uacute;ng n&ecirc;n bỏ qua khối lệnh n&agrave;y<br />
+<u>Bước 3</u>: Đến d&ograve;ng lệnh kiểm tra phải m&agrave;u đỏ kh&ocirc;ng? V&igrave; kh&ocirc;ng đ&uacute;ng n&ecirc;n cũng bỏ qua khối lệnh m&agrave;u đỏ n&agrave;y<br />
+<u>Bước 4</u>: Đến d&ograve;ng lệnh kiểm tra c&oacute; phải m&agrave;u v&agrave;ng kh&ocirc;ng, V&igrave; đ&uacute;ng n&ecirc;n b&ecirc;n trong khối m&agrave;u v&agrave;ng sẽ được chạy v&agrave; in ra m&agrave;n h&igrave;nh chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u v&agrave;ng&rdquo; v&agrave; đồng thơi kh&ocirc;ng chạy v&agrave;o c&acirc;u lệnh else ở b&ecirc;n dưới v&igrave; đ&atilde; đ&uacute;ng điều kiện</span></p>
+
+<p><span style="font-size:22px">Giả sử ta nhập biến&nbsp;<code>$mau = &lsquo;m&agrave;u n&acirc;u&rsquo;</code>&nbsp;th&igrave; như thế n&agrave;o? Tương tự tr&igrave;nh bi&ecirc;n dịch sẽ kiểm tra lần lược c&aacute;c m&agrave;u xanh, đỏ, v&agrave;ng đều kh&ocirc;ng đ&uacute;ng, ở c&aacute;i else cuối c&ugrave;ng l&agrave; trường hợp c&ograve;n lại của c&aacute;c trường hợp tr&ecirc;n n&ecirc;n n&oacute; kh&ocirc;ng cần kiểm tra v&agrave; chạy thẳng v&agrave;o lu&ocirc;n n&ecirc;n m&agrave;n h&igrave;nh sẽ in ra d&ograve;ng chữ &ldquo;C&aacute;c m&agrave;u kh&aacute;c&rdquo;.</span></p>
+
+<p><span style="font-size:22px">Note: Ta c&oacute; thể chuyển d&ograve;ng code th&agrave;nh ng&ocirc;n ngữ b&igrave;nh thường được, v&iacute; dụ như b&agrave;i to&aacute;n tr&ecirc;n t&ocirc;i sẽ chuyển sang tiếng việt như sau:<br />
+Nếu m&agrave;u xanh th&igrave; t&ocirc;i xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;đ&acirc;y l&agrave; m&agrave;u xanh&rdquo;, ngược lại nếu m&agrave;u đỏ th&igrave; t&ocirc;i xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u đỏ&rdquo;, ngược lại nếu m&agrave;u v&agrave;ng th&igrave; t&ocirc;i xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;Đ&acirc;y l&agrave; m&agrave;u v&agrave;ng&rdquo;, kh&ocirc;ng phải c&aacute;c trường hợp tr&ecirc;n th&igrave; t&ocirc;i xuất ra m&agrave;n h&igrave;nh d&ograve;ng chữ &ldquo;C&aacute;c m&agrave;u kh&aacute;c&rdquo;.</span></p>
+
+<h2><span style="font-size:22px">5. C&acirc;u lệnh if else lồng nhau</span></h2>
+
+<p><span style="font-size:22px">Đ&acirc;y l&agrave; phần kh&oacute; nhất trong tất cả c&aacute;c vấn đề của c&acirc;u lệnh if else trong php, ở b&ecirc;n tr&ecirc;n ta chỉ chạy c&acirc;u lệnh if else một tầng, ở phần n&agrave;y ta sẽ nghi&ecirc;n cứu đến if else nhiều tầng lồng nhau, c&oacute; nghĩa l&agrave; c&acirc;u if con nằm trong c&acirc;u if cha.</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$bieu_thuc_cha</code><code>)</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// C&aacute;c c&acirc;u lệnh thuộc về biểu thức cha;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>if</code> <code>(</code><code>$bieu_thuc_con</code><code>){</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>// C&aacute;c c&acirc;u lệnh thuộc về biểu thức con;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px"><strong>V&iacute; dụ:</strong>&nbsp;Kiểm tra s&ocirc; nhập v&agrave;o c&oacute; phải l&agrave; số chẵn hay kh&ocirc;ng? Nếu l&agrave; số chẵn th&igrave; kiểm tra tiếp số đ&oacute; c&oacute; lớn hơn100 hay kh&ocirc;ng, nếu lớn hơn 100 th&igrave; xuất ra m&agrave;n h&igrave;nh &ldquo;Số chẵn v&agrave; lớn hơn 100&Prime;, ngược lại xuất ra m&agrave;n h&igrave;nh &ldquo;Số chẵn v&agrave; nhỏ hơn 100&Prime;.</span></p>
+
+<p><span style="font-size:22px"><u>Bước 1</u>: Nhập v&agrave;o một số<br />
+<u>Bước 2</u>: Kiểm tra c&oacute; phải số chẵn hay kh&ocirc;ng, nếu l&agrave; số chẵn th&igrave; qua bước 3<br />
+<u>Bước 3</u>: Kiểm tra số đ&oacute; lớn hơn 100 hay kh&ocirc;ng, nếu lớn hơn th&igrave; xuất ra m&agrave;n h&igrave;nh &ldquo;Số chẵn v&agrave; lớn hơn 100&Prime;, ngược lại xuất ra m&agrave;n h&igrave;nh &ldquo;Số chẵn v&agrave; nhỏ hơn 100&Prime;.</span></p>
+
+<p><span style="font-size:22px"><strong>B&agrave;i giải</strong>:</span></p>
+
+<p>&nbsp;</p>
+
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td>
+			<p><span style="font-size:22px">1</span></p>
+
+			<p><span style="font-size:22px">2</span></p>
+
+			<p><span style="font-size:22px">3</span></p>
+
+			<p><span style="font-size:22px">4</span></p>
+
+			<p><span style="font-size:22px">5</span></p>
+
+			<p><span style="font-size:22px">6</span></p>
+
+			<p><span style="font-size:22px">7</span></p>
+
+			<p><span style="font-size:22px">8</span></p>
+
+			<p><span style="font-size:22px">9</span></p>
+
+			<p><span style="font-size:22px">10</span></p>
+			</td>
+			<td>
+			<p><span style="font-size:22px"><code>$so</code> <code>= 80; </code><code>// Nhập v&agrave;o số 80</code></span></p>
+
+			<p><span style="font-size:22px"><code>if</code> <code>(</code><code>$so</code> <code>% 2 == 0) </code><code>// Nếu số dư khi chia cho 2 = o, tức l&agrave; số chẵn ta sẽ chạy tiếp c&acirc;u lệnh b&ecirc;n trong</code></span></p>
+
+			<p><span style="font-size:22px"><code>{</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>if</code> <code>(</code><code>$so</code> <code>&gt; 100){ </code><code>// Nếu số lớn hơn 100 th&igrave; chạy lệnh b&ecirc;n trong</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số chẵn v&agrave; lớn hơn 100&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>else</code> <code>if</code> <code>(</code><code>$so</code> <code>&lt; 100){ </code><code>// Ngược lại nếu số nhỏ hơn 100 th&igrave; chạy lệnh b&ecirc;n trong</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code>echo</code> <code>&#39;Số chẵn v&agrave; nhỏ hơn 100&#39;</code><code>;</code></span></p>
+
+			<p><span style="font-size:22px"><code>&nbsp;&nbsp;&nbsp;&nbsp;</code><code>}</code></span></p>
+
+			<p><span style="font-size:22px"><code>}</code></span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:22px">Qua phần ghi ch&uacute; t&ocirc;i đ&atilde; giải th&iacute;ch cho c&aacute;c bạn n&oacute; xử l&yacute; như thế n&agrave;o rồi n&ecirc;n c&oacute; lẽ t&ocirc;i kh&ocirc;ng giải th&iacute;ch g&igrave; th&ecirc;m cho phần n&agrave;y v&igrave; n&oacute; cũng tương tự như những phần tr&ecirc;n, chỉ kh&aacute;c nhiều c&acirc;u lệnh if lồng nhau. Nếu c&aacute;c bạn vẫn chưa hiểu th&igrave; qua phần b&agrave;i tập c&oacute; lời giải ở cuối b&agrave;i c&aacute;c bạn đọc kỹ v&agrave; g&otilde; theo rồi xem kết quả l&agrave; sẽ h&igrave;nh dung được.</span></p>
+
+<h2><span style="font-size:22px">6. Lời kết</span></h2>
+
+<p><span style="font-size:22px">Thật sự th&igrave; b&agrave;i n&agrave;y cũng chưa phải l&agrave; chi tiết về c&acirc;u lệnh if else trong php nhưng cũng đủ để c&aacute;c bạn tự học để thực h&agrave;nh. Nếu c&aacute;c bạn muốn đọc th&ecirc;m t&agrave;i liệu c&oacute; thể đọc th&ecirc;m b&agrave;i n&agrave;y ở&nbsp;<a href="https://freetuts.net/cau-lenh-if-else-trong-php-5.html#" onclick="window.open('http://www.w3schools.com/php/php_if_else.asp', '_blank'); return false;" rel="noopener noreferrer nofollow external" target="_blank" title="if else statment">W3C</a>.</span></p>

@@ -1,0 +1,182 @@
+<h1><span style="font-size:36px"><span style="color:#3498db"><strong>A. Foundations (Kiến thức nền tảng)</strong></span></span></h1>
+
+<h2><span style="font-size:36px"><span style="color:#3498db"><strong>1. Testing (Kiểm thử)</strong></span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#3498db"><strong><em>a. Name and explain types of testing.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Kể t&ecirc;n v&agrave; giải th&iacute;ch c&aacute;c loại kiểm thử)</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#3498db"><strong><em>b. What is black box testing? What is white box testing?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Kiểm thử hộp đen l&agrave; g&igrave;? Kiểm thử hộp trắng l&agrave; g&igrave;?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>c. What is the main problem with web testing?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Đ&acirc;u l&agrave; vấn đề ch&iacute;nh trong kiểm thử website?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>d. Describe a bug life-cycle and draw the diagram on the board.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(M&ocirc; tả v&ograve;ng đời của bug v&agrave; vẽ biểu đồ)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>e. What are differences among test plan, test scenario, test case, test report?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Đ&acirc;u l&agrave; điểm kh&aacute;c biệt giữa kế hoạch kiểm thử, kịch bản kiểm thử, trường hợp kiểm thử, b&aacute;o c&aacute;o kiểm thử?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>f. What are components of a test case?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(C&aacute;c th&agrave;nh phần của một trường hợp kiểm thử l&agrave; g&igrave;?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#3498db"><strong>Gợi &yacute;:</strong></span><span style="color:#000000">&nbsp;Một test case cần c&oacute; đủ &iacute;t nhất c&aacute;c th&agrave;nh phần sau:</span></span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205558/1_EWfOX1H15x2xHS4nwLafPg-1024x819.png" style="width:80%" /></span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>g. How to track the test coverage?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(L&agrave;m thế n&agrave;o để theo d&otilde;i độ bao phủ kiểm thử (tỷ lệ kiểm tra t&iacute;nh theo%?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#3498db"><strong>Gợi &yacute;:</strong></span><span style="color:#000000"><strong>&nbsp;</strong>Ứng vi&ecirc;n c&oacute; thể sử dụng nhiều c&ocirc;ng cụ để theo d&otilde;i. Một số c&oacute; thể kể đến như&nbsp;</span><span style="color:#3498db"><strong>Excel</strong>&nbsp;</span><span style="color:#000000">formulas,&nbsp;</span><span style="color:#3498db"><strong>TestRail&nbsp;</strong></span><span style="color:#000000">(một c&ocirc;ng cụ quản l&yacute; kiểm tra t&iacute;ch hợp đầy đủ tiện &iacute;ch JIRA),&hellip;</span></span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205144/1_UvUPA4QM0y0NJ1bPfiMefw-1024x819.png" style="width:80%" /></span></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>2. Programming languages (Ng&ocirc;n ngữ lập tr&igrave;nh)</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. Explain Inheritance, Abstraction, Encapsulation, Polymorphism concept.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Giải th&iacute;ch c&aacute;c kh&aacute;i niệm: Inheritance (Kế thừa), Abstraction (Trừu tượng), Encapsulation (Đ&oacute;ng g&oacute;i), Polymorphism (Đa h&igrave;nh))</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong>&nbsp;Đ&acirc;y l&agrave; c&aacute;c kh&aacute;i niệm li&ecirc;n quan đến&nbsp;<strong>Object Oriented Programming&nbsp;</strong>(Lập tr&igrave;nh hướng đối tượng).</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#3498db"><strong><em>b. Explain the meaning and the use of: While / For / Do While, Switch, If, Break.</em></strong></span><br />
+<span style="color:#000000">(Giải th&iacute;ch &yacute; nghĩa v&agrave; c&aacute;ch sử dụng của c&aacute;c c&acirc;u lệnh: While / For / Do While, Switch, If, Break)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>c. Name some basic data structures.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Kể t&ecirc;n một v&agrave;i cấu tr&uacute;c dữ liệu cơ bản)</span></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>3. Networking:</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. List some major HTTP methods and response codes.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Liệt k&ecirc; một số phương thức HTTP ch&iacute;nh v&agrave; c&aacute;c m&atilde; d&ugrave;ng để biểu thị trạng th&aacute;i request HTTP chỉ định)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong>&nbsp;Ứng vi&ecirc;n cần biết ph&acirc;n biệt một số phương thức HTTP như&nbsp;<strong>POST, GET, DELETE, UPDATE,&hellip;</strong>v&agrave; liệt k&ecirc; được code&nbsp;<strong>404, 502, 200,&hellip;</strong></span></span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205136/0_BI6Ty9JCUpGdLzRA.png" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Một số phương thức HTTP (Nguồn:&nbsp;</span><a href="https://assertible.com/" rel="noreferrer noopener" target="_blank"><span style="color:#000000">Assertible</span></a><span style="color:#000000">)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. What is Client-server architecture?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Cấu tr&uacute;c Client-server l&agrave; g&igrave;?)</span></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>4. Database (Cơ sở dữ liệu):</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. What is primary key, foreign key? How are they different?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Kho&aacute; ch&iacute;nh, kho&aacute; ngoại l&agrave; g&igrave;? Ch&uacute;ng kh&aacute;c nhau như thế n&agrave;o?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. Write a query that&hellip;</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Viết một c&acirc;u truy vấn đ&aacute;p ứng y&ecirc;u cầu đề b&agrave;i)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>c. What is CRUD?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(CRUD l&agrave; g&igrave;?)</span></span></p>
+
+<h1><span style="color:#3498db"><span style="font-size:22px"><strong>B. Practical skills (Kỹ năng thực h&agrave;nh)</strong></span></span></h1>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>1. Tools (C&ocirc;ng cụ)</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. How to test with different internet speed?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(L&agrave;m thế n&agrave;o để kiểm thử với tốc độ internet kh&aacute;c nhau?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong>&nbsp;Ứng vi&ecirc;n cần biết sử dụng c&aacute;c c&ocirc;ng cụ như&nbsp;<strong>JMeter</strong>,&nbsp;<strong>Chrome DevTools</strong>,&hellip;</span></span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205128/1_WTZoMRh_usu3KfTA4dMl2A-1024x819.png" style="width:80%" /></span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. Explain about Page Object Model concept.</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Giải th&iacute;ch kh&aacute;i niệm &ldquo;Page Object Model&rdquo;)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:&nbsp;</strong>Đ&acirc;y l&agrave; một m&ocirc; h&igrave;nh thiết kế test script được sử dụng phổ biến trong Selenium.</span></span></li>
+</ul>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>c. What is XPath, CSS selector? How to find elements in Selenium?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(XPath, CSS selector l&agrave; g&igrave;? L&agrave;m thế n&agrave;o để sử dụng ch&uacute;ng cho việc t&igrave;m c&aacute;c phần tử trong Selenium?)</span></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>2. Test automation (Kiểm thử tự động)</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. What is Selenium/ Selenium WebDriver?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Selenium/ Selenium WebDriver l&agrave; g&igrave;?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. What tools are/were you using to test a software?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Những c&ocirc;ng cụ bạn đang sử dụng để kiểm thử một phần mềm l&agrave; g&igrave;?)</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205119/1_STfHuc1i56vkjSpfFvhenA-1024x683.jpg" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong><em>Note:&nbsp;</em></strong></span><em><span style="color:#000000">Selenium l&agrave; một trong nhiều c&ocirc;ng nghệ được Got It sử dụng để vận h&agrave;nh hệ thống Test Automation của m&igrave;nh.&nbsp;</span><a href="https://vn.got-it.ai/blog/got-it-test-automation-da-nang-cao-hieu-suat-kiem-thu-nhu-the-nao"><span style="color:#000000">T&igrave;m hiểu th&ecirc;m tại đ&acirc;y</span></a><span style="color:#000000">.</span></em></span></p>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>3. Manual test (Kiểm thử thủ c&ocirc;ng)</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. When you encounter a bug when testing, what will you do? How could you know where an error comes from?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Khi gặp phải bug trong l&uacute;c kiểm thử, bạn sẽ l&agrave;m g&igrave;? L&agrave;m thế n&agrave;o để bạn biết một lỗi n&agrave;o đ&oacute; đến từ đ&acirc;u?)</span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. What are the differences between Load Test and Stress Test?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(So s&aacute;nh điểm kh&aacute;c biệt giữa Load Test v&agrave; Stress Test)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong></span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><img alt="Image for post" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205110/1_ppW_DM224ZmWp4CFDBC6hA-1024x819.png" style="width:80%" /></span></span></p>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>c. How do you review member&rsquo;s test cases?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Bạn review c&aacute;c test cases của th&agrave;nh vi&ecirc;n kh&aacute;c như thế n&agrave;o?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong>&nbsp;Ứng vi&ecirc;n cần biết n&ecirc;u kế hoạch, c&aacute;c bước thực hiện, ti&ecirc;u ch&iacute; để review c&aacute;c test cases.</span></span></li>
+</ul>
+
+<h2><span style="color:#3498db"><span style="font-size:22px"><strong>4. Security (Bảo mật)</strong></span></span></h2>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>a. What should you keep in mind when testing the system&rsquo;s security?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Bạn cần ghi nhớ những g&igrave; khi kiểm thử bảo mật hệ thống?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:</strong>&nbsp;Ứng vi&ecirc;n cần biết một số loại kiểm thử bảo mật cơ bản như&nbsp;<strong>SQL injection</strong>,<strong>&nbsp;XSS</strong>,&hellip;</span></span></li>
+</ul>
+
+<p><span style="color:#3498db"><span style="font-size:22px"><strong><em>b. Can you list the details of each security testing type?</em></strong></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">(Bạn c&oacute; thể liệt k&ecirc; chi tiết về từng loại kiểm thử bảo mật kh&ocirc;ng?)</span></span></p>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000"><strong>Gợi &yacute;:&nbsp;</strong>Ứng vi&ecirc;n c&oacute; thể nhắc đến top 10 lỗ hổng bảo mật web phổ biến theo chuẩn OWASP &mdash;&nbsp;<strong>OWASP TOP 10</strong>.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000">Bạn trả lời được bao nhi&ecirc;u % trong tổng số c&aacute;c c&acirc;u hỏi tr&ecirc;n đ&acirc;y rồi? Nếu trả lời được tự tin tất cả c&aacute;c c&acirc;u hỏi n&agrave;y, bạn rất c&oacute; thể sẽ vượt qua v&ograve;ng phỏng vấn tại Got It một c&aacute;ch dễ d&agrave;ng đấy!</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="https://d1iv5z3ivlqga1.cloudfront.net/wp-content/uploads/2021/05/29205059/1_2zC0BVWCYgikLw8W4u9k_A-1024x390.jpg" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Join us now!</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Nếu vẫn c&ograve;n một số kiến thức chưa nắm chắc, kh&ocirc;ng sao cả, h&atilde;y lưu b&agrave;i viết n&agrave;y lại để d&agrave;nh thời gian tu luyện th&ecirc;m bạn nh&eacute;! Hy vọng bộ c&acirc;u hỏi của Got It ng&agrave;y h&ocirc;m nay c&oacute; thể đồng h&agrave;nh c&ugrave;ng bạn tr&ecirc;n chặng đường trở th&agrave;nh một QA Engineer ch&iacute;nh hiệu của m&igrave;nh 😄</span></span></p>

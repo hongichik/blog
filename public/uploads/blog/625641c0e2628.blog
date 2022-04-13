@@ -1,0 +1,26 @@
+<p><span style="font-size:22px"><strong>&Eacute;p kiểu trong C++</strong>&nbsp;l&agrave; việc g&aacute;n gi&aacute; trị của một biến c&oacute; kiểu dữ liệu n&agrave;y tới biến kh&aacute;c c&oacute; kiểu dữ liệu kh&aacute;c.</span></p>
+
+<p><span style="font-size:22px">C&uacute; ph&aacute;p:</span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/6256413622529.PNG" style="width:80%" /></span></p>
+
+<h2><span style="font-size:22px">Ph&acirc;n loại &eacute;p kiểu trong C++</span></h2>
+
+<p><span style="font-size:22px">Trong C++, c&oacute; hai loại &eacute;p kiểu dữ liệu:</span></p>
+
+<ol>
+	<li><span style="font-size:22px"><strong>Nới rộng (widening):</strong>&nbsp;L&agrave; qu&aacute; tr&igrave;nh l&agrave;m tr&ograve;n số từ kiểu dữ liệu c&oacute; k&iacute;ch thước nhỏ hơn sang kiểu c&oacute; k&iacute;ch thước lớn hơn. Kiểu biến đổi n&agrave;y kh&ocirc;ng l&agrave;m mất th&ocirc;ng tin.</span></li>
+	<li><span style="font-size:22px"><strong>Thu hẹp (narrowwing):</strong>&nbsp;L&agrave; qu&aacute; tr&igrave;nh l&agrave;m tr&ograve;n số từ kiểu dữ liệu c&oacute; k&iacute;ch thước lớn hơn sang kiểu c&oacute; k&iacute;ch thước nhỏ hơn. Kiểu biến đổi n&agrave;y c&oacute; thể l&agrave;m mất th&ocirc;ng tin</span></li>
+</ol>
+
+<h2><span style="font-size:22px">1. Nới rộng (widening)</span></h2>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="ep-kieu-du-lieu-noi-rong" src="https://viettuts.vn/images/lap-trinh-c/ep-kieu-du-lieu-noi-rong.jpg" /></span></p>
+
+<p><span style="font-size:22px"><strong>Nới rộng (widening):</strong>&nbsp;L&agrave; qu&aacute; tr&igrave;nh l&agrave;m tr&ograve;n số từ kiểu dữ liệu c&oacute; k&iacute;ch thước nhỏ hơn sang kiểu c&oacute; k&iacute;ch thước lớn hơn. Kiểu biến đổi n&agrave;y kh&ocirc;ng l&agrave;m mất th&ocirc;ng tin. V&iacute; dụ chuyển từ int sang float. Chuyển kiểu loại n&agrave;y c&oacute; thế được thực hiện ngầm định bởi tr&igrave;nh bi&ecirc;n dịch.</span></p>
+
+<h2><span style="font-size:22px">2.Thu hẹp (narrowwing)</span></h2>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="ep-kieu-du-lieu-thu-hep" src="https://viettuts.vn/images/lap-trinh-c/ep-kieu-du-lieu-thu-hep.jpg" /></span></p>
+
+<p><span style="font-size:22px"><strong>Thu hẹp (narrowwing):</strong>&nbsp;L&agrave; qu&aacute; tr&igrave;nh l&agrave;m tr&ograve;n số từ kiểu dữ liệu c&oacute; k&iacute;ch thước lớn hơn sang kiểu c&oacute; k&iacute;ch thước nhỏ hơn. Kiểu biến đổi n&agrave;y c&oacute; thể l&agrave;m mất th&ocirc;ng tin như v&iacute; dụ ở tr&ecirc;n. Chuyển kiểu loại n&agrave;y kh&ocirc;ng thể thực hiện ngầm định bởi tr&igrave;nh bi&ecirc;n dịch, người d&ugrave;ng phải thực hiện chuyển kiểu tường minh.</span></p>

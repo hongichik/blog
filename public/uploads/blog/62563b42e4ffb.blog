@@ -1,0 +1,64 @@
+<p><span style="font-size:22px"><span style="color:#000000">C++ l&agrave; ng&ocirc;n ngữ được sử dụng rộng r&atilde;i. N&oacute; cung cấp rất nhiều&nbsp;<strong>t&iacute;nh năng</strong>&nbsp;được đưa ra dưới đ&acirc;y:</span></span></p>
+
+<ol>
+	<li><span style="font-size:22px"><span style="color:#000000">Đơn giản.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">M&aacute;y độc lập hoặc di động.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Ng&ocirc;n ngữ lập tr&igrave;nh cấp trung.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">ng&ocirc;n ngữ lập tr&igrave;nh c&oacute; cấu tr&uacute;c.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Thư viện phong ph&uacute;.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Quản l&yacute; bộ nhớ.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Tốc độ nhanh.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Con trỏ.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Đệ quy.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Mở rộng.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Hướng đối tượng.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Dựa tr&ecirc;n tr&igrave;nh bi&ecirc;n dịch.</span></span></li>
+</ol>
+
+<h3><span style="font-size:22px"><span style="color:#000000">1. Đơn giản</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ l&agrave; một ng&ocirc;n ngữ đơn giản theo nghĩa n&oacute; cung cấp&nbsp;<strong>c&aacute;ch tiếp cận c&oacute; cấu tr&uacute;c</strong>&nbsp;(để ph&aacute; vỡ vấn đề th&agrave;nh c&aacute;c phần), tập hợp c&aacute;c chức năng thư viện phong ph&uacute; , c&aacute;c kiểu dữ liệu vv.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">2. M&aacute;y độc lập hoặc di động</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Kh&ocirc;ng giống như ng&ocirc;n ngữ assembly, chương tr&igrave;nh C++&nbsp;<strong>c&oacute; thể được thực hiện trong nhiều m&aacute;y</strong>&nbsp;với sự thay đổi ch&uacute;t &iacute;t hoặc kh&ocirc;ng c&oacute;. Nhưng n&oacute; kh&ocirc;ng phải l&agrave; nền tảng độc lập.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">3. Ng&ocirc;n ngữ lập tr&igrave;nh cấp trung</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ cũng được sử dụng để&nbsp;<strong>lập tr&igrave;nh ở mức thấp</strong>. N&oacute; được sử dụng để ph&aacute;t triển c&aacute;c ứng dụng hệ thống như kernel, driver, vv. N&oacute; cũng hỗ trợ c&aacute;c&nbsp;<strong>t&iacute;nh năng của ng&ocirc;n ngữ cấp cao</strong>. Đ&oacute; l&agrave; l&yacute; do tại sao n&oacute; được gọi l&agrave; ng&ocirc;n ngữ bậc trung.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">4. Ng&ocirc;n ngữ lập tr&igrave;nh c&oacute; cấu tr&uacute;c</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ l&agrave; một ng&ocirc;n ngữ lập tr&igrave;nh c&oacute; cấu tr&uacute;c theo nghĩa ch&uacute;ng ta c&oacute; thể&nbsp;<strong>chia nhỏ chương tr&igrave;nh th&agrave;nh c&aacute;c phần bằng c&aacute;ch sử dụng c&aacute;c h&agrave;m</strong>. V&igrave; vậy, n&oacute; rất dễ hiểu v&agrave; sửa đổi.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">5. Thư viện phong ph&uacute;</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++&nbsp;<strong>cung cấp rất nhiều chức năng sẵn</strong>&nbsp;c&oacute; m&agrave; l&agrave;m cho việc ph&aacute;t triển nhanh ch&oacute;ng.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">6. Quản l&yacute; bộ nhớ</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">N&oacute; hỗ trợ t&iacute;nh năng&nbsp;<strong>ph&acirc;n bổ bộ nhớ động</strong>. Trong ng&ocirc;n ngữ C++, ch&uacute;ng ta c&oacute; thể giải ph&oacute;ng bộ nhớ được ph&acirc;n bổ bất cứ l&uacute;c n&agrave;o bằng c&aacute;ch gọi h&agrave;m free().</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">7. Tốc độ nhanh</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Việc bi&ecirc;n dịch v&agrave; thời gian thực hiện của ng&ocirc;n ngữ C++ l&agrave; nhanh.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">8. Con trỏ</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ cung cấp t&iacute;nh năng của con trỏ. Ch&uacute;ng ta c&oacute; thể trực tiếp tương t&aacute;c với bộ nhớ bằng c&aacute;ch sử dụng c&aacute;c con trỏ. Ch&uacute;ng ta&nbsp;<strong>c&oacute; thể sử dụng con trỏ cho bộ nhớ, cấu tr&uacute;c, chức năng, mảng, vv</strong>.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">9. Đệ quy</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Trong C++, ch&uacute;ng ta c&oacute; thể gọi h&agrave;m trong h&agrave;m. N&oacute; cung cấp khả năng sử dụng lại m&atilde; cho mỗi chức năng.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">10. Mở rộng</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">Ng&ocirc;n ngữ C++ mở rộng v&igrave; n&oacute; c&oacute; thể dễ d&agrave;ng &aacute;p dụng c&aacute;c t&iacute;nh năng mới.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">11. Hướng đối tượng</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ l&agrave; ng&ocirc;n ngữ lập tr&igrave;nh hướng đối tượng. OOPs l&agrave;m cho việc ph&aacute;t triển v&agrave; bảo tr&igrave; dễ d&agrave;ng hơn so với ng&ocirc;n ngữ lập tr&igrave;nh theo thủ tục, v&igrave; hướng thủ tục kh&ocirc;ng dễ d&agrave;ng để quản l&yacute; nếu khi k&iacute;ch thước dự &aacute;n ph&aacute;t triển lớn.</span></span></p>
+
+<h3><span style="font-size:22px"><span style="color:#000000">12. Dựa tr&ecirc;n tr&igrave;nh bi&ecirc;n dịch</span></span></h3>
+
+<p><span style="font-size:22px"><span style="color:#000000">C++ l&agrave; một ng&ocirc;n ngữ lập tr&igrave;nh dựa tr&ecirc;n tr&igrave;nh bi&ecirc;n dịch, điều đ&oacute; c&oacute; nghĩa l&agrave; khi kh&ocirc;ng bi&ecirc;n dịch thi kh&ocirc;ng c&oacute; chương tr&igrave;nh C++ n&agrave;o c&oacute; thể được thực thi. Đầu ti&ecirc;n ch&uacute;ng ta cần bi&ecirc;n dịch chương tr&igrave;nh bằng c&aacute;ch sử dụng tr&igrave;nh bi&ecirc;n dịch v&agrave; sau đ&oacute; ch&uacute;ng ta c&oacute; thể thực hiện chương tr&igrave;nh đ&atilde; được bi&ecirc;n dịch.</span></span></p>

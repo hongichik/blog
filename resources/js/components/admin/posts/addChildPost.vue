@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <h5 class="card-header">Thêm bài viết mới</h5>
+        <h5 class="card-header">Bài viết con</h5>
         <div class="card-body">
             <div>
                 <div class="form-group col-5">
@@ -27,7 +27,7 @@
                 </div> 
                 <div class="form-group col-12">
                     <label>Tóm tắt</label>
-                    <textarea v-model="summary" class="form-control" rows="4" cols="50" type="text" autocomplete="off" ></textarea>
+                    <textarea v-model="summary" class="form-control col-6" rows="4" cols="50" type="text" autocomplete="off"></textarea>
                 </div>
                 <div class="col-lg-12 mt-1 mb-1 ">
                     <span  style="color:red;font-size: 1em">{{errors.summary}}</span>
@@ -48,9 +48,8 @@
                 <div class="row">
                     <div class="col-sm-6 pl-0">
                         <p class="text-right">
-                            <button @click="addChildPost()" class="btn btn-space btn-primary">Lưu và thoát</button>
-                            <button class="btn btn-space btn-primary">Lưu và tiếp tục tạo thêm bài viết</button>
-                            <button class="btn btn-space btn-secondary" @click="Calcel(1)">Làm mới trang web</button>
+                            <button @click="addChildPost()" class="btn btn-space btn-primary">Lưu</button>
+                            <button class="btn btn-space btn-secondary" @click="Calcel(1)">Làm mới</button>
                         </p>
                     </div>
                 </div>
@@ -103,10 +102,26 @@ export default {
   created () {
       this.CheckPermissin()
       this.id = this.$route.params.id;
-      this.getCategory()
+      this.CheckFatherId();
   },
   methods: {
-      async CheckPermissin()
+      async CheckFatherId(){
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/CheckPost?id='+this.$route.params.id,{
+            headers: {
+            Accept: 'application/json'
+            },
+        })
+        .then(data => {
+            if(!data.data)
+                this.$router.push({name: 'home'});
+        })
+        .catch(error=>{
+            this.$router.push({name: 'home'});
+            console.log(error);
+        })
+      },
+      async CheckPermissin() // kiểm tra quyền
       {
         axios.defaults.headers.post['Accept'] = 'application/json'
         await axios.get('/api/CheckPermission?Permission='+'Manage-Personal-Posts',{
@@ -119,67 +134,47 @@ export default {
                 this.$router.push({name: 'home'});
         })
         .catch(error=>{
+            this.$router.push({name: 'home'});
             console.log(error);
         })
       },
+
+
       async addChildPost(){
 
-        if(this.showError() == 2)
+        if(this.showError() == 0)
         {
             const [file] = this.$refs.FileImg.files
             let fromData = new FormData();
             fromData.append('name',this.namePosts);
             fromData.append('image',file);
-            fromData.append('parent_id',"có");
+            fromData.append('parent_id',this.id);
             fromData.append('summary',this.summary);
+            fromData.append('content',this.Content);
             axios.defaults.headers.post['Accept'] = 'application/json'
-            await axios.post('/api/AddPost',fromData,{
+            await axios.post('/api/AddChildPost',fromData,{
                     headers: {
                     Accept: 'application/json'
                 }
             })
             .then(data => {
+                if(this.$route.params.type == 0)
+                {
+                    this.$router.push({path: '/posts'});   
+                }
+                else
+                    this.$router.push({path: '/AllPosts'});  
                 this.Success = "Đã thêm thành công bài viết mới"
                 this.Calcel(1);
             })
             .catch(error=>{
-                console.log(error);
+                console.log(error.response.data);
             })
         }
       },
       addImg(){
           const [file] = this.$refs.FileImg.files
           document.getElementById('img').src = URL.createObjectURL(file);
-      },
-      async getCategory()
-      {
-        axios.defaults.headers.post['Accept'] = 'application/json'
-        await axios.get('/api/CategoryAll',{
-                headers: {
-                Accept: 'application/json'
-            }
-        })
-        .then(data => {
-            console.log(data);
-            this.Categories = data.data;
-        })
-        .catch(error=>{
-            console.log(error.response.data);
-        })
-      },
-
-
-      addCategoryId($id,$name){
-          if($id == 0)
-          {
-              this.parentName = "Danh mục cha"
-              this.Category_id = null
-          }
-          else
-          {
-              this.parentName = $name
-              this.Category_id = $id
-          }
       },
       showError(){
         this.deleteError()

@@ -5,10 +5,10 @@
       <div class="m-2">
         <nav class="navbar-light col-12 border">
           <ul class="navbar-nav flex-column">
-            <li v-for="(Post,index) in Posts " :key="Post.value" class="nav-item m-2 p-2 border" style="cursor: pointer;">
-              <a class="nav-link active" data-toggle="collapse"
+            <li v-for="(Post,index) in Posts " :key="Post.value" class="nav-item m-2 p-2 border" >
+              <a class="nav-link active" data-toggle="collapse" style="cursor: pointer;"
                 aria-expanded="false"
-                :data-target="'#'+index"
+                :data-target="'#'+index+Post.id"
                 aria-controls="Posts"
               >
                 {{ Post.name }}
@@ -18,14 +18,14 @@
                     <button @click="btnNewPost(Post.name,Post.id)" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 	fa fa-plus-square"></button>
                 </span>
               </a>
-              <div v-if="Post.Post != null" :id="index" class="collapse submenu col-12 p-2">
+              <div v-if="Post.Post != null" :id="index+''+Post.id" class="collapse submenu col-12 p-2">
                 <ul class="nav flex-column border pl-3 pr-3">
-                  <li v-for="(PostPather,index) in Post.Post" :key="PostPather.value" class="nav-item">
+                  <li v-for="(PostPather,index) in Post.Post" :key="PostPather.value" class="nav-item" style="cursor: auto;">
                     <a
-                      class="nav-link active d-flex mb-2 border-bottom"
+                      class="nav-link active d-flex mb-2 border-bottom" style="cursor: pointer;"
                       data-toggle="collapse"
                       aria-expanded="false"
-                      :data-target="'#1'+index"
+                      :data-target="'#1'+PostPather.id+index"
                       aria-controls="Post"
                     >
                       <div class="d-flex flex-grow-1">
@@ -51,8 +51,8 @@
                           <label class="w-100 text-center">Chức năng</label>
                           <div class="form-group border-top pt-1 d-flex flex-grow-1">
                             <div class="d-flex m-auto">
-                              <button class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa fas fa-edit p-2"></button>
-                              <button class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
+                              <button @click="btnEditPost(PostPather.id)" class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa fas fa-edit p-2"></button>
+                              <button @click="btnDelete(PostPather.id)" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
                             </div>
                           </div>
                         </div>
@@ -60,10 +60,10 @@
                       <span v-if="PostPather.PostChilds != null" class="badge badge-success ml-2 mt-0 mb-auto">{{PostPather.PostChilds.length}}</span>
                       <span v-if="PostPather.PostChilds == null" class="badge badge-success ml-2 mt-0 mb-auto">0</span>  
                         <span class="form-group">
-                            <button @click="btnNewPost()" v-if="!(Post.name === 'Blog')" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fa fa-plus-square"></button>
+                            <button @click="btnNewChildPost(PostPather.id)" v-if="!(Post.name === 'Blog')" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fa fa-plus-square"></button>
                         </span>
                     </a>
-                    <div v-if="PostPather.PostChilds != null" :id="'1'+index" class="collapse submenu col-12 p-2">
+                    <div v-if="PostPather.PostChilds != null" :id="'1'+PostPather.id+index" class="collapse submenu col-11 p-2" style="margin-left: 7%;cursor: auto;">
                       <ul class="nav flex-column border pl-3 pr-3">
                         <li v-for="(PostChilds) in PostPather.PostChilds" :key="PostChilds.value" style="cursor: auto;" class="nav-item border-bottom d-flex mb-4 border-top">
                           <div class="col-3 border-right">
@@ -88,8 +88,8 @@
                             <label class="w-100 text-center">Chức năng</label>
                             <div class="form-group border-top pt-1 d-flex flex-grow-1">
                               <div class="d-flex m-auto">
-                                <button class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa fas fa-edit p-2"></button>
-                                <button class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
+                                <button @click="btnEditPost(PostChilds.id)" class="ml-1 btn btn-outline-primary btn-sm rounded-circle fa fas fa-edit p-2"></button>
+                                <button @click="btnDelete(PostChilds.id)" class="m-0 ml-2 btn btn-outline-danger btn-sm rounded-circle p-2 fas fa-trash-alt"></button>
                               </div>
                             </div>
                           </div>
@@ -118,6 +118,31 @@ created() {
     this.getPosts();
 },
 methods: {
+      btnEditPost($id){
+        this.$router.push({path: '/editPost/'+$id+'/0'});
+      },
+      async btnDelete($id){
+        let text = "Bạn có chắc chắn muốn xóa bài viết và các bài viết liên quan chứ ?";
+        if (confirm(text) == true) {
+          axios.defaults.headers.post['Accept'] = 'application/json'
+          await axios.get('/api/deletePost?id='+$id,{
+              headers: {
+              Accept: 'application/json'
+              },
+          })
+          .then(data => {
+              console.log(data.data);
+              alert("xóa thành công");
+              this.getPosts();
+          })
+          .catch(error=>{
+              console.log(error);
+          })
+        }
+      },
+      btnNewChildPost($idFatherPost){
+        this.$router.push({path: '/addChildPost/'+$idFatherPost+'/0'});
+      },
       async CheckPermissin()
       {
         axios.defaults.headers.post['Accept'] = 'application/json'
@@ -136,9 +161,9 @@ methods: {
       },
     btnNewPost($categoryName, $categoryId){
         if($categoryName)
-            this.$router.push({path: '/addPosts/'+$categoryName+'/'+$categoryId});
+            this.$router.push({path: '/addPosts/'+$categoryName+'/'+$categoryId+'/0'});
         else
-            this.$router.push({path: '/addPosts/Chưa chọn/0'});
+            this.$router.push({path: '/addPosts/Chưa chọn/0/0'});
     },
     async getPosts()
     {

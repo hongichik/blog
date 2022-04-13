@@ -10,11 +10,11 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <router-link to="/"><img :src="logo_footer" alt=""></router-link>
+                                    <a href=""><img src="/api/ShowImg/logo2_footer.png" alt=""></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
-                                        <p class="info1">{{target}}</p>
+                                        <p class="info1">{{InfoWeb.target}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -27,8 +27,8 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info2">{{member_one}}</p>
-                                    <p class="info2">{{menber_tow}}</p>
+                                    <p class="info2">{{InfoWeb.memberOne}}</p>
+                                    <p class="info2">{{InfoWeb.menberTow}}</p>
                                 </div>
                             </div>
                         </div>
@@ -40,8 +40,8 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info2">Gmail: {{Gmail_footer}}</p>
-                                    <p class="info2">Số điện thoại: {{number_footer}}</p>
+                                    <p class="info2">Gmail: {{InfoWeb.GmailFooter}}</p>
+                                    <p class="info2">Số điện thoại: {{InfoWeb.numberFooter}}</p>
                                 </div>
                             </div>                           
                         </div>
@@ -57,7 +57,7 @@
                         <div class="col-xl-12 ">
                             <div class="footer-copy-right text-center">
                                 <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Được phát triển vào năm  &copy;2022 Với mục đính giao lưu và cùng nhau học tập | Trưởng nhóm <a :href="Link_fb_footer" target="_blank">{{member_one}}</a>
+  Được phát triển vào năm  &copy;2022 Với mục đính giao lưu và cùng nhau học tập | Trưởng nhóm <a :href="InfoWeb.LinkFBFooter" target="_blank">{{InfoWeb.memberOne}}</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
                         </div>
@@ -72,8 +72,30 @@
 
 <script>
 export default {
-
-props: ['target','member_one','menber_tow','logo_footer','Gmail_footer','number_footer','Link_fb_footer'],
-
+data () {
+    return {
+        InfoWeb:"",
+    }
+},
+created () {
+    this.showInfo();
+},
+methods: {
+    async showInfo()
+    {
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/InfoShow',{
+                headers: {
+                Accept: 'application/json'
+            }
+        })
+        .then(data => {
+            this.InfoWeb = data.data;
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+    },
+}
 }
 </script>

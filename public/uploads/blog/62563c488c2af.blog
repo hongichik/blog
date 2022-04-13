@@ -1,0 +1,102 @@
+<h2><span style="font-size:22px">Cấu h&igrave;nh Virtual Host trong XAMPP</span></h2>
+
+<ul>
+	<li><span style="font-size:22px">Trong hướng dẫn c&agrave;i đặt XAMPP ch&uacute;ng ta đ&atilde; biết chạy một file PHP như thế n&agrave;o, đối với một file PHP c&oacute; t&ecirc;n&nbsp;hello-world.php&nbsp;được chứa trong folder&nbsp;myproject&nbsp;ta chỉ cần chạy tr&ecirc;n thanh địa chỉ của tr&igrave;nh duyệt&nbsp;<strong>http://localhost/myproject/hello-world.php</strong>, nếu chưa biết th&igrave; bạn cần xem lại phần&nbsp;<a href="https://hocwebchuan.com/tutorial/php/install_xampp.php#workingFolder">Thư mục l&agrave;m việc với XAMPP</a>.</span></li>
+	<li>
+	<p><span style="font-size:22px">Theo c&aacute;ch tr&ecirc;n, ứng với mỗi project, ch&uacute;ng ta sẽ c&oacute; một đường dẫn tương ứng:</span></p>
+
+	<ul>
+		<li><span style="font-size:22px">http://localhost/<strong>myproject</strong>/hello-world.php</span></li>
+		<li><span style="font-size:22px">http://localhost/<strong>project_a</strong>/hello-world.php</span></li>
+		<li><span style="font-size:22px">http://localhost/<strong>project_b</strong>/hello-world.php</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:22px">C&aacute;ch sử dụng tr&ecirc;n sẽ trở n&ecirc;n d&agrave;i v&igrave; c&oacute; th&ecirc;m t&ecirc;n project, hoặc sẽ trở n&ecirc;n bất tiện nếu ch&uacute;ng ta sử dụng đường dẫn root c&oacute; dạng&nbsp;/myproject/include/file.php.</span></li>
+	<li>
+	<p><span style="font-size:22px">Để giải quyết vấn đề tr&ecirc;n, ch&uacute;ng ta sẽ cấu h&igrave;nh XAMPP sao cho c&oacute; thể chạy được nhiều domain ngắn gọn hơn v&agrave; c&oacute; thể d&ugrave;ng root path tiện lợi hơn, khi n&agrave;y thay v&igrave; viết như tr&ecirc;n, ch&uacute;ng ta c&oacute; thể sử dụng đường dẫn như sau:</span></p>
+
+	<ul>
+		<li><span style="font-size:22px">http://localhost<strong>:81</strong>/hello-world.php</span></li>
+		<li><span style="font-size:22px">http://localhost<strong>:82</strong>/hello-world.php</span></li>
+		<li><span style="font-size:22px">http://localhost<strong>:83</strong>/hello-world.php</span></li>
+	</ul>
+	</li>
+	<li><span style="font-size:22px">Ch&uacute;ng ta cũng c&oacute; thể sử dụng c&aacute;ch n&agrave;y để cấu h&igrave;nh chạy nhiều domain trong c&ugrave;ng một server.</span></li>
+</ul>
+
+<h3><span style="font-size:22px">Th&ecirc;m port cho XAMPP: httpd.conf</span></h3>
+
+<ul>
+	<li><span style="font-size:22px">Mở file&nbsp;<strong>C:\xampp\apache\conf\httpd.conf</strong>&nbsp;với một c&ocirc;ng cụ chỉnh sửa (editor) n&agrave;o đ&oacute;, notepad cũng được, hoặc truy cập file trực tiếp từ XAMPP theo h&igrave;nh b&ecirc;n dưới.</span></li>
+</ul>
+
+<p style="text-align:center"><span style="font-size:22px"><img alt="" src="/api/ShowImg/62563c3032534.png" style="width:80%" /></span></p>
+
+<ul>
+	<li><span style="font-size:22px">Khi file&nbsp;<strong>httpd.conf</strong>&nbsp;đ&atilde; được mở, t&igrave;m tới d&ograve;ng&nbsp;<code>#Listen 12.34.56.78:80</code>, bạn sẽ thấy đoạn code b&ecirc;n trong c&oacute; dạng như sau:</span></li>
+</ul>
+
+<pre>
+<span style="font-size:22px">#Listen 12.34.56.78:80
+Listen 80</span></pre>
+
+<ul>
+	<li><span style="font-size:22px">Port 80 l&agrave; port mặc định chạy http://localhost/ của XAMPP.</span></li>
+	<li><span style="font-size:22px">Từ vị tr&iacute; n&agrave;y ta th&ecirc;m nhiều port kh&aacute;c nhau, save lại sau mỗi lần th&ecirc;m port:</span></li>
+</ul>
+
+<pre>
+<span style="font-size:22px">#Listen 12.34.56.78:80
+Listen 80
+Listen 81
+Listen 82
+Listen 83</span></pre>
+
+<h3><span style="font-size:22px">Cấu h&igrave;nh Virtual Host: httpd-vhosts.conf</span></h3>
+
+<ul>
+	<li><span style="font-size:22px">Mở file&nbsp;<strong>C:\xampp\apache\conf\extra\httpd-vhosts.conf</strong>&nbsp;với một c&ocirc;ng cụ chỉnh sửa (editor) n&agrave;o đ&oacute;.</span></li>
+	<li><span style="font-size:22px">B&ecirc;n dưới file ta thấy c&oacute; sẵn đoạn cấu h&igrave;nh mẫu cho port 80 đ&atilde; được comment kh&ocirc;ng cho chạy bằng dấu #</span></li>
+</ul>
+
+<pre>
+<span style="font-size:22px">##&lt;VirtualHost *:80&gt;
+    ##ServerAdmin webmaster@dummy-host.example.com
+    ##DocumentRoot &quot;C:/xampp/htdocs/dummy-host.example.com&quot;
+    ##ServerName dummy-host.example.com
+    ##ServerAlias www.dummy-host.example.com
+    ##ErrorLog &quot;logs/dummy-host.example.com-error.log&quot;
+    ##CustomLog &quot;logs/dummy-host.example.com-access.log&quot; common
+##&lt;/VirtualHost&gt;</span></pre>
+
+<ul>
+	<li><span style="font-size:22px">B&ecirc;n dưới đoạn code mẫu n&agrave;y ta th&ecirc;m đoạn code cấu h&igrave;nh sau:</span></li>
+</ul>
+
+<pre>
+<span style="font-size:22px">&lt;VirtualHost *:<em>82</em>&gt;
+    DocumentRoot &quot;<em>C:/xampp/htdocs/myproject</em>&quot;
+    ServerName <em>myproject.hwc</em>
+    ServerAlias <em>www.myproject.hwc</em>
+    ErrorLog &quot;C:/xampp/apache/logs/myproject.hwc-error.log&quot;
+    CustomLog &quot;C:/xampp/apache/logs/myproject.hwc-access.log&quot;
+    &lt;Directory &quot;<em>C:/xampp/htdocs/myproject</em>&quot;&gt;
+        Order Allow,Deny
+        Allow from all
+    &lt;/Directory&gt;
+&lt;/VirtualHost&gt;</span></pre>
+
+<ul>
+	<li><span style="font-size:22px"><code>&lt;VirtualHost *:82&gt;</code>&nbsp;: Đ&acirc;y l&agrave; một trong những port đ&atilde; được th&ecirc;m v&agrave;o httpd.conf, nếu cấu h&igrave;nh chạy domain th&igrave; ch&uacute;ng ta c&oacute; thể d&ugrave;ng port 80.</span></li>
+	<li><span style="font-size:22px"><code>DocumentRoot</code>&nbsp;Thư mục chứa project (khai b&aacute;o bắt buộc).</span></li>
+	<li><span style="font-size:22px"><code>ServerName</code>&nbsp;T&ecirc;n server, d&ugrave;ng t&ecirc;n domain v&agrave; port nếu c&oacute; (khai b&aacute;o bắt buộc).</span></li>
+	<li><span style="font-size:22px"><code>ServerAlias</code>&nbsp;T&ecirc;n thay thế cho t&ecirc;n server (khai b&aacute;o t&ugrave;y chọn).</span></li>
+	<li><span style="font-size:22px"><code>ErrorLog</code>&nbsp;Đường dẫn tới file log error, sẽ xem lỗi từ đ&acirc;y (khai b&aacute;o t&ugrave;y chọn).</span></li>
+	<li><span style="font-size:22px"><code>CustomLog</code>&nbsp;Đường dẫn tới file log Uri khi người d&ugrave;ng request (khai b&aacute;o t&ugrave;y chọn).</span></li>
+	<li><span style="font-size:22px"><code>Directory</code>&nbsp;B&ecirc;n trong tag n&agrave;y d&ugrave;ng để cấp quyền cho thư mục.</span></li>
+</ul>
+
+<p><span style="font-size:22px">Sau khi cấu h&igrave;nh như tr&ecirc;n ho&agrave;n tất, save lại v&agrave; cần restart Apache, bằng c&aacute;ch mở XAMPP click v&agrave;o stop tương ứng của Apache v&agrave; start lại, khi n&agrave;y bạn thử chạy tr&ecirc;n tr&igrave;nh duyệt lại bằng đường dẫn mới:<br />
+<a href="http://localhost:82/hello-world.php"><span style="color:#3498db">http://localhost:82/hello-world.php</span></a><span style="color:#3498db">.</span></span></p>
+
+<p><span style="font-size:22px">Tương tự như vậy, ch&uacute;ng ta c&oacute; thể tạo nhiều Virtual Host kh&aacute;c nhau trong c&ugrave;ng một server.</span></p>

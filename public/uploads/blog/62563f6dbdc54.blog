@@ -1,0 +1,36 @@
+<p><span style="font-size:22px"><span style="color:#000000">Một&nbsp;<strong>biến trong C++</strong>&nbsp;l&agrave; t&ecirc;n của vị tr&iacute; bộ nhớ. N&oacute; được sử dụng để lưu trữ dữ liệu. Gi&aacute; trị của n&oacute; c&oacute; thể được thay đổi v&agrave; n&oacute; c&oacute; thể được sử dụng lại nhiều lần. Mỗi biến trong C++ c&oacute; một loại dữ liệu cụ thể, x&aacute;c định k&iacute;ch thước của bộ nhớ của biến; phạm vi c&aacute;c gi&aacute; trị c&oacute; thể được lưu trữ trong bộ nhớ đ&oacute;.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Biến l&agrave; một c&aacute;ch để thể hiện vị tr&iacute; bộ nhớ th&ocirc;ng qua một c&aacute;i t&ecirc;n để n&oacute; c&oacute; thể được x&aacute;c định một c&aacute;ch dễ d&agrave;ng. T&ecirc;n của một biến c&oacute; thể bao gồm c&aacute;c chữ c&aacute;i, chữ số v&agrave; k&yacute; tự gạch dưới. N&oacute; phải bắt đầu bằng một chữ c&aacute;i thư hoặc một gạch dưới. Biến trong C++ c&oacute;&nbsp;<strong>ph&acirc;n biệt chữ hoa v&agrave; chữ thường</strong>.</span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">C&uacute; ph&aacute;p khai b&aacute;o biến</span></span></h2>
+
+<p><span style="font-size:22px"><span style="color:#000000">C&uacute; ph&aacute;p để khai b&aacute;o một biến trong C:</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="/api/ShowImg/62563ebe255e2.PNG" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">V&iacute; dụ về khai b&aacute;o biến:</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="/api/ShowImg/62563ee68f8e3.PNG" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Ở đ&acirc;y, a, b, c l&agrave; c&aacute;c biến v&agrave; int, float, char l&agrave; c&aacute;c kiểu dữ liệu.</span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000">Ch&uacute;ng ta cũng c&oacute; thể cung cấp gi&aacute; trị trong khi khai b&aacute;o c&aacute;c biến như được đưa ra dưới đ&acirc;y:</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="/api/ShowImg/62563eff84c7b.PNG" style="width:80%" /></span></span></p>
+
+<h2><span style="font-size:22px"><span style="color:#000000">Quy tắc khai b&aacute;o biến trong C</span></span></h2>
+
+<ul>
+	<li><span style="font-size:22px"><span style="color:#000000">Một biến c&oacute; thể c&oacute; c&aacute;c chữ c&aacute;i, chữ số v&agrave; dấu gạch dưới.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">T&ecirc;n biến chỉ c&oacute; thể bắt đầu bằng bảng chữ c&aacute;i v&agrave; dấu gạch dưới. N&oacute; kh&ocirc;ng thể bắt đầu bằng chữ số.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">Kh&ocirc;ng c&oacute; khoảng trắng trong t&ecirc;n biến.</span></span></li>
+	<li><span style="font-size:22px"><span style="color:#000000">T&ecirc;n biến kh&ocirc;ng phải l&agrave; bất kỳ từ hoặc từ kh&oacute;a d&agrave;nh ri&ecirc;ng như int, float, vv.</span></span></li>
+</ul>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>T&ecirc;n biến hợp lệ</strong>:</span></span></p>
+
+<p style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="/api/ShowImg/62563f323e191.PNG" style="width:80%" /></span></span></p>
+
+<p><span style="font-size:22px"><span style="color:#000000"><strong>T&ecirc;n biến kh&ocirc;ng hợp lệ</strong>:</span></span></p>
+
+<h2 style="text-align:center"><span style="font-size:22px"><span style="color:#000000"><img alt="" src="/api/ShowImg/62563f4d79446.PNG" style="width:80%" /></span></span></h2>
