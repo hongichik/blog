@@ -30452,7 +30452,7 @@ var render = function () {
                 _c("div", { staticClass: "footer-copy-right text-center" }, [
                   _c("p", [
                     _vm._v(
-                      "\r\n  Được phát triển vào năm  ©2022 Với mục đính giao lưu và cùng nhau học tập | Trưởng nhóm "
+                      "\n  Được phát triển vào năm  ©2022 Với mục đính giao lưu và cùng nhau học tập | Trưởng nhóm "
                     ),
                     _c(
                       "a",
