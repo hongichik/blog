@@ -59,18 +59,7 @@
                 <div class="col-lg-4 p-3 mb-5 bg-body rounded">
                     <div class="blog_right_sidebar">
                        <aside class="single_sidebar_widget search_widget">
-                          <form action="#">
-                             <div class="form-group">
-                                <div class="input-group mb-3">
-                                   <input type="text" class="form-control" placeholder='Tìm kiếm từ khoá'
-                                      onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tìm kiếm từ khóa'">
-                                   <div class="input-group-append">
-                                      <button class="btns" type="button"><i class="ti-search"></i></button>
-                                   </div>
-                                </div>
-                             </div>
-                            
-                          </form>
+                        <user-searchpost/>
                        </aside>
                        <aside class="single_sidebar_widget popular_post_widget shadow-sm p-3 mb-5 bg-body rounded">
                         <h3 class="widget_title">Bài viết đề xuất</h3>

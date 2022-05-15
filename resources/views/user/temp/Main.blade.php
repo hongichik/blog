@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="/api/ShowImg/favicon.ico">
-
+    <meta name="csrf-token" content="{{csrf_token()}}"/>
     <!-- CSS here -->
     <link rel="stylesheet" href="{{asset('themeUser/assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('themeUser/assets/css/owl.carousel.min.css')}}">

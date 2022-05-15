@@ -52,7 +52,7 @@
                         <div class="col-xl-2 col-lg-2 col-md-2">
                             <div class="header-right f-right d-none d-xl-block">
                                 <div class="nav-search search-switch">
-                                    <i class="fa fa-search"></i>
+                                    <i @click="btn()" class="fa fa-search"></i>
                                 </div>
                             </div>
                         </div>
@@ -85,20 +85,23 @@ created () {
 },
 
 methods: {
+    btn(){
+        document.getElementById('search-model-box').style.display  =  "block";
+    },
     async getCategories()
     {
-    axios.defaults.headers.post['Accept'] = 'application/json'
-    await axios.get('/api/listCategory',{
-            headers: {
-            Accept: 'application/json'
-        }
-    })
-    .then(data => {
-        this.Categories = data.data;
-    })
-    .catch(error=>{
-        console.log(error);
-    })
+        axios.defaults.headers.post['Accept'] = 'application/json'
+        await axios.get('/api/listCategory',{
+                headers: {
+                Accept: 'application/json'
+            }
+        })
+        .then(data => {
+            this.Categories = data.data;
+        })
+        .catch(error=>{
+            console.log(error);
+        })
     },
     
     async showInfo()

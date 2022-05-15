@@ -33,7 +33,29 @@ import posts from './components/admin/posts/posts.vue';
 import AllPosts from './components/admin/posts/AllPosts.vue';
 import editPost from './components/admin/posts/editPost.vue';
 
+import Feedback from './components/admin/Feedback/Feedback.vue';
+
+import newPermission from './components/admin/Permission/newPermission.vue';
+import EditPermission from './components/admin/Permission/EditPermission.vue';
+import ListPermission from './components/admin/Permission/ListPermission.vue';
+
 export const routes = [
+    {
+        path: '/ListPermission',
+        component: ListPermission
+    },
+    {
+        path: '/EditPermission/:id',
+        component: EditPermission
+    },
+    {
+        path: '/newPermission',
+        component: newPermission
+    },
+    {
+		path: '/Feedback',
+        component: Feedback
+    },
     {
 		path: '/editPost/:id/:type',
         component: editPost

@@ -85,15 +85,18 @@
                                 <div id="submenu-4" class="collapse submenu" >
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                            <router-link to=/editContact class=nav-link>Danh sách tài khoản</router-link>                                            
+                                            <router-link to=/ListPermission class=nav-link>Danh sách tài khoản</router-link>                                            
                                         </li>
                                         <li class="nav-item">
-                                            <router-link to=/editInfo class=nav-link>Tạo tài khoản</router-link>
+                                            <router-link to=/newPermission class=nav-link>Tạo tài khoản</router-link>
                                         </li>
 
                                     </ul>
                                 </div>
                             </li>  
+                            <li class="nav-item">
+                                <router-link to=/Feedback class=nav-link>Phản hồi</router-link>
+                            </li>
                             <!-- <li v-if="ManageLayoutHome" class="nav-item">
                                 <router-link to=/editContact class="nav-link">
                                     Bố cục trang chủ

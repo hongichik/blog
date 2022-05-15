@@ -8,6 +8,9 @@ use App\Http\Controllers\API\ContactController;
 use App\Http\Controllers\API\AllInfoWebController;
 use App\Http\Controllers\API\PostsController;
 use App\Http\Controllers\API\PermissionController;
+use App\Http\Controllers\API\FeedbackController;
+
+
 
 //admin
 Route::middleware('auth')->group(function (){
@@ -22,7 +25,8 @@ Route::middleware('auth')->group(function (){
 
     Route::post('/ContactEdit', [ContactController::class,'Edit']); //edit contact
 
-    
+    Route::get('/GetFeedback', [FeedbackController::class,'GetFeedback']); //show
+    Route::get('/DeleteFeedback', [FeedbackController::class,'DeleteFeedback']); //delete
 
     
     Route::post('/UploadImg', [ImgController::class,'uploadImg']); //upload img
@@ -40,9 +44,15 @@ Route::middleware('auth')->group(function (){
 
     Route::get('/ShowPermissionAll', [PermissionController::class,'ShowPermissionAll']); // get all permission
     Route::get('/CheckPermission', [PermissionController::class,'CheckPermission']); // check permmission
+    Route::get('/GetPermisson', [PermissionController::class,'GetPermisson']);
+    Route::post('/NewAccount', [PermissionController::class,'NewAccount']);
+    Route::get('/GetAllAdmin', [PermissionController::class,'GetAllAdmin']);
+    Route::get('/DeleteAcount', [PermissionController::class,'DeleteAcount']);
+    Route::get('/GetInfoAcount', [PermissionController::class,'GetInfoAcount']);
+    Route::get('/GetInfoAcountPer', [PermissionController::class,'GetInfoAcountPer']);
+    Route::post('/UpdateAcount', [PermissionController::class,'UpdateAcount']);
+
 });
-
-
 
 
 

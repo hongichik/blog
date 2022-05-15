@@ -17,13 +17,14 @@ Vue.prototype.$http = window.axios;
 
 Vue.component('user-home', require('./components/user/Home.vue').default);
 Vue.component('user-about', require('./components/user/About.vue').default);
+Vue.component('user-contact', require('./components/user/Contact.vue').default);
 
-
+Vue.component('user-feedback', require('./components/user/temp/Feedback.vue').default);
 Vue.component('user-header', require('./components/user/temp/header.vue').default);
-
 Vue.component('user-preloader', require('./components/user/temp/Preloader.vue').default);
 Vue.component('user-footer', require('./components/user/temp/footer.vue').default);
 Vue.component('user-search', require('./components/user/temp/Search.vue').default);
+Vue.component('user-searchpost', require('./components/user/temp/SearchPost.vue').default);
 
 const app = new Vue({
 }).$mount('#app')

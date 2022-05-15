@@ -1,9 +1,9 @@
 <template>
 <!-- Search model Begin -->
-<div class="search-model-box">
+<div class="search-model-box" id="search-model-box">
     <div class="d-flex align-items-center h-100 justify-content-center">
         <button  class="search-close-btn">+</button>
-        <form class="search-model-form">
+        <form class="search-model-form" >
             <input @keyup.enter="onSearch()" v-model="search" type="text" id="search-input" placeholder="Bạn muốn tìm kiếm gì?" autocomplete="off">
         </form>
     </div>

@@ -14,28 +14,7 @@
                                     <h2 class="contact-title">Liên hệ</h2>
                                 </div>
                                 <div class="col-lg-8">
-                                    <form class="form-contact contact_form">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <textarea style="font-size: 1.2em;" class="form-control w-100 border-dark" name="message" id="message" cols="30" rows="9" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nội dung'" placeholder=" Nội dung"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input style="font-size: 1.2em;" class="form-control valid border-dark" name="name" id="name" type="text" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Họ và tên'" placeholder="Họ và tên">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <input style="font-size: 1.2em;" class="form-control valid border-dark" name="email" id="email" type="email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Gmail'" placeholder="Gmail">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="button-group-area mt-40">
-                                            <button  class="genric-btn primary circle">Gửi</button>
-                                        </div>
-                                    </form>
+                                <user-contact/>
                                 </div>
                                 <div class="col-lg-3 offset-lg-1">
                                     <div class="media contact-info">
